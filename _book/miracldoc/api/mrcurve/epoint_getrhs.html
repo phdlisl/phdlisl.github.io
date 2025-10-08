@@ -1,0 +1,2516 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>epoint_getrhs · Gitbook应用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="计算机科学实验室">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="epoint_negate.html" />
+    
+    
+    <link rel="prev" href="epoint_copy.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gitbook使用指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../ebook/startbook.html">
+            
+                <a href="../../../ebook/startbook.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Gitbook环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../../ebook/firstpage.html">
+            
+                <a href="../../../ebook/firstpage.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    第一个Gitbook项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../../ebook/plugins.html">
+            
+                <a href="../../../ebook/plugins.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    Gitbook插件配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../../ebook/gitbk.html">
+            
+                <a href="../../../ebook/gitbk.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Gitbook操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../../ebook/mkdown.html">
+            
+                <a href="../../../ebook/mkdown.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    MarkDown语法规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miracl密码库</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    MIRACL简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../install.html">
+            
+                <a href="../../install.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../curvePara.html">
+            
+                <a href="../../curvePara.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    曲线参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../demo/ecsgen.html">
+            
+                <a href="../../demo/ecsgen.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    ecsgen.cpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../demo/mraes.html">
+            
+                <a href="../../demo/mraes.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    mraes.c
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../demo/blmq.html">
+            
+                <a href="../../demo/blmq.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    blmq.cpp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../../packgDemo/bn_pair.html">
+            
+                <a href="../../packgDemo/bn_pair.html">
+            
+                    
+                        <b>3.6.1.</b>
+                    
+                    bn_pair.cpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../cplus.html">
+            
+                <a href="../cplus.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    C++中的函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" >
+            
+                <span>
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据类型和常量
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="../dtype/big.html">
+            
+                <a href="../dtype/big.html">
+            
+                    
+                        <b>3.8.1.</b>
+                    
+                    big类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="../dtype/constants.html">
+            
+                <a href="../dtype/constants.html">
+            
+                    
+                        <b>3.8.2.</b>
+                    
+                    字符常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="../dtype/epoint.html">
+            
+                <a href="../dtype/epoint.html">
+            
+                    
+                        <b>3.8.3.</b>
+                    
+                    epoint类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="../dtype/int.html">
+            
+                <a href="../dtype/int.html">
+            
+                    
+                        <b>3.8.4.</b>
+                    
+                    与int类型相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.5" data-path="../dtype/miracl.html">
+            
+                <a href="../dtype/miracl.html">
+            
+                    
+                        <b>3.8.5.</b>
+                    
+                    miracl类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" >
+            
+                <span>
+            
+                    
+                        <b>3.9.</b>
+                    
+                    mrarth0.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="../mrarth0/mr_psub.html">
+            
+                <a href="../mrarth0/mr_psub.html">
+            
+                    
+                        <b>3.9.1.</b>
+                    
+                    mr_psub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" >
+            
+                <span>
+            
+                    
+                        <b>3.10.</b>
+                    
+                    mrarth1.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="../mrarth1/mr_invert.html">
+            
+                <a href="../mrarth1/mr_invert.html">
+            
+                    
+                        <b>3.10.1.</b>
+                    
+                    mr_invert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.2" data-path="../mrarth1/mr_pmul.html">
+            
+                <a href="../mrarth1/mr_pmul.html">
+            
+                    
+                        <b>3.10.2.</b>
+                    
+                    mr_pmul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.3" data-path="../mrarth1/mr_sdiv.html">
+            
+                <a href="../mrarth1/mr_sdiv.html">
+            
+                    
+                        <b>3.10.3.</b>
+                    
+                    mr_sdiv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.4" data-path="../mrarth1/remain.html">
+            
+                <a href="../mrarth1/remain.html">
+            
+                    
+                        <b>3.10.4.</b>
+                    
+                    remain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" >
+            
+                <span>
+            
+                    
+                        <b>3.11.</b>
+                    
+                    mrarth2.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.1" data-path="../mrarth2/divide.html">
+            
+                <a href="../mrarth2/divide.html">
+            
+                    
+                        <b>3.11.1.</b>
+                    
+                    divide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.2" data-path="../mrarth2/normalise.html">
+            
+                <a href="../mrarth2/normalise.html">
+            
+                    
+                        <b>3.11.2.</b>
+                    
+                    normalise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" >
+            
+                <span>
+            
+                    
+                        <b>3.12.</b>
+                    
+                    mrcomba.tpl
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.12.1" data-path="../mrcomba/comba_mult.html">
+            
+                <a href="../mrcomba/comba_mult.html">
+            
+                    
+                        <b>3.12.1.</b>
+                    
+                    comba_mult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.2" data-path="../mrcomba/comba_square.html">
+            
+                <a href="../mrcomba/comba_square.html">
+            
+                    
+                        <b>3.12.2.</b>
+                    
+                    comba_square
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.3" data-path="../mrcomba/comba_redc.html">
+            
+                <a href="../mrcomba/comba_redc.html">
+            
+                    
+                        <b>3.12.3.</b>
+                    
+                    comba_redc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.4" data-path="../mrcomba/comba_modadd.html">
+            
+                <a href="../mrcomba/comba_modadd.html">
+            
+                    
+                        <b>3.12.4.</b>
+                    
+                    comba_modadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.5" data-path="../mrcomba/comba_modsub.html">
+            
+                <a href="../mrcomba/comba_modsub.html">
+            
+                    
+                        <b>3.12.5.</b>
+                    
+                    comba_modsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.6" data-path="../mrcomba/comba_double_modadd.html">
+            
+                <a href="../mrcomba/comba_double_modadd.html">
+            
+                    
+                        <b>3.12.6.</b>
+                    
+                    comba_double_modadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.7" data-path="../mrcomba/comba_double_modsub.html">
+            
+                <a href="../mrcomba/comba_double_modsub.html">
+            
+                    
+                        <b>3.12.7.</b>
+                    
+                    comba_double_modsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.8" data-path="../mrcomba/comba_negate.html">
+            
+                <a href="../mrcomba/comba_negate.html">
+            
+                    
+                        <b>3.12.8.</b>
+                    
+                    comba_negate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.9" data-path="../mrcomba/comba_add.html">
+            
+                <a href="../mrcomba/comba_add.html">
+            
+                    
+                        <b>3.12.9.</b>
+                    
+                    comba_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.10" data-path="../mrcomba/comba_sub.html">
+            
+                <a href="../mrcomba/comba_sub.html">
+            
+                    
+                        <b>3.12.10.</b>
+                    
+                    comba_sub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.11" data-path="../mrcomba/comba_double_add.html">
+            
+                <a href="../mrcomba/comba_double_add.html">
+            
+                    
+                        <b>3.12.11.</b>
+                    
+                    comba_double_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.12" data-path="../mrcomba/comba_double_sub.html">
+            
+                <a href="../mrcomba/comba_double_sub.html">
+            
+                    
+                        <b>3.12.12.</b>
+                    
+                    comba_double_sub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" >
+            
+                <span>
+            
+                    
+                        <b>3.13.</b>
+                    
+                    mrcore.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.13.1" data-path="../mrcore/convert.html">
+            
+                <a href="../mrcore/convert.html">
+            
+                    
+                        <b>3.13.1.</b>
+                    
+                    convert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.2" data-path="../mrcore/copy.html">
+            
+                <a href="../mrcore/copy.html">
+            
+                    
+                        <b>3.13.2.</b>
+                    
+                    copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.3" data-path="../mrcore/ecp_memalloc.html">
+            
+                <a href="../mrcore/ecp_memalloc.html">
+            
+                    
+                        <b>3.13.3.</b>
+                    
+                    ecp_memalloc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.4" data-path="../mrcore/epoint_init_mem.html">
+            
+                <a href="../mrcore/epoint_init_mem.html">
+            
+                    
+                        <b>3.13.4.</b>
+                    
+                    epoint_init_mem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5" data-path="../mrcore/epoint_init_mem_variable.html">
+            
+                <a href="../mrcore/epoint_init_mem_variable.html">
+            
+                    
+                        <b>3.13.5.</b>
+                    
+                    epoint_init_mem_variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.6" data-path="../mrcore/get_mip.html">
+            
+                <a href="../mrcore/get_mip.html">
+            
+                    
+                        <b>3.13.6.</b>
+                    
+                    get_mip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.7" data-path="../mrcore/imuldiv.html">
+            
+                <a href="../mrcore/imuldiv.html">
+            
+                    
+                        <b>3.13.7.</b>
+                    
+                    imuldiv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.8" data-path="../mrcore/irand.html">
+            
+                <a href="../mrcore/irand.html">
+            
+                    
+                        <b>3.13.8.</b>
+                    
+                    irand
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.9" data-path="../mrcore/mirvar_mem_variable.html">
+            
+                <a href="../mrcore/mirvar_mem_variable.html">
+            
+                    
+                        <b>3.13.9.</b>
+                    
+                    mirvar_mem_variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.10" data-path="../mrcore/mputs.html">
+            
+                <a href="../mrcore/mputs.html">
+            
+                    
+                        <b>3.13.10.</b>
+                    
+                    mputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.11" data-path="../mrcore/mr_berror.html">
+            
+                <a href="../mrcore/mr_berror.html">
+            
+                    
+                        <b>3.13.11.</b>
+                    
+                    mr_berror
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.12" data-path="../mrcore/mr_compare.html">
+            
+                <a href="../mrcore/mr_compare.html">
+            
+                    
+                        <b>3.13.12.</b>
+                    
+                    mr_compare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.13" data-path="../mrcore/mr_lent.html">
+            
+                <a href="../mrcore/mr_lent.html">
+            
+                    
+                        <b>3.13.13.</b>
+                    
+                    mr_lent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.14" data-path="../mrcore/mr_lzero.html">
+            
+                <a href="../mrcore/mr_lzero.html">
+            
+                    
+                        <b>3.13.14.</b>
+                    
+                    mr_lzero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.15" data-path="../mrcore/mr_notint.html">
+            
+                <a href="../mrcore/mr_notint.html">
+            
+                    
+                        <b>3.13.15.</b>
+                    
+                    mr_notint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.16" data-path="../mrcore/muldiv.html">
+            
+                <a href="../mrcore/muldiv.html">
+            
+                    
+                        <b>3.13.16.</b>
+                    
+                    muldiv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.17" data-path="../mrcore/muldvd.html">
+            
+                <a href="../mrcore/muldvd.html">
+            
+                    
+                        <b>3.13.17.</b>
+                    
+                    muldvd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.18" data-path="../mrcore/muldvm.html">
+            
+                <a href="../mrcore/muldvm.html">
+            
+                    
+                        <b>3.13.18.</b>
+                    
+                    muldvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.19" data-path="../mrcore/size.html">
+            
+                <a href="../mrcore/size.html">
+            
+                    
+                        <b>3.13.19.</b>
+                    
+                    size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.20" data-path="../mrcore/uconvert.html">
+            
+                <a href="../mrcore/uconvert.html">
+            
+                    
+                        <b>3.13.20.</b>
+                    
+                    uconvert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.21" data-path="../mrcore/zero.html">
+            
+                <a href="../mrcore/zero.html">
+            
+                    
+                        <b>3.13.21.</b>
+                    
+                    zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" >
+            
+                <span>
+            
+                    
+                        <b>3.14.</b>
+                    
+                    big.cpp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.14.1" data-path="../big/ecurve.html">
+            
+                <a href="../big/ecurve.html">
+            
+                    
+                        <b>3.14.1.</b>
+                    
+                    ecurve
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" >
+            
+                <span>
+            
+                    
+                        <b>3.15.</b>
+                    
+                    mr87f.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.15.1" data-path="../mr87f/fastmodmult.html">
+            
+                <a href="../mr87f/fastmodmult.html">
+            
+                    
+                        <b>3.15.1.</b>
+                    
+                    fastmodmult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15.2" data-path="../mr87f/fastmodsquare.html">
+            
+                <a href="../mr87f/fastmodsquare.html">
+            
+                    
+                        <b>3.15.2.</b>
+                    
+                    fastmodsquare
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" >
+            
+                <span>
+            
+                    
+                        <b>3.16.</b>
+                    
+                    mralloc.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.16.1" data-path="../mralloc/mr_alloc.html">
+            
+                <a href="../mralloc/mr_alloc.html">
+            
+                    
+                        <b>3.16.1.</b>
+                    
+                    mr_alloc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" >
+            
+                <span>
+            
+                    
+                        <b>3.17.</b>
+                    
+                    mrcurve.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.17.1" data-path="ecurve_add.html">
+            
+                <a href="ecurve_add.html">
+            
+                    
+                        <b>3.17.1.</b>
+                    
+                    ecurve_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.2" data-path="ecurve_double.html">
+            
+                <a href="ecurve_double.html">
+            
+                    
+                        <b>3.17.2.</b>
+                    
+                    ecurve_double
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.3" data-path="ecurve_mult.html">
+            
+                <a href="ecurve_mult.html">
+            
+                    
+                        <b>3.17.3.</b>
+                    
+                    ecurve_mult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.4" data-path="ecurve_padd.html">
+            
+                <a href="ecurve_padd.html">
+            
+                    
+                        <b>3.17.4.</b>
+                    
+                    ecurve_padd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.5" data-path="ecurve_sub.html">
+            
+                <a href="ecurve_sub.html">
+            
+                    
+                        <b>3.17.5.</b>
+                    
+                    ecurve_sub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.6" data-path="epoint_copy.html">
+            
+                <a href="epoint_copy.html">
+            
+                    
+                        <b>3.17.6.</b>
+                    
+                    epoint_copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.17.7" data-path="epoint_getrhs.html">
+            
+                <a href="epoint_getrhs.html">
+            
+                    
+                        <b>3.17.7.</b>
+                    
+                    epoint_getrhs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.8" data-path="epoint_negate.html">
+            
+                <a href="epoint_negate.html">
+            
+                    
+                        <b>3.17.8.</b>
+                    
+                    epoint_negate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.9" data-path="epoint_set.html">
+            
+                <a href="epoint_set.html">
+            
+                    
+                        <b>3.17.9.</b>
+                    
+                    epoint_set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18" >
+            
+                <span>
+            
+                    
+                        <b>3.18.</b>
+                    
+                    mrkcm.tpl
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.18.1" data-path="../miracl/kcm_mul.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.1.</b>
+                    
+                    kcm_mul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.2" data-path="../miracl/kcm_multiply.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.2.</b>
+                    
+                    kcm_multiply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.3" data-path="../miracl/kcm_redc.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.3.</b>
+                    
+                    kcm_redc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.4" data-path="../miracl/kcm_sqr.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.4.</b>
+                    
+                    kcm_sqr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.5" data-path="../miracl/kcm_square.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.5.</b>
+                    
+                    kcm_square
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.6" data-path="../miracl/kcm_top.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.6.</b>
+                    
+                    kcm_top
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.7" data-path="../miracl/mr_addn.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.7.</b>
+                    
+                    mr_addn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.8" data-path="../miracl/mr_comba_halfm.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.8.</b>
+                    
+                    mr_comba_halfm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.9" data-path="../miracl/mr_comba_mul.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.9.</b>
+                    
+                    mr_comba_mul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.10" data-path="../miracl/mr_comba_sqr.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.10.</b>
+                    
+                    mr_comba_sqr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.11" data-path="../miracl/mr_cpy.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.11.</b>
+                    
+                    mr_cpy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.12" data-path="../miracl/mr_decn.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.12.</b>
+                    
+                    mr_decn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.13" data-path="../miracl/mr_incn.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.13.</b>
+                    
+                    mr_incn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.14" data-path="../miracl/mr_karmul.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.14.</b>
+                    
+                    mr_karmul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.15" data-path="../miracl/mr_karmul_lower.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.15.</b>
+                    
+                    mr_karmul_lower
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.16" data-path="../miracl/mr_karmul_upper.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.16.</b>
+                    
+                    mr_karmul_upper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.17" data-path="../miracl/mr_karsqr.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.17.</b>
+                    
+                    mr_karsqr
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19" >
+            
+                <span>
+            
+                    
+                        <b>3.19.</b>
+                    
+                    miracl.h
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.19.1" data-path="../miracl/mr_abs.html">
+            
+                <a href="../miracl/mr_abs.html">
+            
+                    
+                        <b>3.19.1.</b>
+                    
+                    mr_abs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.2" data-path="../miracl/mr_big_reserve.html">
+            
+                <a href="../miracl/mr_big_reserve.html">
+            
+                    
+                        <b>3.19.2.</b>
+                    
+                    mr_big_reserve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.3" data-path="../miracl/MR_DIV.html">
+            
+                <a href="../miracl/MR_DIV.html">
+            
+                    
+                        <b>3.19.3.</b>
+                    
+                    MR_DIV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.4" data-path="../miracl/mr_ecp_reserve.html">
+            
+                <a href="../miracl/mr_ecp_reserve.html">
+            
+                    
+                        <b>3.19.4.</b>
+                    
+                    mr_ecp_reserve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.5" data-path="../miracl/mr_ecp_reserve_a.html">
+            
+                <a href="../miracl/mr_ecp_reserve_a.html">
+            
+                    
+                        <b>3.19.5.</b>
+                    
+                    mr_ecp_reserve_a
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.6" data-path="../miracl/mr_esize.html">
+            
+                <a href="../miracl/mr_esize.html">
+            
+                    
+                        <b>3.19.6.</b>
+                    
+                    mr_esize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.7" data-path="../miracl/mr_esize_a.html">
+            
+                <a href="../miracl/mr_esize_a.html">
+            
+                    
+                        <b>3.19.7.</b>
+                    
+                    mr_esize_a
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.8" data-path="../miracl/MR_IN-MR_OUT.html">
+            
+                <a href="../miracl/MR_IN-MR_OUT.html">
+            
+                    
+                        <b>3.19.8.</b>
+                    
+                    MR_IN和MR_OUT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.9" data-path="../miracl/MR_LROUND.html">
+            
+                <a href="../miracl/MR_LROUND.html">
+            
+                    
+                        <b>3.19.9.</b>
+                    
+                    MR_LROUND
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.10" data-path="../miracl/MR_REMAIN.html">
+            
+                <a href="../miracl/MR_REMAIN.html">
+            
+                    
+                        <b>3.19.10.</b>
+                    
+                    MR_REMAIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.11" data-path="../miracl/mr_size.html">
+            
+                <a href="../miracl/mr_size.html">
+            
+                    
+                        <b>3.19.11.</b>
+                    
+                    mr_size
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20" >
+            
+                <span>
+            
+                    
+                        <b>3.20.</b>
+                    
+                    ecn.h/ecn.cpp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.20.1" data-path="../ecn/operator-.html">
+            
+                <a href="../ecn/operator-.html">
+            
+                    
+                        <b>3.20.1.</b>
+                    
+                    operator-
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.2" data-path="../ecn/add.html">
+            
+                <a href="../ecn/add.html">
+            
+                    
+                        <b>3.20.2.</b>
+                    
+                    add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.3" data-path="../ecn/double_add.html">
+            
+                <a href="../ecn/double_add.html">
+            
+                    
+                        <b>3.20.3.</b>
+                    
+                    double_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.4" data-path="../ecn/get.html">
+            
+                <a href="../ecn/get.html">
+            
+                    
+                        <b>3.20.4.</b>
+                    
+                    get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.5" data-path="../ecn/getx.html">
+            
+                <a href="../ecn/getx.html">
+            
+                    
+                        <b>3.20.5.</b>
+                    
+                    getx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.6" data-path="../ecn/getxy.html">
+            
+                <a href="../ecn/getxy.html">
+            
+                    
+                        <b>3.20.6.</b>
+                    
+                    getxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.7" data-path="../ecn/getxyz.html">
+            
+                <a href="../ecn/getxyz.html">
+            
+                    
+                        <b>3.20.7.</b>
+                    
+                    getxyz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.8" data-path="../ecn/is_on_curve.html">
+            
+                <a href="../ecn/is_on_curve.html">
+            
+                    
+                        <b>3.20.8.</b>
+                    
+                    is_on_curve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.9" data-path="../ecn/iszero.html">
+            
+                <a href="../ecn/iszero.html">
+            
+                    
+                        <b>3.20.9.</b>
+                    
+                    iszero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.10" data-path="../ecn/operator-lb.html">
+            
+                <a href="../ecn/operator-lb.html">
+            
+                    
+                        <b>3.20.10.</b>
+                    
+                    operator<<
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.11" data-path="../ecn/mul.html">
+            
+                <a href="../ecn/mul.html">
+            
+                    
+                        <b>3.20.11.</b>
+                    
+                    mul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.12" data-path="../ecn/multi_add.html">
+            
+                <a href="../ecn/multi_add.html">
+            
+                    
+                        <b>3.20.12.</b>
+                    
+                    multi_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.13" data-path="../ecn/multi_norm.html">
+            
+                <a href="../ecn/multi_norm.html">
+            
+                    
+                        <b>3.20.13.</b>
+                    
+                    multi_norm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.14" data-path="../ecn/sub.html">
+            
+                <a href="../ecn/sub.html">
+            
+                    
+                        <b>3.20.14.</b>
+                    
+                    sub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.15" data-path="../ecn/get_point.html">
+            
+                <a href="../ecn/get_point.html">
+            
+                    
+                        <b>3.20.15.</b>
+                    
+                    get_point
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.16" data-path="../ecn/operator-x.html">
+            
+                <a href="../ecn/operator-x.html">
+            
+                    
+                        <b>3.20.16.</b>
+                    
+                    operator*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.17" data-path="../ecn/get_status.html">
+            
+                <a href="../ecn/get_status.html">
+            
+                    
+                        <b>3.20.17.</b>
+                    
+                    get_status
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21" >
+            
+                <span>
+            
+                    
+                        <b>3.21.</b>
+                    
+                    mrmonty.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.21.1" data-path="../mrmonty/nres.html">
+            
+                <a href="../mrmonty/nres.html">
+            
+                    
+                        <b>3.21.1.</b>
+                    
+                    nres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21.2" data-path="../mrmonty/nres_modmult.html">
+            
+                <a href="../mrmonty/nres_modmult.html">
+            
+                    
+                        <b>3.21.2.</b>
+                    
+                    nres_modmult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21.3" data-path="../mrmonty/nres_modadd.html">
+            
+                <a href="../mrmonty/nres_modadd.html">
+            
+                    
+                        <b>3.21.3.</b>
+                    
+                    nres_modadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21.4" data-path="../mrmonty/nres_premult.html">
+            
+                <a href="../mrmonty/nres_premult.html">
+            
+                    
+                        <b>3.21.4.</b>
+                    
+                    nres_premult
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.22" >
+            
+                <span>
+            
+                    
+                        <b>3.22.</b>
+                    
+                    mrsroot.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.22.1" data-path="../mrsroot/nres_sqroot.html">
+            
+                <a href="../mrsroot/nres_sqroot.html">
+            
+                    
+                        <b>3.22.1.</b>
+                    
+                    nres_sqroot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.22.2" data-path="../mrsroot/sqroot.html">
+            
+                <a href="../mrsroot/sqroot.html">
+            
+                    
+                        <b>3.22.2.</b>
+                    
+                    sqroot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.23" data-path="../../packg/big.html">
+            
+                <a href="../../packg/big.html">
+            
+                    
+                        <b>3.23.</b>
+                    
+                    big
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.24" data-path="../../packg/ecn.html">
+            
+                <a href="../../packg/ecn.html">
+            
+                    
+                        <b>3.24.</b>
+                    
+                    ecn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.25" data-path="../../packg/pairing3h.html">
+            
+                <a href="../../packg/pairing3h.html">
+            
+                    
+                        <b>3.25.</b>
+                    
+                    pairing_3.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >epoint_getrhs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="epointgetrhs">epoint_getrhs</h1>
+<p><code>epoint_getrhs</code></p>
+<p>```c</p>
+<h1 id="ifndef-mredwards">ifndef MR_EDWARDS</h1>
+<p>static void epoint<em>getrhs(_MIPD</em> big x,big y)
+{ /<em> x and y must be different </em>/</p>
+<p>  /<em> find x^3+Ax+B </em>/</p>
+<h1 id="ifdef-mrosthreads">ifdef MR_OS_THREADS</h1>
+<pre class="language-"><code>miracl *mr_mip=get_mip();
+</code></pre><h1 id="endif">endif</h1>
+<pre class="language-"><code>nres_modmult(_MIPP_ x,x,y);
+
+nres_modmult(_MIPP_ y,x,y);
+if (mr_abs(mr_mip-&gt;Asize)==MR_TOOBIG)
+    nres_modmult(_MIPP_ x,mr_mip-&gt;A,mr_mip-&gt;w1);
+else
+    nres_premult(_MIPP_ x,mr_mip-&gt;Asize,mr_mip-&gt;w1);
+nres_modadd(_MIPP_ y,mr_mip-&gt;w1,y);
+if (mr_abs(mr_mip-&gt;Bsize)==MR_TOOBIG)
+    nres_modadd(_MIPP_ y,mr_mip-&gt;B,y);
+else
+{
+    convert(_MIPP_ mr_mip-&gt;Bsize,mr_mip-&gt;w1);
+    nres(_MIPP_ mr_mip-&gt;w1,mr_mip-&gt;w1);
+    nres_modadd(_MIPP_ y,mr_mip-&gt;w1,y);
+}
+</code></pre><p>}</p>
+<h1 id="else">else</h1>
+<p>/*   Twisted Inverted Edwards curves </p>
+<ul>
+<li>Assumes Twisted Inverted Edward&apos;s equation x^2+Ay^2 = x^2.y^2 + B</li>
+<li>Assumes points are not of order 2 or 4
+*/</li>
+</ul>
+<p>static void epoint<em>getrhs(_MIPD</em> big x,big y)
+{ 
+  /<em> find RHS=(x^2-B)/(x^2-A) </em>/</p>
+<h1 id="ifdef-mrosthreads">ifdef MR_OS_THREADS</h1>
+<pre class="language-"><code>miracl *mr_mip=get_mip();
+</code></pre><h1 id="endif">endif</h1>
+<pre class="language-"><code>nres_modmult(_MIPP_ x,x,mr_mip-&gt;w6);
+nres_modsub(_MIPP_ mr_mip-&gt;w6,mr_mip-&gt;B,y);  
+nres_modsub(_MIPP_ mr_mip-&gt;w6,mr_mip-&gt;A,mr_mip-&gt;w6);
+
+nres_moddiv(_MIPP_ y,mr_mip-&gt;w6,y);
+</code></pre><p>}</p>
+<h1 id="endif">endif</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="epoint_copy.html" class="navigation navigation-prev " aria-label="Previous page: epoint_copy">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="epoint_negate.html" class="navigation navigation-next " aria-label="Next page: epoint_negate">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"epoint_getrhs","level":"3.17.7","depth":2,"next":{"title":"epoint_negate","level":"3.17.8","depth":2,"path":"miracldoc/api/mrcurve/epoint_negate.md","ref":"miracldoc/api/mrcurve/epoint_negate.md","articles":[]},"previous":{"title":"epoint_copy","level":"3.17.6","depth":2,"path":"miracldoc/api/mrcurve/epoint_copy.md","ref":"miracldoc/api/mrcurve/epoint_copy.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"计算机科学实验室","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook应用教程","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"Gitbook快速建立个人博客"},"file":{"path":"miracldoc/api/mrcurve/epoint_getrhs.md","mtime":"2024-05-20T01:48:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-08T08:04:01.845Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

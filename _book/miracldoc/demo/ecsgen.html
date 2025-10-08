@@ -1,0 +1,2760 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ecsgen.cpp · Gitbook应用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="计算机科学实验室">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mraes.html" />
+    
+    
+    <link rel="prev" href="../curvePara.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gitbook使用指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../ebook/startbook.html">
+            
+                <a href="../../ebook/startbook.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Gitbook环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../ebook/firstpage.html">
+            
+                <a href="../../ebook/firstpage.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    第一个Gitbook项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../ebook/plugins.html">
+            
+                <a href="../../ebook/plugins.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    Gitbook插件配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../ebook/gitbk.html">
+            
+                <a href="../../ebook/gitbk.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Gitbook操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../ebook/mkdown.html">
+            
+                <a href="../../ebook/mkdown.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    MarkDown语法规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miracl密码库</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    MIRACL简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../install.html">
+            
+                <a href="../install.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../curvePara.html">
+            
+                <a href="../curvePara.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    曲线参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="ecsgen.html">
+            
+                <a href="ecsgen.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    ecsgen.cpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="mraes.html">
+            
+                <a href="mraes.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    mraes.c
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="blmq.html">
+            
+                <a href="blmq.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    blmq.cpp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../packgDemo/bn_pair.html">
+            
+                <a href="../packgDemo/bn_pair.html">
+            
+                    
+                        <b>3.6.1.</b>
+                    
+                    bn_pair.cpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../api/cplus.html">
+            
+                <a href="../api/cplus.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    C++中的函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" >
+            
+                <span>
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据类型和常量
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="../api/dtype/big.html">
+            
+                <a href="../api/dtype/big.html">
+            
+                    
+                        <b>3.8.1.</b>
+                    
+                    big类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="../api/dtype/constants.html">
+            
+                <a href="../api/dtype/constants.html">
+            
+                    
+                        <b>3.8.2.</b>
+                    
+                    字符常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="../api/dtype/epoint.html">
+            
+                <a href="../api/dtype/epoint.html">
+            
+                    
+                        <b>3.8.3.</b>
+                    
+                    epoint类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="../api/dtype/int.html">
+            
+                <a href="../api/dtype/int.html">
+            
+                    
+                        <b>3.8.4.</b>
+                    
+                    与int类型相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.5" data-path="../api/dtype/miracl.html">
+            
+                <a href="../api/dtype/miracl.html">
+            
+                    
+                        <b>3.8.5.</b>
+                    
+                    miracl类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" >
+            
+                <span>
+            
+                    
+                        <b>3.9.</b>
+                    
+                    mrarth0.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="../api/mrarth0/mr_psub.html">
+            
+                <a href="../api/mrarth0/mr_psub.html">
+            
+                    
+                        <b>3.9.1.</b>
+                    
+                    mr_psub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" >
+            
+                <span>
+            
+                    
+                        <b>3.10.</b>
+                    
+                    mrarth1.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="../api/mrarth1/mr_invert.html">
+            
+                <a href="../api/mrarth1/mr_invert.html">
+            
+                    
+                        <b>3.10.1.</b>
+                    
+                    mr_invert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.2" data-path="../api/mrarth1/mr_pmul.html">
+            
+                <a href="../api/mrarth1/mr_pmul.html">
+            
+                    
+                        <b>3.10.2.</b>
+                    
+                    mr_pmul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.3" data-path="../api/mrarth1/mr_sdiv.html">
+            
+                <a href="../api/mrarth1/mr_sdiv.html">
+            
+                    
+                        <b>3.10.3.</b>
+                    
+                    mr_sdiv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.4" data-path="../api/mrarth1/remain.html">
+            
+                <a href="../api/mrarth1/remain.html">
+            
+                    
+                        <b>3.10.4.</b>
+                    
+                    remain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" >
+            
+                <span>
+            
+                    
+                        <b>3.11.</b>
+                    
+                    mrarth2.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.1" data-path="../api/mrarth2/divide.html">
+            
+                <a href="../api/mrarth2/divide.html">
+            
+                    
+                        <b>3.11.1.</b>
+                    
+                    divide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.2" data-path="../api/mrarth2/normalise.html">
+            
+                <a href="../api/mrarth2/normalise.html">
+            
+                    
+                        <b>3.11.2.</b>
+                    
+                    normalise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" >
+            
+                <span>
+            
+                    
+                        <b>3.12.</b>
+                    
+                    mrcomba.tpl
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.12.1" data-path="../api/mrcomba/comba_mult.html">
+            
+                <a href="../api/mrcomba/comba_mult.html">
+            
+                    
+                        <b>3.12.1.</b>
+                    
+                    comba_mult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.2" data-path="../api/mrcomba/comba_square.html">
+            
+                <a href="../api/mrcomba/comba_square.html">
+            
+                    
+                        <b>3.12.2.</b>
+                    
+                    comba_square
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.3" data-path="../api/mrcomba/comba_redc.html">
+            
+                <a href="../api/mrcomba/comba_redc.html">
+            
+                    
+                        <b>3.12.3.</b>
+                    
+                    comba_redc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.4" data-path="../api/mrcomba/comba_modadd.html">
+            
+                <a href="../api/mrcomba/comba_modadd.html">
+            
+                    
+                        <b>3.12.4.</b>
+                    
+                    comba_modadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.5" data-path="../api/mrcomba/comba_modsub.html">
+            
+                <a href="../api/mrcomba/comba_modsub.html">
+            
+                    
+                        <b>3.12.5.</b>
+                    
+                    comba_modsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.6" data-path="../api/mrcomba/comba_double_modadd.html">
+            
+                <a href="../api/mrcomba/comba_double_modadd.html">
+            
+                    
+                        <b>3.12.6.</b>
+                    
+                    comba_double_modadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.7" data-path="../api/mrcomba/comba_double_modsub.html">
+            
+                <a href="../api/mrcomba/comba_double_modsub.html">
+            
+                    
+                        <b>3.12.7.</b>
+                    
+                    comba_double_modsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.8" data-path="../api/mrcomba/comba_negate.html">
+            
+                <a href="../api/mrcomba/comba_negate.html">
+            
+                    
+                        <b>3.12.8.</b>
+                    
+                    comba_negate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.9" data-path="../api/mrcomba/comba_add.html">
+            
+                <a href="../api/mrcomba/comba_add.html">
+            
+                    
+                        <b>3.12.9.</b>
+                    
+                    comba_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.10" data-path="../api/mrcomba/comba_sub.html">
+            
+                <a href="../api/mrcomba/comba_sub.html">
+            
+                    
+                        <b>3.12.10.</b>
+                    
+                    comba_sub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.11" data-path="../api/mrcomba/comba_double_add.html">
+            
+                <a href="../api/mrcomba/comba_double_add.html">
+            
+                    
+                        <b>3.12.11.</b>
+                    
+                    comba_double_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.12" data-path="../api/mrcomba/comba_double_sub.html">
+            
+                <a href="../api/mrcomba/comba_double_sub.html">
+            
+                    
+                        <b>3.12.12.</b>
+                    
+                    comba_double_sub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" >
+            
+                <span>
+            
+                    
+                        <b>3.13.</b>
+                    
+                    mrcore.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.13.1" data-path="../api/mrcore/convert.html">
+            
+                <a href="../api/mrcore/convert.html">
+            
+                    
+                        <b>3.13.1.</b>
+                    
+                    convert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.2" data-path="../api/mrcore/copy.html">
+            
+                <a href="../api/mrcore/copy.html">
+            
+                    
+                        <b>3.13.2.</b>
+                    
+                    copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.3" data-path="../api/mrcore/ecp_memalloc.html">
+            
+                <a href="../api/mrcore/ecp_memalloc.html">
+            
+                    
+                        <b>3.13.3.</b>
+                    
+                    ecp_memalloc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.4" data-path="../api/mrcore/epoint_init_mem.html">
+            
+                <a href="../api/mrcore/epoint_init_mem.html">
+            
+                    
+                        <b>3.13.4.</b>
+                    
+                    epoint_init_mem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5" data-path="../api/mrcore/epoint_init_mem_variable.html">
+            
+                <a href="../api/mrcore/epoint_init_mem_variable.html">
+            
+                    
+                        <b>3.13.5.</b>
+                    
+                    epoint_init_mem_variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.6" data-path="../api/mrcore/get_mip.html">
+            
+                <a href="../api/mrcore/get_mip.html">
+            
+                    
+                        <b>3.13.6.</b>
+                    
+                    get_mip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.7" data-path="../api/mrcore/imuldiv.html">
+            
+                <a href="../api/mrcore/imuldiv.html">
+            
+                    
+                        <b>3.13.7.</b>
+                    
+                    imuldiv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.8" data-path="../api/mrcore/irand.html">
+            
+                <a href="../api/mrcore/irand.html">
+            
+                    
+                        <b>3.13.8.</b>
+                    
+                    irand
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.9" data-path="../api/mrcore/mirvar_mem_variable.html">
+            
+                <a href="../api/mrcore/mirvar_mem_variable.html">
+            
+                    
+                        <b>3.13.9.</b>
+                    
+                    mirvar_mem_variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.10" data-path="../api/mrcore/mputs.html">
+            
+                <a href="../api/mrcore/mputs.html">
+            
+                    
+                        <b>3.13.10.</b>
+                    
+                    mputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.11" data-path="../api/mrcore/mr_berror.html">
+            
+                <a href="../api/mrcore/mr_berror.html">
+            
+                    
+                        <b>3.13.11.</b>
+                    
+                    mr_berror
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.12" data-path="../api/mrcore/mr_compare.html">
+            
+                <a href="../api/mrcore/mr_compare.html">
+            
+                    
+                        <b>3.13.12.</b>
+                    
+                    mr_compare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.13" data-path="../api/mrcore/mr_lent.html">
+            
+                <a href="../api/mrcore/mr_lent.html">
+            
+                    
+                        <b>3.13.13.</b>
+                    
+                    mr_lent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.14" data-path="../api/mrcore/mr_lzero.html">
+            
+                <a href="../api/mrcore/mr_lzero.html">
+            
+                    
+                        <b>3.13.14.</b>
+                    
+                    mr_lzero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.15" data-path="../api/mrcore/mr_notint.html">
+            
+                <a href="../api/mrcore/mr_notint.html">
+            
+                    
+                        <b>3.13.15.</b>
+                    
+                    mr_notint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.16" data-path="../api/mrcore/muldiv.html">
+            
+                <a href="../api/mrcore/muldiv.html">
+            
+                    
+                        <b>3.13.16.</b>
+                    
+                    muldiv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.17" data-path="../api/mrcore/muldvd.html">
+            
+                <a href="../api/mrcore/muldvd.html">
+            
+                    
+                        <b>3.13.17.</b>
+                    
+                    muldvd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.18" data-path="../api/mrcore/muldvm.html">
+            
+                <a href="../api/mrcore/muldvm.html">
+            
+                    
+                        <b>3.13.18.</b>
+                    
+                    muldvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.19" data-path="../api/mrcore/size.html">
+            
+                <a href="../api/mrcore/size.html">
+            
+                    
+                        <b>3.13.19.</b>
+                    
+                    size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.20" data-path="../api/mrcore/uconvert.html">
+            
+                <a href="../api/mrcore/uconvert.html">
+            
+                    
+                        <b>3.13.20.</b>
+                    
+                    uconvert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.21" data-path="../api/mrcore/zero.html">
+            
+                <a href="../api/mrcore/zero.html">
+            
+                    
+                        <b>3.13.21.</b>
+                    
+                    zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" >
+            
+                <span>
+            
+                    
+                        <b>3.14.</b>
+                    
+                    big.cpp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.14.1" data-path="../api/big/ecurve.html">
+            
+                <a href="../api/big/ecurve.html">
+            
+                    
+                        <b>3.14.1.</b>
+                    
+                    ecurve
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" >
+            
+                <span>
+            
+                    
+                        <b>3.15.</b>
+                    
+                    mr87f.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.15.1" data-path="../api/mr87f/fastmodmult.html">
+            
+                <a href="../api/mr87f/fastmodmult.html">
+            
+                    
+                        <b>3.15.1.</b>
+                    
+                    fastmodmult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15.2" data-path="../api/mr87f/fastmodsquare.html">
+            
+                <a href="../api/mr87f/fastmodsquare.html">
+            
+                    
+                        <b>3.15.2.</b>
+                    
+                    fastmodsquare
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" >
+            
+                <span>
+            
+                    
+                        <b>3.16.</b>
+                    
+                    mralloc.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.16.1" data-path="../api/mralloc/mr_alloc.html">
+            
+                <a href="../api/mralloc/mr_alloc.html">
+            
+                    
+                        <b>3.16.1.</b>
+                    
+                    mr_alloc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" >
+            
+                <span>
+            
+                    
+                        <b>3.17.</b>
+                    
+                    mrcurve.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.17.1" data-path="../api/mrcurve/ecurve_add.html">
+            
+                <a href="../api/mrcurve/ecurve_add.html">
+            
+                    
+                        <b>3.17.1.</b>
+                    
+                    ecurve_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.2" data-path="../api/mrcurve/ecurve_double.html">
+            
+                <a href="../api/mrcurve/ecurve_double.html">
+            
+                    
+                        <b>3.17.2.</b>
+                    
+                    ecurve_double
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.3" data-path="../api/mrcurve/ecurve_mult.html">
+            
+                <a href="../api/mrcurve/ecurve_mult.html">
+            
+                    
+                        <b>3.17.3.</b>
+                    
+                    ecurve_mult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.4" data-path="../api/mrcurve/ecurve_padd.html">
+            
+                <a href="../api/mrcurve/ecurve_padd.html">
+            
+                    
+                        <b>3.17.4.</b>
+                    
+                    ecurve_padd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.5" data-path="../api/mrcurve/ecurve_sub.html">
+            
+                <a href="../api/mrcurve/ecurve_sub.html">
+            
+                    
+                        <b>3.17.5.</b>
+                    
+                    ecurve_sub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.6" data-path="../api/mrcurve/epoint_copy.html">
+            
+                <a href="../api/mrcurve/epoint_copy.html">
+            
+                    
+                        <b>3.17.6.</b>
+                    
+                    epoint_copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.7" data-path="../api/mrcurve/epoint_getrhs.html">
+            
+                <a href="../api/mrcurve/epoint_getrhs.html">
+            
+                    
+                        <b>3.17.7.</b>
+                    
+                    epoint_getrhs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.8" data-path="../api/mrcurve/epoint_negate.html">
+            
+                <a href="../api/mrcurve/epoint_negate.html">
+            
+                    
+                        <b>3.17.8.</b>
+                    
+                    epoint_negate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.9" data-path="../api/mrcurve/epoint_set.html">
+            
+                <a href="../api/mrcurve/epoint_set.html">
+            
+                    
+                        <b>3.17.9.</b>
+                    
+                    epoint_set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18" >
+            
+                <span>
+            
+                    
+                        <b>3.18.</b>
+                    
+                    mrkcm.tpl
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.18.1" data-path="../api/miracl/kcm_mul.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.1.</b>
+                    
+                    kcm_mul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.2" data-path="../api/miracl/kcm_multiply.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.2.</b>
+                    
+                    kcm_multiply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.3" data-path="../api/miracl/kcm_redc.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.3.</b>
+                    
+                    kcm_redc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.4" data-path="../api/miracl/kcm_sqr.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.4.</b>
+                    
+                    kcm_sqr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.5" data-path="../api/miracl/kcm_square.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.5.</b>
+                    
+                    kcm_square
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.6" data-path="../api/miracl/kcm_top.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.6.</b>
+                    
+                    kcm_top
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.7" data-path="../api/miracl/mr_addn.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.7.</b>
+                    
+                    mr_addn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.8" data-path="../api/miracl/mr_comba_halfm.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.8.</b>
+                    
+                    mr_comba_halfm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.9" data-path="../api/miracl/mr_comba_mul.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.9.</b>
+                    
+                    mr_comba_mul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.10" data-path="../api/miracl/mr_comba_sqr.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.10.</b>
+                    
+                    mr_comba_sqr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.11" data-path="../api/miracl/mr_cpy.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.11.</b>
+                    
+                    mr_cpy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.12" data-path="../api/miracl/mr_decn.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.12.</b>
+                    
+                    mr_decn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.13" data-path="../api/miracl/mr_incn.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.13.</b>
+                    
+                    mr_incn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.14" data-path="../api/miracl/mr_karmul.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.14.</b>
+                    
+                    mr_karmul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.15" data-path="../api/miracl/mr_karmul_lower.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.15.</b>
+                    
+                    mr_karmul_lower
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.16" data-path="../api/miracl/mr_karmul_upper.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.16.</b>
+                    
+                    mr_karmul_upper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.17" data-path="../api/miracl/mr_karsqr.md">
+            
+                <span>
+            
+                    
+                        <b>3.18.17.</b>
+                    
+                    mr_karsqr
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19" >
+            
+                <span>
+            
+                    
+                        <b>3.19.</b>
+                    
+                    miracl.h
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.19.1" data-path="../api/miracl/mr_abs.html">
+            
+                <a href="../api/miracl/mr_abs.html">
+            
+                    
+                        <b>3.19.1.</b>
+                    
+                    mr_abs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.2" data-path="../api/miracl/mr_big_reserve.html">
+            
+                <a href="../api/miracl/mr_big_reserve.html">
+            
+                    
+                        <b>3.19.2.</b>
+                    
+                    mr_big_reserve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.3" data-path="../api/miracl/MR_DIV.html">
+            
+                <a href="../api/miracl/MR_DIV.html">
+            
+                    
+                        <b>3.19.3.</b>
+                    
+                    MR_DIV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.4" data-path="../api/miracl/mr_ecp_reserve.html">
+            
+                <a href="../api/miracl/mr_ecp_reserve.html">
+            
+                    
+                        <b>3.19.4.</b>
+                    
+                    mr_ecp_reserve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.5" data-path="../api/miracl/mr_ecp_reserve_a.html">
+            
+                <a href="../api/miracl/mr_ecp_reserve_a.html">
+            
+                    
+                        <b>3.19.5.</b>
+                    
+                    mr_ecp_reserve_a
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.6" data-path="../api/miracl/mr_esize.html">
+            
+                <a href="../api/miracl/mr_esize.html">
+            
+                    
+                        <b>3.19.6.</b>
+                    
+                    mr_esize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.7" data-path="../api/miracl/mr_esize_a.html">
+            
+                <a href="../api/miracl/mr_esize_a.html">
+            
+                    
+                        <b>3.19.7.</b>
+                    
+                    mr_esize_a
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.8" data-path="../api/miracl/MR_IN-MR_OUT.html">
+            
+                <a href="../api/miracl/MR_IN-MR_OUT.html">
+            
+                    
+                        <b>3.19.8.</b>
+                    
+                    MR_IN和MR_OUT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.9" data-path="../api/miracl/MR_LROUND.html">
+            
+                <a href="../api/miracl/MR_LROUND.html">
+            
+                    
+                        <b>3.19.9.</b>
+                    
+                    MR_LROUND
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.10" data-path="../api/miracl/MR_REMAIN.html">
+            
+                <a href="../api/miracl/MR_REMAIN.html">
+            
+                    
+                        <b>3.19.10.</b>
+                    
+                    MR_REMAIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19.11" data-path="../api/miracl/mr_size.html">
+            
+                <a href="../api/miracl/mr_size.html">
+            
+                    
+                        <b>3.19.11.</b>
+                    
+                    mr_size
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20" >
+            
+                <span>
+            
+                    
+                        <b>3.20.</b>
+                    
+                    ecn.h/ecn.cpp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.20.1" data-path="../api/ecn/operator-.html">
+            
+                <a href="../api/ecn/operator-.html">
+            
+                    
+                        <b>3.20.1.</b>
+                    
+                    operator-
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.2" data-path="../api/ecn/add.html">
+            
+                <a href="../api/ecn/add.html">
+            
+                    
+                        <b>3.20.2.</b>
+                    
+                    add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.3" data-path="../api/ecn/double_add.html">
+            
+                <a href="../api/ecn/double_add.html">
+            
+                    
+                        <b>3.20.3.</b>
+                    
+                    double_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.4" data-path="../api/ecn/get.html">
+            
+                <a href="../api/ecn/get.html">
+            
+                    
+                        <b>3.20.4.</b>
+                    
+                    get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.5" data-path="../api/ecn/getx.html">
+            
+                <a href="../api/ecn/getx.html">
+            
+                    
+                        <b>3.20.5.</b>
+                    
+                    getx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.6" data-path="../api/ecn/getxy.html">
+            
+                <a href="../api/ecn/getxy.html">
+            
+                    
+                        <b>3.20.6.</b>
+                    
+                    getxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.7" data-path="../api/ecn/getxyz.html">
+            
+                <a href="../api/ecn/getxyz.html">
+            
+                    
+                        <b>3.20.7.</b>
+                    
+                    getxyz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.8" data-path="../api/ecn/is_on_curve.html">
+            
+                <a href="../api/ecn/is_on_curve.html">
+            
+                    
+                        <b>3.20.8.</b>
+                    
+                    is_on_curve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.9" data-path="../api/ecn/iszero.html">
+            
+                <a href="../api/ecn/iszero.html">
+            
+                    
+                        <b>3.20.9.</b>
+                    
+                    iszero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.10" data-path="../api/ecn/operator-lb.html">
+            
+                <a href="../api/ecn/operator-lb.html">
+            
+                    
+                        <b>3.20.10.</b>
+                    
+                    operator<<
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.11" data-path="../api/ecn/mul.html">
+            
+                <a href="../api/ecn/mul.html">
+            
+                    
+                        <b>3.20.11.</b>
+                    
+                    mul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.12" data-path="../api/ecn/multi_add.html">
+            
+                <a href="../api/ecn/multi_add.html">
+            
+                    
+                        <b>3.20.12.</b>
+                    
+                    multi_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.13" data-path="../api/ecn/multi_norm.html">
+            
+                <a href="../api/ecn/multi_norm.html">
+            
+                    
+                        <b>3.20.13.</b>
+                    
+                    multi_norm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.14" data-path="../api/ecn/sub.html">
+            
+                <a href="../api/ecn/sub.html">
+            
+                    
+                        <b>3.20.14.</b>
+                    
+                    sub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.15" data-path="../api/ecn/get_point.html">
+            
+                <a href="../api/ecn/get_point.html">
+            
+                    
+                        <b>3.20.15.</b>
+                    
+                    get_point
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.16" data-path="../api/ecn/operator-x.html">
+            
+                <a href="../api/ecn/operator-x.html">
+            
+                    
+                        <b>3.20.16.</b>
+                    
+                    operator*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20.17" data-path="../api/ecn/get_status.html">
+            
+                <a href="../api/ecn/get_status.html">
+            
+                    
+                        <b>3.20.17.</b>
+                    
+                    get_status
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21" >
+            
+                <span>
+            
+                    
+                        <b>3.21.</b>
+                    
+                    mrmonty.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.21.1" data-path="../api/mrmonty/nres.html">
+            
+                <a href="../api/mrmonty/nres.html">
+            
+                    
+                        <b>3.21.1.</b>
+                    
+                    nres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21.2" data-path="../api/mrmonty/nres_modmult.html">
+            
+                <a href="../api/mrmonty/nres_modmult.html">
+            
+                    
+                        <b>3.21.2.</b>
+                    
+                    nres_modmult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21.3" data-path="../api/mrmonty/nres_modadd.html">
+            
+                <a href="../api/mrmonty/nres_modadd.html">
+            
+                    
+                        <b>3.21.3.</b>
+                    
+                    nres_modadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21.4" data-path="../api/mrmonty/nres_premult.html">
+            
+                <a href="../api/mrmonty/nres_premult.html">
+            
+                    
+                        <b>3.21.4.</b>
+                    
+                    nres_premult
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.22" >
+            
+                <span>
+            
+                    
+                        <b>3.22.</b>
+                    
+                    mrsroot.c
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.22.1" data-path="../api/mrsroot/nres_sqroot.html">
+            
+                <a href="../api/mrsroot/nres_sqroot.html">
+            
+                    
+                        <b>3.22.1.</b>
+                    
+                    nres_sqroot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.22.2" data-path="../api/mrsroot/sqroot.html">
+            
+                <a href="../api/mrsroot/sqroot.html">
+            
+                    
+                        <b>3.22.2.</b>
+                    
+                    sqroot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.23" data-path="../packg/big.html">
+            
+                <a href="../packg/big.html">
+            
+                    
+                        <b>3.23.</b>
+                    
+                    big
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.24" data-path="../packg/ecn.html">
+            
+                <a href="../packg/ecn.html">
+            
+                    
+                        <b>3.24.</b>
+                    
+                    ecn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.25" data-path="../packg/pairing3h.html">
+            
+                <a href="../packg/pairing3h.html">
+            
+                    
+                        <b>3.25.</b>
+                    
+                    pairing_3.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ecsgen.cpp</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5256;&#x6790;ecsgencpp&#x6587;&#x4EF6;">&#x5256;&#x6790;ecsgen.cpp&#x6587;&#x4EF6;</h1>
+<p>&#x6D4B;&#x8BD5;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x9759;&#x6001;&#x5E93;&#xFF0C;&#x6839;&#x636E;<code>linux64</code>&#x7684;&#x6307;&#x5BFC;&#xFF0C;&#x6D4B;&#x8BD5;<code>ecsgen</code>&#xFF08;Elliptic Curve Digital Signature Algorithm&#xFF09;&#xFF0C;&#x5C06;&#x4E0B;&#x9762;&#x7684;&#x6587;&#x4EF6;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5176;&#x4E2D;<code>miracl.a</code>&#x5C31;&#x662F;&#x7F16;&#x8BD1;&#x5F97;&#x5230;&#x7684;&#x9759;&#x6001;&#x5E93;&#x3002;</p>
+<pre class="language-"><code class="lang-c">Makefile    big<span class="token punctuation">.</span>h        ecn<span class="token punctuation">.</span>h        miracl<span class="token punctuation">.</span>a    mirdef<span class="token punctuation">.</span>h
+big<span class="token punctuation">.</span>cpp        ecn<span class="token punctuation">.</span>cpp        ecsgen<span class="token punctuation">.</span>cpp    miracl<span class="token punctuation">.</span>h
+</code></pre>
+<h2 id="ecsgencpp&#x6587;&#x4EF6;&#x6E90;&#x7801;">ecsgen.cpp&#x6587;&#x4EF6;&#x6E90;&#x7801;</h2>
+<pre class="language-"><code class="lang-c"><span class="token comment">/*
+ *   Elliptic Curve Digital Signature Algorithm (ECDSA)
+ *
+ *
+ *   This program generates one set of public and private keys in files 
+ *   public.ecs and private.ecs respectively. Notice that the public key 
+ *   can be much shorter in this scheme, for the same security level.
+ *
+ *   It is assumed that Curve parameters are to be found in file common.ecs
+ *
+ *   The curve is y^2=x^3+Ax+B mod p
+ *
+ *   The file common.ecs is presumed to exist, and to contain the domain
+ *   information {p,A,B,q,x,y}, where A and B are curve parameters, (x,y) are
+ *   a point of order q, p is the prime modulus, and q is the order of the 
+ *   point (x,y). In fact normally q is the prime number of points counted
+ *   on the curve. 
+ *
+ *   Requires: big.cpp ecn.cpp
+ */</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;fstream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&quot;ecn.h&quot;</span></span>
+
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token comment">// if MR_STATIC defined, it should be 20</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">ifndef</span> <span class="token expression">MR_NOFULLWIDTH</span></span>
+Miracl precision<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">else</span></span>
+Miracl <span class="token function">precision</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span>MAXBASE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    ifstream <span class="token function">common</span><span class="token punctuation">(</span><span class="token string">&quot;common.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">/* construct file I/O streams */</span>
+    ofstream <span class="token function">public_key</span><span class="token punctuation">(</span><span class="token string">&quot;public.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ofstream <span class="token function">private_key</span><span class="token punctuation">(</span><span class="token string">&quot;private.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> bits<span class="token punctuation">,</span>ep<span class="token punctuation">;</span>
+    miracl <span class="token operator">*</span>mip<span class="token operator">=</span><span class="token operator">&amp;</span>precision<span class="token punctuation">;</span>
+
+    ECn G<span class="token punctuation">,</span>W<span class="token punctuation">;</span>
+    Big a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>p<span class="token punctuation">,</span>q<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>d<span class="token punctuation">;</span>
+    <span class="token keyword">long</span> seed<span class="token punctuation">;</span>
+
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;Enter 9 digit random number seed  = &quot;</span><span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> seed<span class="token punctuation">;</span>
+    <span class="token function">irand</span><span class="token punctuation">(</span>seed<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    common <span class="token operator">&gt;&gt;</span> bits<span class="token punctuation">;</span>
+    mip<span class="token operator">-&gt;</span>IOBASE<span class="token operator">=</span><span class="token number">16</span><span class="token punctuation">;</span>
+    common <span class="token operator">&gt;&gt;</span> p <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b <span class="token operator">&gt;&gt;</span> q <span class="token operator">&gt;&gt;</span> x <span class="token operator">&gt;&gt;</span> y<span class="token punctuation">;</span>
+    mip<span class="token operator">-&gt;</span>IOBASE<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
+
+    <span class="token function">ecurve</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>p<span class="token punctuation">,</span>MR_PROJECTIVE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>G<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;Problem - point (x,y) is not on the curve&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    W<span class="token operator">=</span>G<span class="token punctuation">;</span>
+    W<span class="token operator">*=</span>q<span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>W<span class="token punctuation">.</span><span class="token function">iszero</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;Problem - point (x,y) is not of order q&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token comment">/* generate public/private keys */</span>
+
+    d<span class="token operator">=</span><span class="token function">rand</span><span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token comment">//   for (int i=0;i&lt;=10000;i++)</span>
+    G<span class="token operator">*=</span>d<span class="token punctuation">;</span>
+    ep<span class="token operator">=</span>G<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;public key = &quot;</span> <span class="token operator">&lt;&lt;</span> ep <span class="token operator">&lt;&lt;</span> <span class="token string">&quot; &quot;</span> <span class="token operator">&lt;&lt;</span> x <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    public_key <span class="token operator">&lt;&lt;</span> ep <span class="token operator">&lt;&lt;</span> <span class="token string">&quot; &quot;</span> <span class="token operator">&lt;&lt;</span> x <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    private_key <span class="token operator">&lt;&lt;</span> d <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="makefile&#x6587;&#x4EF6;&#x548C;&#x6D4B;&#x8BD5;">Makefile&#x6587;&#x4EF6;&#x548C;&#x6D4B;&#x8BD5;</h2>
+<p>&#x7528;<code>Makefile</code>&#x7BA1;&#x7406;&#x9879;&#x76EE;&#xFF0C;<code>Makefile</code>&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x3002;</p>
+<pre class="language-"><code class="lang-c"># &#x6D4B;&#x8BD5; ecsgen<span class="token punctuation">.</span>cpp
+
+ecsgen <span class="token operator">:</span> big<span class="token punctuation">.</span>o miracl<span class="token punctuation">.</span>a ecsgen<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>o
+    g<span class="token operator">++</span> <span class="token operator">-</span>o ecsgen big<span class="token punctuation">.</span>o miracl<span class="token punctuation">.</span>a ecsgen<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>o
+
+big<span class="token punctuation">.</span>o <span class="token operator">:</span> big<span class="token punctuation">.</span>cpp
+    g<span class="token operator">++</span> <span class="token operator">-</span>c <span class="token operator">-</span>o big<span class="token punctuation">.</span>o big<span class="token punctuation">.</span>cpp
+
+ecn<span class="token punctuation">.</span>o <span class="token operator">:</span> ecn<span class="token punctuation">.</span>cpp
+    g<span class="token operator">++</span> <span class="token operator">-</span>c <span class="token operator">-</span>o ecn<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>cpp
+
+ecsgen<span class="token punctuation">.</span>o <span class="token operator">:</span> ecsgen<span class="token punctuation">.</span>cpp
+    g<span class="token operator">++</span> <span class="token operator">-</span>c <span class="token operator">-</span>o ecsgen<span class="token punctuation">.</span>o ecsgen<span class="token punctuation">.</span>cpp
+
+clean <span class="token operator">:</span>
+    rm <span class="token operator">-</span>f <span class="token operator">*</span><span class="token punctuation">.</span>o
+</code></pre>
+<p>&#x7ECF;&#x8FC7;&#x7F16;&#x8BD1;&#xFF0C;&#x5F97;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF0C;&#x8868;&#x793A;&#x7F16;&#x8BD1;&#x901A;&#x8FC7;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token operator">%</span> make
+g<span class="token operator">++</span> <span class="token operator">-</span>c <span class="token operator">-</span>o big<span class="token punctuation">.</span>o big<span class="token punctuation">.</span>cpp
+g<span class="token operator">++</span> <span class="token operator">-</span>c <span class="token operator">-</span>o ecsgen<span class="token punctuation">.</span>o ecsgen<span class="token punctuation">.</span>cpp
+g<span class="token operator">++</span> <span class="token operator">-</span>c <span class="token operator">-</span>o ecn<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>cpp
+g<span class="token operator">++</span> <span class="token operator">-</span>o ecsgen big<span class="token punctuation">.</span>o miracl<span class="token punctuation">.</span>a ecsgen<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>o
+</code></pre>
+<p>&#x5728;<code>Makefile</code>&#x7684;&#x7F16;&#x8F91;&#x4E2D;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x7F16;&#x8F91;&#xFF0C;&#x5BFC;&#x81F4;&#x7F16;&#x8BD1;&#x51FA;&#x9519;&#x3002;</p>
+<pre class="language-"><code class="lang-c"># &#x6D4B;&#x8BD5; ecsgen<span class="token punctuation">.</span>cpp
+
+ecsgen <span class="token operator">:</span> big<span class="token punctuation">.</span>o miracl<span class="token punctuation">.</span>a ecsgen<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>o
+  gcc <span class="token operator">-</span>o ecsgen big<span class="token punctuation">.</span>o miracl<span class="token punctuation">.</span>a ecsgen<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>o
+
+big<span class="token punctuation">.</span>o <span class="token operator">:</span> big<span class="token punctuation">.</span>cpp
+  gcc <span class="token operator">-</span>c <span class="token operator">-</span>o big<span class="token punctuation">.</span>o big<span class="token punctuation">.</span>cpp
+
+ecn<span class="token punctuation">.</span>o <span class="token operator">:</span> ecn<span class="token punctuation">.</span>cpp
+  gcc <span class="token operator">-</span>c <span class="token operator">-</span>o ecn<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>cpp
+
+ecsgen<span class="token punctuation">.</span>o <span class="token operator">:</span> ecsgen<span class="token punctuation">.</span>cpp
+  gcc <span class="token operator">-</span>c <span class="token operator">-</span>o ecsgen<span class="token punctuation">.</span>o ecsgen<span class="token punctuation">.</span>cpp
+
+clean <span class="token operator">:</span>
+  rm <span class="token operator">-</span>f <span class="token operator">*</span><span class="token punctuation">.</span>o ecsgen
+</code></pre>
+<p>&#x7528;gcc&#x6765;&#x7F16;&#x8BD1;&#xFF0C;&#x5374;&#x53D1;&#x751F;&#x4E86;&#x4E0B;&#x9762;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<pre class="language-"><code class="lang-c">Undefined symbols <span class="token keyword">for</span> architecture arm64<span class="token operator">:</span>
+  <span class="token string">&quot;std::__1::locale::use_facet(std::__1::locale::id&amp;) const&quot;</span><span class="token punctuation">,</span> referenced from<span class="token operator">:</span>
+      std<span class="token operator">::</span>__1<span class="token operator">::</span>ctype<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token operator">&gt;</span> <span class="token keyword">const</span><span class="token operator">&amp;</span> std<span class="token operator">::</span>__1<span class="token operator">::</span>use_facet<span class="token operator">&lt;</span>std<span class="token operator">::</span>__1<span class="token operator">::</span>ctype<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token operator">&gt;</span> <span class="token operator">&gt;</span><span class="token punctuation">(</span>std<span class="token operator">::</span>__1<span class="token operator">::</span>locale <span class="token keyword">const</span><span class="token operator">&amp;</span><span class="token punctuation">)</span> in big<span class="token punctuation">.</span>o
+      std<span class="token operator">::</span>__1<span class="token operator">::</span>ctype<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token operator">&gt;</span> <span class="token keyword">const</span><span class="token operator">&amp;</span> std<span class="token operator">::</span>__1<span class="token operator">::</span>use_facet<span class="token operator">&lt;</span>std<span class="token operator">::</span>__1<span class="token operator">::</span>ctype<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token operator">&gt;</span> <span class="token operator">&gt;</span><span class="token punctuation">(</span>std<span class="token operator">::</span>__1<span class="token operator">::</span>locale <span class="token keyword">const</span><span class="token operator">&amp;</span><span class="token punctuation">)</span> in ecsgen<span class="token punctuation">.</span>o
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre>
+<p>&#x5728;<code>linux64</code>&#x7684;&#x6307;&#x5BFC;&#x91CC;&#x9762;&#xFF0C;&#x7528;&#x7684;&#x662F;<code>g++</code>&#x7F16;&#x8BD1;&#xFF0C;<code>gcc</code>&#x548C;<code>g++</code>&#x662F;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7248;&#x672C;&#xFF0C;&#x67E5;&#x770B;&#x7248;&#x672C;&#xFF0C;&#x53D1;&#x73B0;&#x4E24;&#x8005;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token operator">%</span> g<span class="token operator">++</span> <span class="token operator">-</span>v
+Configured with<span class="token operator">:</span> <span class="token operator">--</span>prefix<span class="token operator">=</span><span class="token operator">/</span>Library<span class="token operator">/</span>Developer<span class="token operator">/</span>CommandLineTools<span class="token operator">/</span>usr <span class="token operator">--</span>with<span class="token operator">-</span>gxx<span class="token operator">-</span>include<span class="token operator">-</span>dir<span class="token operator">=</span><span class="token operator">/</span>Library<span class="token operator">/</span>Developer<span class="token operator">/</span>CommandLineTools<span class="token operator">/</span>SDKs<span class="token operator">/</span>MacOSX12<span class="token punctuation">.</span><span class="token number">3.</span>sdk<span class="token operator">/</span>usr<span class="token operator">/</span>include<span class="token operator">/</span>c<span class="token operator">++</span><span class="token operator">/</span><span class="token number">4.2</span><span class="token number">.1</span>
+Apple clang version <span class="token number">13.0</span><span class="token number">.0</span> <span class="token punctuation">(</span>clang<span class="token operator">-</span><span class="token number">1300.0</span><span class="token number">.27</span><span class="token number">.3</span><span class="token punctuation">)</span>
+Target<span class="token operator">:</span> arm64<span class="token operator">-</span>apple<span class="token operator">-</span>darwin21<span class="token punctuation">.</span><span class="token number">3.0</span>
+Thread model<span class="token operator">:</span> posix
+InstalledDir<span class="token operator">:</span> <span class="token operator">/</span>Library<span class="token operator">/</span>Developer<span class="token operator">/</span>CommandLineTools<span class="token operator">/</span>usr<span class="token operator">/</span>bin
+</code></pre>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x7528;gcc&#x7F16;&#x8BD1;&#x62A5;&#x9519;&#x5462;&#xFF1F;</p>
+<p><code>gcc</code>&#x662F;GNU&#x5F00;&#x53D1;&#x7684;&#x9488;&#x5BF9;c&#x7684;&#x7F16;&#x8BD1;&#x5668;&#xFF0C;&#x521A;&#x5F00;&#x59CB;&#x53EA;&#x652F;&#x6301;&#x7F16;&#x8BD1;c&#x4EE3;&#x7801;&#xFF0C;&#x968F;&#x7740;<code>gcc</code>&#x7684;&#x53D1;&#x5C55;&#x6108;&#x53D1;&#x5F3A;&#x5927;&#xFF0C;&#x540E;&#x9762;<code>gcc</code>&#x4E5F;&#x652F;&#x6301;&#x7F16;&#x8BD1;<code>c++</code>&#x3001;<code>Objective-c</code>&#x548C;<code>java</code>&#x7B49;&#xFF0C;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x8BBE;&#x5B9A;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x7684;&#x8BED;&#x8A00;&#x3002;&#x6240;&#x4EE5;&#x540E;&#x6765;&#xFF0C;<code>gcc</code>&#x9ED8;&#x8BA4;&#x7F16;&#x8BD1;&#x7684;&#x662F;c&#x4EE3;&#x7801;&#x3002;&#x628A;&#x53C2;&#x6570;&#x7559;&#x7ED9;&#x7528;&#x6237;&#x8BBE;&#x7F6E;&#x663E;&#x7136;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x53CB;&#x597D;&#xFF0C;&#x4E8E;&#x662F;&#x5C31;&#x4E13;&#x95E8;&#x9488;&#x5BF9;<code>c++</code> &#x5F00;&#x53D1;&#x4E86;<code>g++</code>&#x7F16;&#x8BD1;&#x5668;&#x3002;&#x6240;&#x4EE5;<code>gcc</code>&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x8BD1;&#x5668;&#x96C6;&#x5408;&#xFF0C;&#x800C;<code>g++</code>&#x662F;&#x9488;&#x5BF9;<code>c++</code>&#x7684;&#x7F16;&#x8BD1;&#x5668;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x60F3;&#x8981;&#x4F7F;&#x7528;<code>gcc</code>&#x7F16;&#x8BD1;<code>c++</code>&#x7684;&#x4EE3;&#x7801;&#x9700;&#x8981;&#x52A0;&#x4E0A;&#x53C2;&#x6570;<code>-lstdc++</code>&#x6307;&#x4EE4;&#x3002;</p>
+<pre class="language-"><code class="lang-c"># &#x6D4B;&#x8BD5; ecsgen<span class="token punctuation">.</span>cpp
+
+ecsgen <span class="token operator">:</span> big<span class="token punctuation">.</span>o miracl<span class="token punctuation">.</span>a ecsgen<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>o
+  gcc <span class="token operator">-</span>lstdc<span class="token operator">++</span> <span class="token operator">-</span>o ecsgen big<span class="token punctuation">.</span>o miracl<span class="token punctuation">.</span>a ecsgen<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>o
+
+big<span class="token punctuation">.</span>o <span class="token operator">:</span> big<span class="token punctuation">.</span>cpp
+  gcc <span class="token operator">-</span>c <span class="token operator">-</span>lstdc<span class="token operator">++</span> <span class="token operator">-</span>o big<span class="token punctuation">.</span>o big<span class="token punctuation">.</span>cpp
+
+ecn<span class="token punctuation">.</span>o <span class="token operator">:</span> ecn<span class="token punctuation">.</span>cpp
+  gcc <span class="token operator">-</span>c <span class="token operator">-</span>lstdc<span class="token operator">++</span> <span class="token operator">-</span>o ecn<span class="token punctuation">.</span>o ecn<span class="token punctuation">.</span>cpp
+
+ecsgen<span class="token punctuation">.</span>o <span class="token operator">:</span> ecsgen<span class="token punctuation">.</span>cpp
+  gcc <span class="token operator">-</span>c <span class="token operator">-</span>lstdc<span class="token operator">++</span> <span class="token operator">-</span>o ecsgen<span class="token punctuation">.</span>o ecsgen<span class="token punctuation">.</span>cpp
+
+clean <span class="token operator">:</span>
+  rm <span class="token operator">-</span>f <span class="token operator">*</span><span class="token punctuation">.</span>o ecsgen
+</code></pre>
+<p>&#x6267;&#x884C;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code class="lang-c"><span class="token operator">%</span> <span class="token punctuation">.</span><span class="token operator">/</span>ecsgen 
+Enter <span class="token number">9</span> digit random number seed  <span class="token operator">=</span> <span class="token number">322476589</span>
+
+MIRACL error from routine prepare_monty
+              called from ecurve_init
+              called from your program
+Illegal modulus
+</code></pre>
+<p>&#x5F88;&#x53EF;&#x60DC;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x901A;&#x8FC7;&#x3002;&#x8FD9;&#x5FC5;&#x7136;&#x662F;&#x7531;&#x4E8E;<code>ecurve</code>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x5BFC;&#x81F4;&#x7684;&#xFF0C;&#x800C;&#x5BFC;&#x81F4;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x5C31;&#x662F;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x6DFB;&#x52A0;<code>common.ecs</code>&#x6587;&#x4EF6;&#xFF0C;&#x5C06;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x8FDB;&#x9879;&#x76EE;&#xFF0C;&#x518D;&#x6B21;&#x6D4B;&#x8BD5;&#xFF0C;&#x5C31;&#x80FD;&#x591F;&#x5F97;&#x5230;&#x6B63;&#x786E;&#x7ED3;&#x679C;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token operator">%</span> <span class="token punctuation">.</span><span class="token operator">/</span>ecsgen 
+Enter <span class="token number">9</span> digit random number seed  <span class="token operator">=</span> <span class="token number">384738928</span>
+public key <span class="token operator">=</span> <span class="token number">1</span> <span class="token number">5077662368640563685149485350869738525687256375694504212009</span>
+</code></pre>
+<p>Miracl&#x5E93;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#x5BC6;&#x7801;&#x5E93;&#xFF0C;&#x5728;&#x6784;&#x5EFA;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x662F;&#x8981;&#x751F;&#x6210;SDK&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5C31;&#x662F;&#x751F;&#x6210;&#x9759;&#x6001;&#x5E93;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5E38;&#x5E38;&#x4F1A;&#x9047;&#x5230;&#x5F88;&#x591A;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x4E3B;&#x8981;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x73AF;&#x5883;&#x56E0;&#x7D20;&#xFF0C;&#x5728;<code>mrmuldv.any</code>&#x4E2D;&#x7ED9;&#x51FA;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x53EF;&#x80FD;&#x73AF;&#x5883;&#xFF0C;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x673A;&#x5668;&#x73AF;&#x5883;&#xFF0C;&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x73AF;&#x5883;&#x4EE3;&#x7801;&#xFF0C;&#x624D;&#x80FD;&#x591F;&#x5F97;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x9759;&#x6001;&#x5E93;&#x3002;&#x6211;&#x60F3;&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x6CA1;&#x6709;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x7684;SDK&#x7684;&#x539F;&#x56E0;&#x5427;&#xFF0C;&#x6BD5;&#x7ADF;&#x6BCF;&#x4E2A;&#x4EBA;&#x7684;&#x5E94;&#x7528;&#x73AF;&#x5883;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x4E0D;&#x5F97;&#x4E0D;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;SDK&#x7684;&#x642D;&#x5EFA;&#xFF0C;&#x786E;&#x5B9E;&#x5B58;&#x5728;&#x5F88;&#x5927;&#x7684;&#x6311;&#x6218;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x7528;<code>Makefile</code>&#x6765;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x6587;&#x4EF6;&#xFF0C;&#x80FD;&#x591F;&#x8F7B;&#x677E;&#x638C;&#x63E1;&#x3002;</p>
+<h2 id="&#x6E90;&#x7801;&#x5206;&#x6790;">&#x6E90;&#x7801;&#x5206;&#x6790;</h2>
+<h3 id="&#x5BC6;&#x7801;&#x539F;&#x7406;">&#x5BC6;&#x7801;&#x539F;&#x7406;</h3>
+<p>Elliptic Curve Digital Signature Algorithm (ECDSA)&#xFF0C;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x4E0A;&#x7684;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x7B97;&#x6CD5;&#xFF0C;&#x5047;&#x8BBE;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x4E3A;</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>A</mi><mi>x</mi><mo>+</mo><mi>B</mi><mtext>&#xA0;</mtext><mtext>&#xA0;</mtext><mi>m</mi><mi>o</mi><mi>d</mi><mtext>&#xA0;</mtext><mtext>&#xA0;</mtext><mi>p</mi></mrow><annotation encoding="application/x-tex">
+y^2=x^3+Ax+B ~~ mod ~~ p
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8641079999999999em;"></span><span class="strut bottom" style="height:1.0585479999999998em;vertical-align:-0.19444em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mrel">=</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mbin">+</span><span class="mord mathit">A</span><span class="mord mathit">x</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit"><span class="mspace">&#xA0;</span><span class="mspace">&#xA0;</span><span class="mord mathit">m</span></span><span class="mord mathit">o</span><span class="mord mathit">d</span><span class="mord mathit"><span class="mspace">&#xA0;</span><span class="mspace">&#xA0;</span><span class="mord mathit">p</span></span></span></span></span></span></p>
+<p>&#x53C2;&#x6570;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi>p</mi><mo separator="true">,</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo separator="true">,</mo><mi>q</mi></mrow></mrow><annotation encoding="application/x-tex">{p,A,B,q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathit">p</span><span class="mpunct">,</span><span class="mord mathit">A</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.03588em;">q</span></span></span></span></span>&#x5728;<code>common.ecs</code>&#x91CC;&#x9762;&#xFF0C;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mopen">(</span><span class="mord mathit">x</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>&#x4E3A;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x4E0A;&#x7684;&#x70B9;&#xFF0C;&#x53D6;&#x503C;&#x5206;&#x522B;&#x4E3A;bits&#x3001;p&#x3001;a&#x3001;b&#x3001;q&#x3001;x&#x3001;y&#x3002;</p>
+<pre class="language-"><code>192
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFFFFFFFFFFF
+-3
+64210519E59C80E70FA7E9AB72243049FEB8DEECC146B9B1
+FFFFFFFFFFFFFFFFFFFFFFFF99DEF836146BC9B1B4D22831
+188DA80EB03090F67CBF20EB43A18800F4FF0AFD82FF1012
+07192B95FFC8DA78631011ED6B24CDD573F977A11E794811
+</code></pre><p>&#x8FC7;&#x7A0B;&#xFF1A;&#x8BFB;&#x5165;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x53C2;&#x6570;&#xFF0C;&#x9A8C;&#x8BC1;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x53C2;&#x6570;&#x7684;&#x53EF;&#x884C;&#x6027;&#xFF0C;&#x9009;&#x62E9;&#x79C1;&#x94A5;&#xFF0C;&#x8BA1;&#x7B97;&#x516C;&#x94A5;&#xFF0C;&#x8F93;&#x51FA;&#x516C;&#x79C1;&#x94A5;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;">&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;</h3>
+<p>&#x4E0B;&#x9762;&#x9010;&#x884C;&#x5206;&#x6790;ECDSA&#x7684;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">ifndef</span> <span class="token expression">MR_NOFULLWIDTH</span></span>
+Miracl precision<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">else</span></span>
+Miracl <span class="token function">precision</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span>MAXBASE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x5B9A;&#x4E49;&#x4E86;<code>MR_NOFULLWIDTH</code>&#xFF0C;&#x90A3;&#x4E48;<code>precision</code>&#x5C31;&#x662F;20&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x662F;<code>(20,MAXBASE)</code>&#xFF0C;&#x5176;&#x4E2D;<code>MAXBASE</code>&#x5728;&#x6587;&#x4EF6;<code>mirdef.h</code>&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">MIRACL</span> <span class="token expression"><span class="token number">32</span></span></span>
+<span class="token comment">//&#x5B9A;&#x4E49;MIRACL&#x5728;32&#x4F4D;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x6267;&#x884C;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">MAXBASE</span> <span class="token expression"><span class="token punctuation">(</span><span class="token punctuation">(</span>mr_small<span class="token punctuation">)</span><span class="token number">1</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>MIRACL<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span></span>
+</code></pre>
+<p>1&#x3001;&#x8BFB;&#x53D6;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#xFF0C;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF08;&#x5199;&#x5165;&#x516C;&#x79C1;&#x94A5;&#xFF09;&#x3002;<code>common</code>&#x3001;<code>public_key</code>&#x3001;<code>private_key</code>&#x7531;C++&#x63D0;&#x4F9B;&#x3002;</p>
+<pre class="language-"><code class="lang-c">ifstream <span class="token function">common</span><span class="token punctuation">(</span><span class="token string">&quot;common.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">/* construct file I/O streams */</span>
+ofstream <span class="token function">public_key</span><span class="token punctuation">(</span><span class="token string">&quot;public.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ofstream <span class="token function">private_key</span><span class="token punctuation">(</span><span class="token string">&quot;private.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>2&#x3001;&#x6784;&#x9020;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E;&#x53D8;&#x91CF;&#xFF0C;<code>miracl</code>&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x5728;<code>miracl.h</code>&#x4E2D;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token keyword">int</span> bits<span class="token punctuation">,</span>ep<span class="token punctuation">;</span>
+miracl <span class="token operator">*</span>mip<span class="token operator">=</span><span class="token operator">&amp;</span>precision<span class="token punctuation">;</span>
+</code></pre>
+<p><code>ECn</code>&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x5728;<code>ecn.h</code>&#xFF0C;<code>Big</code>&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x5728;<code>big.h</code>&#x3002;</p>
+<pre class="language-"><code class="lang-c">ECn G<span class="token punctuation">,</span>W<span class="token punctuation">;</span>
+Big a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>p<span class="token punctuation">,</span>q<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>d<span class="token punctuation">;</span>
+<span class="token keyword">long</span> seed<span class="token punctuation">;</span>
+</code></pre>
+<p>3&#x3001;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x79CD;&#x5B50;&#xFF0C;&#x9A8C;&#x8BC1;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x53C2;&#x6570;&#x7684;&#x53EF;&#x884C;&#x6027;&#x3002;</p>
+<p>&#x63D0;&#x793A;&#x8F93;&#x5165;&#x4E00;&#x4E2A;9&#x4F4D;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x653E;&#x5728;<code>seed</code>&#x4E2D;&#xFF0C;<code>irand</code>&#x5B9A;&#x4E49;&#x5728;<code>miracl.h</code>&#x4E2D;&#xFF0C;&#x5728;<code>mrcore.c</code>&#x4E2D;&#x5B9E;&#x73B0;&#xFF08;<a href="../../parts/api/irand.md">irand</a>&#xFF09;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c">cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;Enter 9 digit random number seed  = &quot;</span><span class="token punctuation">;</span>
+cin <span class="token operator">&gt;&gt;</span> seed<span class="token punctuation">;</span>
+<span class="token function">irand</span><span class="token punctuation">(</span>seed<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x4ECE;<code>common.ecs</code>&#x8BFB;&#x53D6;&#x76F8;&#x5E94;&#x7684;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-c">common <span class="token operator">&gt;&gt;</span> bits<span class="token punctuation">;</span>
+mip<span class="token operator">-&gt;</span>IOBASE<span class="token operator">=</span><span class="token number">16</span><span class="token punctuation">;</span>
+common <span class="token operator">&gt;&gt;</span> p <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b <span class="token operator">&gt;&gt;</span> q <span class="token operator">&gt;&gt;</span> x <span class="token operator">&gt;&gt;</span> y<span class="token punctuation">;</span>
+mip<span class="token operator">-&gt;</span>IOBASE<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>ecurve</code>&#x5B9A;&#x4E49;&#x5728;<code>big.h</code>&#xFF0C;&#x5B9E;&#x73B0;&#x5728;<code>big.cpp</code>&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x3002;&#xFF08;<a href="../../parts/api/ecurve.md">ecurve</a>&#xFF09;</p>
+<pre class="language-"><code class="lang-c"><span class="token function">ecurve</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>p<span class="token punctuation">,</span>MR_PROJECTIVE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x83B7;&#x53D6;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x4E0A;&#x7684;&#x70B9;(x,y)</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>G<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;Problem - point (x,y) is not on the curve&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+W<span class="token operator">=</span>G<span class="token punctuation">;</span><span class="token comment">//&#x8D4B;&#x503C;</span>
+W<span class="token operator">*=</span>q<span class="token punctuation">;</span><span class="token comment">//W=q*W&#xFF0C;&#x975E;&#x9000;&#x5316;&#x6027;&#x9A8C;&#x8BC1;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>W<span class="token punctuation">.</span><span class="token function">iszero</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;Problem - point (x,y) is not of order q&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>4&#x3001;&#x968F;&#x673A;&#x9009;&#x62E9;&#x79C1;&#x94A5;&#xFF0C;&#x8BA1;&#x7B97;&#x516C;&#x94A5;&#xFF0C;&#x516C;&#x79C1;&#x94A5;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token comment">/* generate public/private keys */</span>
+d<span class="token operator">=</span><span class="token function">rand</span><span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//&#x4EA7;&#x751F;&#x968F;&#x673A;&#x503C;&#xFF0C;&#x4F5C;&#x4E3A;&#x79C1;&#x94A5;</span>
+<span class="token comment">//   for (int i=0;i&lt;=10000;i++)</span>
+G<span class="token operator">*=</span>d<span class="token punctuation">;</span><span class="token comment">//G=d*G&#xFF0C;&#x516C;&#x94A5;</span>
+ep<span class="token operator">=</span>G<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x83B7;&#x53D6;G&#x7684;&#x6A2A;&#x5750;&#x6807;</span>
+cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;public key = &quot;</span> <span class="token operator">&lt;&lt;</span> ep <span class="token operator">&lt;&lt;</span> <span class="token string">&quot; &quot;</span> <span class="token operator">&lt;&lt;</span> x <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+public_key <span class="token operator">&lt;&lt;</span> ep <span class="token operator">&lt;&lt;</span> <span class="token string">&quot; &quot;</span> <span class="token operator">&lt;&lt;</span> x <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+private_key <span class="token operator">&lt;&lt;</span> d <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+</code></pre>
+<h4 id="&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;">&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;</h4>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;fstream&gt;</span></span>
+
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  ifstream <span class="token function">common</span><span class="token punctuation">(</span><span class="token string">&quot;common.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">/* construct file I/O streams */</span>
+  ofstream <span class="token function">public_key</span><span class="token punctuation">(</span><span class="token string">&quot;public.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ofstream <span class="token function">private_key</span><span class="token punctuation">(</span><span class="token string">&quot;private.ecs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> bits<span class="token punctuation">,</span>ep<span class="token punctuation">;</span>
+
+    common <span class="token operator">&gt;&gt;</span> bits<span class="token punctuation">;</span>
+
+    cout <span class="token operator">&lt;&lt;</span> bits <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x4E3B;&#x8981;&#x8BF4;&#x660E;C++&#x5DF2;&#x7ECF;&#x63D0;&#x4F9B;<code>common</code>&#x3001;<code>public_key</code>&#x3001;<code>private_key</code>&#x7B49;&#x51FD;&#x6570;&#x7B49;&#x5B9E;&#x73B0;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../curvePara.html" class="navigation navigation-prev " aria-label="Previous page: 曲线参数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mraes.html" class="navigation navigation-next " aria-label="Next page: mraes.c">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ecsgen.cpp","level":"3.4","depth":1,"next":{"title":"mraes.c","level":"3.5","depth":1,"path":"miracldoc/demo/mraes.md","ref":"miracldoc/demo/mraes.md","articles":[]},"previous":{"title":"曲线参数","level":"3.3","depth":1,"path":"miracldoc/curvePara.md","ref":"miracldoc/curvePara.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"计算机科学实验室","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook应用教程","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"Gitbook快速建立个人博客"},"file":{"path":"miracldoc/demo/ecsgen.md","mtime":"2024-05-21T14:34:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-08T08:04:01.845Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

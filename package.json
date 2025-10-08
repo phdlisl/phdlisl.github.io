@@ -1,0 +1,22 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "book.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gitbook serve",
+    "build": "gitbook build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-flexible-alerts": "^1.0.4",
+    "gitbook-plugin-hide-element": "^0.0.4",
+    "gitbook-plugin-katex": "^1.1.4",
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-search-pro": "^2.0.2"
+  }
+}
