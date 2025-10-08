@@ -42,6 +42,10 @@ module.exports = {
     }
   },
 
+  "styles": {
+    "website": "styles/website.css"
+  },
+
   // 模板变量
   variables: {
     // 自定义

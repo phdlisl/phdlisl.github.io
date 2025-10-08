@@ -17,6 +17,7 @@
 	- [Gitbook插件配置](ebook/plugins.md)
 	- [Gitbook操作技巧](ebook/gitbk.md)
 	- [MarkDown语法规则](ebook/mkdown.md)
+	- [个性化样式配置](ebook/style.md)
 <!-- ### Miracl密码库 -->
 * [Miracl密码库](miracldoc/intro.md)
 	* [环境配置](miracldoc/install.md)

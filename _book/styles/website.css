@@ -1,0 +1,32 @@
+/* 调整主内容区域宽度 */
+.book .book-body .page-wrapper .page-inner {
+    max-width: 90% !important;
+}
+
+/* 调整正文内容宽度 */
+.markdown-section {
+    /* max-width: 1200px !important; */
+    max-width: 90% !important;
+    margin: 0 auto;
+}
+
+/* 调整代码块的宽度 */
+.markdown-section pre {
+    max-width: 100% !important;
+}
+
+/* 调整表格宽度 */
+.markdown-section table {
+    width: 100% !important;
+}
+
+/* 如果需要调整侧边栏宽度 */
+.book .book-summary {
+    width: 10% !important;
+    /* width: 300px !important; */
+}
+
+.book.with-summary .book-body {
+    /* left: 300px !important; */
+    left: 10% !important;
+}
