@@ -4,7 +4,10 @@
 
 ### 教学笔记
 
-
+* [C语言](clang/intro.md)
+* [数据结构](datastruct/intro.md)
+* 零散笔记
+	* [基于GitHub服务用Gitbook搭建免费个人网站](note/gitbook-github.md)
 
 ### 技术使用指南
 
