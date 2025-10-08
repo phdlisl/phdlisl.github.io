@@ -9,7 +9,7 @@
 * 零散笔记
 	* [基于GitHub服务用Gitbook搭建免费个人网站](note/gitbook-github.md)
 
-### 技术使用指南
+### 技术指南
 
 * [Gitbook使用指南](ebook/intro.md)
 	- [Gitbook环境配置](ebook/startbook.md)
