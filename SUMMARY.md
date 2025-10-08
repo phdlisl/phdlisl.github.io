@@ -4,6 +4,7 @@
 
 ### Gitbook使用指南
 
+* [Gitbook简介](ebook/intro.md)
 * [Gitbook环境配置](ebook/startbook.md)
 * [第一个Gitbook项目](ebook/firstpage.md)
 * [Gitbook插件配置](ebook/plugins.md)
@@ -12,7 +13,7 @@
 
 ### Miracl密码库
 
-* [MIRACL简介](README.md)
+* [MIRACL简介](miracldoc/intro.md)
 * [环境配置](miracldoc/install.md)
 * [曲线参数](miracldoc/curvePara.md)
 <!-- #### 案例分析 -->

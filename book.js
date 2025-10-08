@@ -1,9 +1,9 @@
 module.exports = {
   // 书籍信息
-  title: 'Gitbook应用教程',
-  description: 'Gitbook快速建立个人博客',
+  title: '技术博客指南',
+  description: '技术博客指南',
   // isbn: '987',
-  author: '计算机科学实验室',
+  author: 'phdlisl',
   lang: 'zh-cn',
 
   // 插件列表

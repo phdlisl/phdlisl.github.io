@@ -18,7 +18,7 @@ info: create SUMMARY.md
 info: initialization is finished
 ```
 
-完成后，文件目录下出现`README.md`、`SUMMARY.md`两个项目文件。
+完成后，文件目录下出现`README.md`、`SUMMARY.md`两个项目文件。当需要多个文件时，只有在`SUMMARY.md`中注册的文件才能够编译成HTML文件，才能够被访问。`README.md`文件是默认的文件，一定会被编译为HTML文件。
 
 3、添加必要的文件。
 
