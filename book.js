@@ -1,7 +1,7 @@
 module.exports = {
   // 书籍信息
-  title: '技术博客指南',
-  description: '技术博客指南',
+  title: '个人档案',
+  description: '技术博客指南，教学视频，教学笔记',
   // isbn: '987',
   author: 'phdlisl',
   lang: 'zh-cn',
