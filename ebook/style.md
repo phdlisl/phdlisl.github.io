@@ -7,13 +7,13 @@
 ```
 /* 调整主内容区域宽度 */
 .book .book-body .page-wrapper .page-inner {
-    max-width: 90% !important;
+    max-width: 95% !important;
 }
 
 /* 调整正文内容宽度 */
 .markdown-section {
     /* max-width: 1200px !important; */
-    max-width: 90% !important;
+    max-width: 100% !important;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -30,13 +30,11 @@
 
 /* 如果需要调整侧边栏宽度 */
 .book .book-summary {
-    /* width: 100% !important; */
     width: 300px !important;
 }
 
 .book.with-summary .book-body {
     left: 300px !important;
-    /* left: 10% !important; */
 }
 
 /* 移动端适配 */
