@@ -122,3 +122,14 @@
         width: 250px !important;
     }
 }
+
+/* 隐藏导航箭头 */
+.navigation-next, .navigation-prev {
+    display: none !important;
+}
+
+/* 或者更具体的选择器 */
+button[data-testid="next-chapter-button"],
+button[data-testid="previous-chapter-button"] {
+    display: none !important;
+}

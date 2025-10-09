@@ -7,7 +7,7 @@ module.exports = {
   lang: 'zh-cn',
 
   // 插件列表
-  plugins: ["-lunr", "-search", "search-pro", "katex", "code", "hide-element", "flexible-alerts", "prism", "-highlight", "expandable-chapters", "page-toc"],
+  plugins: ["-lunr", "-search", "search-pro", "katex", "code", "hide-element", "flexible-alerts", "prism", "-highlight", "expandable-chapters", "page-toc", "back-to-top-button"],
 
   // 插件全局配置
   pluginsConfig: {
