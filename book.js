@@ -20,6 +20,8 @@ module.exports = {
       // "style": "flat",
       "note": {"label" : "注意"},
       "tip": {"label" : "提示"},
+      "warning": { "label": "warning" },
+      "danger": { "label": "危险" }
     },
     // 目录编号
     "theme-default": { "showLevel": true },

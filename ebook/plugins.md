@@ -64,6 +64,18 @@ npm i gitbook-plugin-flexible-alerts
 }
 ```
 
+例如给出具体的样式配置
+
+```
+"flexible-alerts": {
+  // "style": "flat",
+  "note": {"label" : "注意"},
+  "tip": {"label" : "提示"},
+  "warning": { "label": "warning" },
+  "danger": { "label": "危险" }
+}
+```
+
 使用方式如下，`> [!NOTE]`给出“提示”，后面跟着相关文本；其他提示框也类似，例如下面的“TIPs”。
 
 
@@ -71,9 +83,22 @@ npm i gitbook-plugin-flexible-alerts
 > [!NOTE]
 > 文本
 ```
+
+> [!NOTE]
+> An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
+> In addition, this alert uses an own heading and hides specific icon.
+
+```
 > [!TIP]
 > An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
 > In addition, this alert uses an own heading and hides specific icon.
+```
+
+> [!TIP]
+> An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
+> In addition, this alert uses an own heading and hides specific icon.
+
+更多高级用法，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)。
 
 ## 菜单折叠：gitbook-plugin-expandable-chapters
 

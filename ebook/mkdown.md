@@ -1,6 +1,6 @@
 # MarkDown 语法
 
-GitBook 默认使用MarkDown语法。MarkDown是一种轻量级标记语言，语法简洁，让作者更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与 HTML 混编，可导出 HTML、PDF 以及.md 格式的文件。Github、Wikipedia 等网站都有使用MarkDown文本。
+GitBook 默认使用MarkDown语法。MarkDown是一种轻量级标记语言，语法简洁，让作者更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与 HTML 混编，可导出 HTML、PDF 以及`.md`格式的文件。Github、Wikipedia 等网站都有使用MarkDown文本。
 
 ## 1 标题和段落
 
@@ -146,4 +146,8 @@ Gitbook可以建立两种列表，分别是有序列表和无序列表。
 
 ## 5 公式
 
-$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+```
+\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N
+```
+
+$$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$$
