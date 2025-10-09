@@ -104,6 +104,35 @@ npm i gitbook-plugin-flexible-alerts
 
 ## 返回顶部：gitbook-plugin-back-to-top-button
 
+插件gitbook-plugin-back-to-top-button的[官方文档](https://www.npmjs.com/package/gitbook-plugin-back-to-top-button)，首先在项目中安装该插件。
+
+```
+npm i gitbook-plugin-back-to-top-button
+```
+
+然后在`book.js`文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-back-to-top-button)。
+
+```
+{
+    "plugins" : [ "back-to-top-button" ]
+}
+```
+
+设置返回顶部按钮你之后，可能因为原来默认的左右导航箭头影响，不能正常显示，去除左右导航箭头可以配置CSS样式。
+
+```
+/* 隐藏导航箭头 */
+.navigation-next, .navigation-prev {
+    display: none !important;
+}
+
+/* 或者更具体的选择器 */
+button[data-testid="next-chapter-button"],
+button[data-testid="previous-chapter-button"] {
+    display: none !important;
+}
+```
+
 ## 页内导航：gitbook-plugin-page-toc
 
 插件gitbook-plugin-page-toc的[官方文档](https://www.npmjs.com/package/gitbook-plugin-page-toc)，首先在项目中安装该插件。
@@ -124,6 +153,54 @@ npm i gitbook-plugin-page-toc
       "showByDefault": true
     }
   }
+}
+```
+
+默认情况下显示导航目录，如果设置为false，则会隐藏导航目录，但是显示不了打开导航的按钮。可以设置为false，在需要打开导航目录的markdown文档顶部添加以下代码，则该页面出现导航目录。
+
+```
+---
+showToc: true
+---
+```
+
+页面上可能会有一些元素遮挡导航目录，这时候可以通过下面的方式将导航目录浮动到页面顶层。
+
+```
+/* 重置所有可能的高 z-index 元素 */
+.book .book-header,
+.book .book-summary,
+.book .book-body .navigation,
+.markdown-section .code-toolbar {
+    z-index: 100 !important;
+}
+
+/* 模态框和弹出层 */
+.modal, .popup, .tooltip {
+    z-index: 1000 !important;
+}
+
+/* 页面目录 - 最高优先级 */
+.page-toc {
+    z-index: 2147483647 !important; /* 接近最大整数值 */
+    position: fixed !important;
+    right: 20px !important;
+    top: 80px !important;
+    
+    /* 创建新的层叠上下文 */
+    transform: translate3d(0, 0, 0);
+    isolation: isolate;
+}
+
+/* 确保在移动端也能正常显示 */
+@media (max-width: 1240px) {
+    .page-toc {
+        z-index: 2147483647 !important;
+        position: fixed !important;
+        top: 60px !important;
+        right: 10px !important;
+        width: 250px !important;
+    }
 }
 ```
 

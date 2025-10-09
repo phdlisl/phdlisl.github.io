@@ -35,8 +35,7 @@ module.exports = {
       "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
       "position": "before-first",
       "showByDefault": true,
-      "showToc": true
-    }
+    },
   },
 
   // 去掉分享功能
