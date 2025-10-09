@@ -104,6 +104,29 @@ npm i gitbook-plugin-flexible-alerts
 
 ## 返回顶部：gitbook-plugin-back-to-top-button
 
+## 页内导航：gitbook-plugin-page-toc
+
+插件gitbook-plugin-page-toc的[官方文档](https://www.npmjs.com/package/gitbook-plugin-page-toc)，首先在项目中安装该插件。
+
+```
+npm i gitbook-plugin-page-toc
+```
+
+然后在`book.js`文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-page-toc)。
+
+```
+{
+  "plugins": [ "page-toc" ],
+  "pluginsConfig": {
+    "page-toc": {
+      "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+      "position": "before-first",
+      "showByDefault": true
+    }
+  }
+}
+```
+
 
 ## TeX 公式：gitbook-plugin-katex
 
@@ -113,7 +136,7 @@ npm i gitbook-plugin-flexible-alerts
 npm i gitbook-plugin-katex
 ```
 
-然后在book.js文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-katex)。
+然后在`book.js`文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-katex)。
 
 ```
 {

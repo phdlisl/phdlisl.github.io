@@ -16,6 +16,7 @@
     "gitbook-plugin-flexible-alerts": "^1.0.4",
     "gitbook-plugin-hide-element": "^0.0.4",
     "gitbook-plugin-katex": "^1.1.4",
+    "gitbook-plugin-page-toc": "^1.1.1",
     "gitbook-plugin-prism": "^2.4.0",
     "gitbook-plugin-search-pro": "^2.0.2"
   }

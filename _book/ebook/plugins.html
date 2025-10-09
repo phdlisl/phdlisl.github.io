@@ -41,6 +41,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -2541,10 +2545,24 @@ In addition, this alert uses an own heading and hides specific icon.</p>
 <p>&#x66F4;&#x591A;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;&#xFF0C;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-flexible-alerts" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
 <h2 id="&#x83DC;&#x5355;&#x6298;&#x53E0;&#xFF1A;gitbook-plugin-expandable-chapters">&#x83DC;&#x5355;&#x6298;&#x53E0;&#xFF1A;gitbook-plugin-expandable-chapters</h2>
 <h2 id="&#x8FD4;&#x56DE;&#x9876;&#x90E8;&#xFF1A;gitbook-plugin-back-to-top-button">&#x8FD4;&#x56DE;&#x9876;&#x90E8;&#xFF1A;gitbook-plugin-back-to-top-button</h2>
-<h2 id="tex-&#x516C;&#x5F0F;&#xFF1A;gitbook-plugin-katex">TeX &#x516C;&#x5F0F;&#xFF1A;gitbook-plugin-katex</h2>
+<h2 id="&#x9875;&#x5185;&#x5BFC;&#x822A;&#xFF1A;gitbook-plugin-page-toc">&#x9875;&#x5185;&#x5BFC;&#x822A;&#xFF1A;gitbook-plugin-page-toc</h2>
+<p>&#x63D2;&#x4EF6;gitbook-plugin-page-toc&#x7684;<a href="https://www.npmjs.com/package/gitbook-plugin-page-toc" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;&#x3002;</p>
+<pre class="language-"><code>npm i gitbook-plugin-page-toc
+</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x67E5;&#x770B;<a href="https://www.npmjs.com/package/gitbook-plugin-page-toc" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
+<pre class="language-"><code>{
+  &quot;plugins&quot;: [ &quot;page-toc&quot; ],
+  &quot;pluginsConfig&quot;: {
+    &quot;page-toc&quot;: {
+      &quot;selector&quot;: &quot;.markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4&quot;,
+      &quot;position&quot;: &quot;before-first&quot;,
+      &quot;showByDefault&quot;: true
+    }
+  }
+}
+</code></pre><h2 id="tex-&#x516C;&#x5F0F;&#xFF1A;gitbook-plugin-katex">TeX &#x516C;&#x5F0F;&#xFF1A;gitbook-plugin-katex</h2>
 <p>&#x63D2;&#x4EF6;gitbook-plugin-katex&#x7684;<a href="https://www.npmjs.com/package/gitbook-plugin-katex" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;&#x3002;</p>
 <pre class="language-"><code>npm i gitbook-plugin-katex
-</code></pre><p>&#x7136;&#x540E;&#x5728;book.js&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x67E5;&#x770B;<a href="https://www.npmjs.com/package/gitbook-plugin-katex" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
+</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x67E5;&#x770B;<a href="https://www.npmjs.com/package/gitbook-plugin-katex" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
 <pre class="language-"><code>{
     &quot;plugins&quot;: [&quot;katex&quot;]
 }
@@ -2617,7 +2635,7 @@ In addition, this alert uses an own heading and hides specific icon.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gitbook插件配置","level":"3.1.3","depth":2,"next":{"title":"Gitbook操作技巧","level":"3.1.4","depth":2,"path":"ebook/gitbk.md","ref":"ebook/gitbk.md","articles":[]},"previous":{"title":"第一个Gitbook项目","level":"3.1.2","depth":2,"path":"ebook/firstpage.md","ref":"ebook/firstpage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人档案","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"ebook/plugins.md","mtime":"2025-10-09T05:28:48.622Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-09T05:34:38.621Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gitbook插件配置","level":"3.1.3","depth":2,"next":{"title":"Gitbook操作技巧","level":"3.1.4","depth":2,"path":"ebook/gitbk.md","ref":"ebook/gitbk.md","articles":[]},"previous":{"title":"第一个Gitbook项目","level":"3.1.2","depth":2,"path":"ebook/firstpage.md","ref":"ebook/firstpage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","page-toc","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3","position":"before-first","showByDefault":true,"showToc":true},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人档案","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"ebook/plugins.md","mtime":"2025-10-09T06:25:47.901Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-09T06:28:08.921Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2648,6 +2666,14 @@ In addition, this alert uses an own heading and hides specific icon.</p>
     
         
         <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
         
     
         

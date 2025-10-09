@@ -7,7 +7,7 @@ module.exports = {
   lang: 'zh-cn',
 
   // 插件列表
-  plugins: ["-lunr", "-search", "search-pro", "katex", "code", "hide-element", "flexible-alerts", "prism", "-highlight", "expandable-chapters"],
+  plugins: ["-lunr", "-search", "search-pro", "katex", "code", "hide-element", "flexible-alerts", "prism", "-highlight", "expandable-chapters", "page-toc"],
 
   // 插件全局配置
   pluginsConfig: {
@@ -31,6 +31,12 @@ module.exports = {
       "ignore": ["mermaid","eval-js"]
     },
     "expandable-chapters":{},
+    "page-toc": {
+      "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
+      "position": "before-first",
+      "showByDefault": true,
+      "showToc": true
+    }
   },
 
   // 去掉分享功能

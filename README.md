@@ -6,20 +6,17 @@
 
 * 自媒体：公众号（计算机科学实验室），B站（C语言实验室）
 
+## 教学相关
 
+* [C语言程序设计](clang/intro.md)
+* [数据结构与算法](datastruct/intro.md)
+* 零散笔记
 
-## Gitbook使用指南
+## 技术指南
 
-  * [Gitbook简介](ebook/intro.md)
-  * [Gitbook环境配置](ebook/startbook.md)
-  * [第一个Gitbook项目](ebook/firstpage.md)
-  * [Gitbook插件配置](ebook/plugins.md)
-  * [Gitbook操作技巧](ebook/gitbk.md)
-  * [MarkDown语法规则](ebook/mkdown.md)
+* [Gitbook使用指南](ebook/intro.md)
+* [MIRACL使用指南](miracldoc/intro.md)
 
-## MIRACL使用指南
-
-以下是相关目录
 
 
 
