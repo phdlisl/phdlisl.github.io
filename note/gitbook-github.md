@@ -8,7 +8,7 @@
 
 本文将用Github部署个人网站，有两点要求，一是Gitbook项目源码私有（private），二是GitHub部署Gitbook打包的个人网站，必须公有（public）。
 
-0、准备一个gitbook项目，关于gitbook项目的创建，参考[Gitbook配置教程，快速搭建个人博客，制作个人电子书、帮助（说明）文档](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HNd05mijAXGnMqIHcjzlDjtALvHnI4SdhXVkvLJR&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIzODAxNjE1OQ%3D%3D%26mid%3D2247490965%26idx%3D1%26sn%3Dc0dd8163ed92190bfec0d387ea9afaae%26scene%3D21#wechat_redirect)和[gitbook快速搭建第一个个人博客项目](https://mp.weixin.qq.com/s?__biz=MzIzODAxNjE1OQ==&mid=2247490968&idx=1&sn=847f6e3956a8fcda3487757343c099bb&scene=21&poc_token=HAJ15mij64nDqq5uMNRK7o3fO1QzJ2YFQgNFIa26)
+0、准备一个gitbook项目，关于gitbook项目的创建，参考[Gitbook配置教程，快速搭建个人博客，制作个人电子书、帮助（说明）文档](https://mp.weixin.qq.com/s?__biz=MzIzODAxNjE1OQ==&mid=2247490965&idx=1&sn=c0dd8163ed92190bfec0d387ea9afaae&scene=21&poc_token=HKCj52ij32pR5wLzmUQ_NauE6DzLZQqgsInEzMfr)和[gitbook快速搭建第一个个人博客项目](https://mp.weixin.qq.com/s?__biz=MzIzODAxNjE1OQ==&mid=2247490968&idx=1&sn=847f6e3956a8fcda3487757343c099bb&scene=21&poc_token=HAJ15mij64nDqq5uMNRK7o3fO1QzJ2YFQgNFIa26)
 
 1、创建两个github仓库，一个私有仓库，一个公有仓库，公有仓库的名称必须是usename.github.io，其中usename就是GitHub的用户名。
 
