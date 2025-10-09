@@ -5,13 +5,19 @@ npm为Gitbook提供了很多插件，只需要在Gitbook项目配置npm项目，
 > [!NOTE]
 > 插件应该在项目目录下安装，也就是说在当前项目文件下安装，才会出现在`package.json`文件中。
 
-## 搜索插件：gitbook-plugin-search-pro
+## 搜索插件
 
-## 代码插件：gitbook-plugin-code
+gitbook-plugin-search-pro
 
-## 主题插件：gitbook-plugin-theme-
+## 代码插件
 
-## 隐藏Gitbook默认设置：gitbook-plugin-hide-element
+gitbook-plugin-code
+
+## 主题插件
+
+gitbook-plugin-theme-
+
+## 隐藏Gitbook默认设置
 
 Gitbook页面有诸如“Published with GitBook”的默认设置，可用这个插件使之隐藏。
 
@@ -39,7 +45,7 @@ npm i gitbook-plugin-hide-element
 
 完成上述配置，就可以将“Published with GitBook”的默认设置去掉。
 
-## 添加提示、警告等提示框：gitbook-plugin-flexible-alerts
+## 添加提示、警告等提示框
 
 插件gitbook-plugin-flexible-alerts的[官方文档](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)，首先在项目中安装该插件
 
@@ -100,9 +106,11 @@ npm i gitbook-plugin-flexible-alerts
 
 更多高级用法，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)。
 
-## 菜单折叠：gitbook-plugin-expandable-chapters
+## 菜单折叠
 
-## 返回顶部：gitbook-plugin-back-to-top-button
+gitbook-plugin-expandable-chapters
+
+## 返回顶部
 
 插件gitbook-plugin-back-to-top-button的[官方文档](https://www.npmjs.com/package/gitbook-plugin-back-to-top-button)，首先在项目中安装该插件。
 
@@ -133,7 +141,7 @@ button[data-testid="previous-chapter-button"] {
 }
 ```
 
-## 页内导航：gitbook-plugin-page-toc
+## 页内导航
 
 插件gitbook-plugin-page-toc的[官方文档](https://www.npmjs.com/package/gitbook-plugin-page-toc)，首先在项目中安装该插件。
 
@@ -207,7 +215,7 @@ showToc: true
 这个插件的另一个缺点是，当页面出现导航目录的时候，会导致顶部间距增加，或许可以在`website.css`中设置相应的样式调整。
 
 
-## TeX 公式：gitbook-plugin-katex
+## TeX 公式
 
 插件gitbook-plugin-katex的[官方文档](https://www.npmjs.com/package/gitbook-plugin-katex)，首先在项目中安装该插件。
 
@@ -240,7 +248,7 @@ $$
 
 \$\$在gitbook中有特殊含义，表示数学公式的开始，要打印\$\$，可以用转义的方式，如`\$\$`。
 
-## 代码高亮：gitbook-plugin-prism
+## 代码高亮
 
 插件npm i gitbook-plugin-prism的[官方文档](https://www.npmjs.com/package/gitbook-plugin-prism)，首先在项目中安装该插件。
 

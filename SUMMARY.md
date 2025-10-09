@@ -2,6 +2,7 @@
 
 * [首页](README.md)
 
+<!-- 教学笔记 -->
 ### 教学笔记
 
 * [C语言](clang/intro.md)
@@ -13,6 +14,7 @@
 * 零散笔记
 	* [基于GitHub服务用Gitbook搭建免费个人网站](note/gitbook-github.md)
 
+<!-- 技术指南 -->
 ### 技术指南
 
 * [Gitbook使用指南](ebook/intro.md)
