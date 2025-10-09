@@ -24,7 +24,7 @@ module.exports = {
       "danger": { "label": "危险" }
     },
     // 目录编号
-    "theme-default": { "showLevel": true },
+    "theme-default": { "showLevel": false },
     "prism": {
       "css": ["prismjs/themes/prism-solarizedlight.css"],
       "lang": {"flow": "typescript"},

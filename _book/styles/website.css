@@ -134,3 +134,21 @@ button[data-testid="previous-chapter-button"] {
     display: none !important;
 }
 
+/* 为一级目录添加简单序号 1, 2, 3... */
+.book .book-summary > ul.summary > li > a:before {
+  content: counter(chapter) ". ";
+  counter-increment: chapter;
+  font-weight: bold;
+  margin-right: 8px;
+  display: inline-block;
+  min-width: 20px;
+}
+
+.book .book-summary {
+  counter-reset: chapter;
+}
+
+/* 移除子级的序号 */
+.book .book-summary > ul.summary > li ul li a:before {
+  content: none !important;
+}
