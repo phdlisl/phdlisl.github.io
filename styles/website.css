@@ -53,3 +53,35 @@
         padding: 0 20px;
     }
 }
+
+/* 所有链接下划线 */
+.markdown-section a {
+    text-decoration: underline !important;
+    color: #007acc !important;
+    transition: color 0.3s ease;
+}
+
+/* 鼠标悬停时显示下划线 */
+.markdown-section a:hover {
+    text-decoration: underline !important;
+    color: #005a9e !important;
+}
+
+/* 导航链接保持默认样式 */
+.book-summary a {
+    text-decoration: none !important;
+}
+
+.book-summary a:hover {
+    text-decoration: underline !important;
+}
+
+/* 标题锚点链接 */
+.anchor span {
+    text-decoration: none !important;
+}
+
+/* 代码块中的链接 */
+.markdown-section code a {
+    text-decoration: underline !important;
+}
