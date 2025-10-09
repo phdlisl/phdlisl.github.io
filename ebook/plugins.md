@@ -204,6 +204,8 @@ showToc: true
 }
 ```
 
+这个插件的另一个缺点是，当页面出现导航目录的时候，会导致顶部间距增加，或许可以在`website.css`中设置相应的样式调整。
+
 
 ## TeX 公式：gitbook-plugin-katex
 
