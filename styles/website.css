@@ -22,11 +22,11 @@
 
 /* 如果需要调整侧边栏宽度 */
 .book .book-summary {
-    width: 10% !important;
+    width: 100% !important;
     /* width: 300px !important; */
 }
 
 .book.with-summary .book-body {
     /* left: 300px !important; */
-    left: 10% !important;
+    /* left: 10% !important; */
 }
