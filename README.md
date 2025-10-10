@@ -18,6 +18,8 @@ showToc: false
 
 ## 技术指南
 
+* [C语言](clang/intro.md)
+* [数据结构](datastruct/intro.md)
 * [Gitbook使用指南](ebook/intro.md)
 * [MIRACL使用指南](miracldoc/intro.md)
 
