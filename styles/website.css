@@ -111,15 +111,20 @@
     transform: translate3d(0, 0, 0);
     isolation: isolate;
 }
-
 /* 确保在移动端也能正常显示 */
-@media (max-width: 1240px) {
+/* @media (max-width: 1240px) {
     .page-toc {
         z-index: 2147483647 !important;
         position: fixed !important;
         top: 60px !important;
         right: 10px !important;
         width: 250px !important;
+    }
+} */
+ /* 移动端隐藏导航目录 */
+ @media (max-width: 1240px) {
+    .page-toc {
+        display: none !important;
     }
 }
 
