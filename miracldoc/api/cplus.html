@@ -41,11 +41,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -2208,9 +2208,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="c&#x4E2D;&#x7684;&#x51FD;&#x6570;">C++&#x4E2D;&#x7684;&#x51FD;&#x6570;</h1>
-<h2 id="&#x51FD;&#x6570;common">&#x51FD;&#x6570;common()</h2>
-<h2 id="sse2&#x7684;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF08;&#x6765;&#x6E90;&#xFF09;">SSE2&#x7684;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF08;<a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/" target="_blank">&#x6765;&#x6E90;</a>&#xFF09;</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#c&#x4E2D;&#x7684;&#x51FD;&#x6570;"><b>1. </b>C++&#x4E2D;&#x7684;&#x51FD;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;common"><b>1.1. </b>&#x51FD;&#x6570;common()</a></li><li><span class="title-icon "></span><a href="#sse2&#x7684;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF08;&#x6765;&#x6E90;&#xFF09;"><b>1.2. </b>SSE2&#x7684;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF08;&#x6765;&#x6E90;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#modf"><b>1.3. </b>modf()</a></li></ul></ul></div><a href="#c&#x4E2D;&#x7684;&#x51FD;&#x6570;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="c&#x4E2D;&#x7684;&#x51FD;&#x6570;"><a name="c&#x4E2D;&#x7684;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#c&#x4E2D;&#x7684;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1. C++&#x4E2D;&#x7684;&#x51FD;&#x6570;</h1>
+<h2 id="&#x51FD;&#x6570;common"><a name="&#x51FD;&#x6570;common" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;common"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x51FD;&#x6570;common()</h2>
+<h2 id="sse2&#x7684;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF08;&#x6765;&#x6E90;&#xFF09;"><a name="sse2&#x7684;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF08;&#x6765;&#x6E90;&#xFF09;" class="anchor-navigation-ex-anchor" href="#sse2&#x7684;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF08;&#x6765;&#x6E90;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. SSE2&#x7684;&#x5E38;&#x7528;&#x6307;&#x4EE4;&#xFF08;&#x6765;&#x6E90;&#xFF09;</h2>
 <p>_mm_loadu_si128 : </p>
 <pre class="language-"><code class="lang-c">__m128i <span class="token function">_mm_loadu_si128</span> <span class="token punctuation">(</span>__m128i <span class="token keyword">const</span><span class="token operator">*</span> mem_addr<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
@@ -2231,7 +2231,7 @@
 <pre class="language-"><code class="lang-c"><span class="token keyword">void</span> <span class="token function">_mm_storeu_si128</span> <span class="token punctuation">(</span>__m128i<span class="token operator">*</span> mem_addr<span class="token punctuation">,</span> __m128i a<span class="token punctuation">)</span>&#xFF1B;
 </code></pre>
 <p>&#x51FD;&#x6570;&#x529F;&#x80FD;&#xFF1A;&#x5C06;128&#x4F4D;&#x6570;&#x636E;a&#x5B58;&#x50A8;&#x5230;&#x5185;&#x5B58;</p>
-<h2 id="modf">modf()</h2>
+<h2 id="modf"><a name="modf" class="anchor-navigation-ex-anchor" href="#modf"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. modf()</h2>
 <p><code>modf</code>&#x662F;C&#x8BED;&#x8A00;&#x5E93;<code>math.h</code>&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x51FD;&#x6570;</p>
 <pre class="language-"><code class="lang-c"><span class="token keyword">extern</span> <span class="token keyword">double</span> <span class="token function">modf</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">,</span> <span class="token keyword">double</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
@@ -2257,7 +2257,9 @@
 Number: -789.012000 = Integer Part: -789 + Fractional Part: -0.012000
 Number: 0.000000 = Integer Part: 0 + Fractional Part: 0.000000
 Number: 3.141592 = Integer Part: 3 + Fractional Part: 0.141592
-</code></pre>
+</code></pre><footer class="page-footer"><span class="copyright">&#xA9; phdlisl all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Update in 
+2024-05-19 12:45:46
+</span></footer>
                                 
                                 </section>
                             
@@ -2296,7 +2298,7 @@ Number: 3.141592 = Integer Part: 3 + Fractional Part: 0.141592
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"C++中的函数","level":"6.1.6","depth":2,"next":{"title":"数据类型和常量","level":"6.1.7","depth":2,"ref":"","articles":[{"title":"big类型","level":"6.1.7.1","depth":3,"path":"miracldoc/api/dtype/big.md","ref":"miracldoc/api/dtype/big.md","articles":[]},{"title":"字符常量","level":"6.1.7.2","depth":3,"path":"miracldoc/api/dtype/constants.md","ref":"miracldoc/api/dtype/constants.md","articles":[]},{"title":"epoint类型","level":"6.1.7.3","depth":3,"path":"miracldoc/api/dtype/epoint.md","ref":"miracldoc/api/dtype/epoint.md","articles":[]},{"title":"与int类型相关","level":"6.1.7.4","depth":3,"path":"miracldoc/api/dtype/int.md","ref":"miracldoc/api/dtype/int.md","articles":[]},{"title":"miracl类型","level":"6.1.7.5","depth":3,"path":"miracldoc/api/dtype/miracl.md","ref":"miracldoc/api/dtype/miracl.md","articles":[]}]},"previous":{"title":"bn_pair.cpp","level":"6.1.5.1","depth":3,"path":"miracldoc/packgDemo/bn_pair.md","ref":"miracldoc/packgDemo/bn_pair.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","page-toc","back-to-top-button","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3","position":"before-first","showByDefault":true},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"miracldoc/api/cplus.md","mtime":"2024-05-19T04:45:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-10T05:23:48.669Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"C++中的函数","level":"6.1.6","depth":2,"next":{"title":"数据类型和常量","level":"6.1.7","depth":2,"ref":"","articles":[{"title":"big类型","level":"6.1.7.1","depth":3,"path":"miracldoc/api/dtype/big.md","ref":"miracldoc/api/dtype/big.md","articles":[]},{"title":"字符常量","level":"6.1.7.2","depth":3,"path":"miracldoc/api/dtype/constants.md","ref":"miracldoc/api/dtype/constants.md","articles":[]},{"title":"epoint类型","level":"6.1.7.3","depth":3,"path":"miracldoc/api/dtype/epoint.md","ref":"miracldoc/api/dtype/epoint.md","articles":[]},{"title":"与int类型相关","level":"6.1.7.4","depth":3,"path":"miracldoc/api/dtype/int.md","ref":"miracldoc/api/dtype/int.md","articles":[]},{"title":"miracl类型","level":"6.1.7.5","depth":3,"path":"miracldoc/api/dtype/miracl.md","ref":"miracldoc/api/dtype/miracl.md","articles":[]}]},"previous":{"title":"bn_pair.cpp","level":"6.1.5.1","depth":3,"path":"miracldoc/packgDemo/bn_pair.md","ref":"miracldoc/packgDemo/bn_pair.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","tbfed-pagefooter","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy phdlisl","modify_label":"Update in ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"miracldoc/api/cplus.md","mtime":"2024-05-19T04:45:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-10T07:43:17.412Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2327,18 +2329,6 @@ Number: 3.141592 = Integer Part: 3 + Fractional Part: 0.141592
     
         
         <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         

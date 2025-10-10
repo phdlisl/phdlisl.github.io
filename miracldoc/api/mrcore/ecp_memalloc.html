@@ -41,11 +41,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -2210,13 +2210,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ecpmemalloc">ecp_memalloc</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ecpmemalloc"><b>1. </b>ecp_memalloc</a></li><ul><li><span class="title-icon "></span><a href="#&#x6E90;&#x7801;&#x5206;&#x6790;"><b>1.1. </b>&#x6E90;&#x7801;&#x5206;&#x6790;</a></li></ul></ul></div><a href="#ecpmemalloc" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ecpmemalloc"><a name="ecpmemalloc" class="anchor-navigation-ex-anchor" href="#ecpmemalloc"><i class="fa fa-link" aria-hidden="true"></i></a>1. ecp_memalloc</h1>
 <p><code>ecp_memalloc</code>&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5728;<code>miracl.h</code>&#xFF0C;&#x5728;<code>mrcore.c</code>&#x4E2D;&#x5B9E;&#x73B0;&#x3002;</p>
 <pre class="language-"><code class="lang-c"><span class="token keyword">extern</span> <span class="token keyword">void</span><span class="token operator">*</span> <span class="token function">ecp_memalloc</span><span class="token punctuation">(</span>_MIPT_ <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>&#x51FD;&#x6570;&#x529F;&#x80FD;&#xFF1A;&#x4E3A;epoint&#x5206;&#x914D;&#x5806;&#x5185;&#x5B58;&#x3002;</p>
 <p>&#x53C2;&#x6570;<code>num</code>&#xFF1A;&#x6574;&#x6570;&#x3002;</p>
-<h2 id="&#x6E90;&#x7801;&#x5206;&#x6790;">&#x6E90;&#x7801;&#x5206;&#x6790;</h2>
+<h2 id="&#x6E90;&#x7801;&#x5206;&#x6790;"><a name="&#x6E90;&#x7801;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x6E90;&#x7801;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6E90;&#x7801;&#x5206;&#x6790;</h2>
 <p><code>ecp_memalloc</code>&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#x3002;</p>
 <pre class="language-"><code class="lang-c"><span class="token keyword">void</span> <span class="token operator">*</span><span class="token function">ecp_memalloc</span><span class="token punctuation">(</span>_MIPD_ <span class="token keyword">int</span> num<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
@@ -2234,7 +2234,9 @@
 </code></pre>
 <p><a href="../../../parts/api/mrcore/get_mip.md">get_mip</a>&#x8FD4;&#x56DE;<code>miracl *</code>&#x6307;&#x9488;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;<code>MR_OS_THREADS</code>&#xFF0C;&#x7531;<code>_MIPD_</code>&#x63A5;&#x6536;&#x3002;</p>
 <p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7528;<a href="../../../parts/api/miracl/mr_ecp_reserve.md">mr_ecp_reserve</a>&#x8BA1;&#x7B97;&#x9700;&#x8981;&#x7533;&#x8BF7;&#x7684;&#x5B57;&#x8282;&#x6570;&#xFF0C;&#x5F53;&#x58F0;&#x660E;<code>MR_AFFINE_ONLY</code>&#xFF0C;&#x7528;<a href="../../../parts/api/miracl/mr_ecp_reserve_a.md">mr_ecp_reserve_a</a>&#x8BA1;&#x7B97;&#x9700;&#x8981;&#x7533;&#x8BF7;&#x7684;&#x5B57;&#x8282;&#x6570;&#x3002;</p>
-
+<footer class="page-footer"><span class="copyright">&#xA9; phdlisl all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Update in 
+2024-05-17 21:56:12
+</span></footer>
                                 
                                 </section>
                             
@@ -2277,7 +2279,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ecp_memalloc","level":"6.1.12.3","depth":3,"next":{"title":"epoint_init_mem","level":"6.1.12.4","depth":3,"path":"miracldoc/api/mrcore/epoint_init_mem.md","ref":"miracldoc/api/mrcore/epoint_init_mem.md","articles":[]},"previous":{"title":"copy","level":"6.1.12.2","depth":3,"path":"miracldoc/api/mrcore/copy.md","ref":"miracldoc/api/mrcore/copy.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","page-toc","back-to-top-button","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3","position":"before-first","showByDefault":true},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"miracldoc/api/mrcore/ecp_memalloc.md","mtime":"2024-05-17T13:56:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-10T05:23:48.669Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ecp_memalloc","level":"6.1.12.3","depth":3,"next":{"title":"epoint_init_mem","level":"6.1.12.4","depth":3,"path":"miracldoc/api/mrcore/epoint_init_mem.md","ref":"miracldoc/api/mrcore/epoint_init_mem.md","articles":[]},"previous":{"title":"copy","level":"6.1.12.2","depth":3,"path":"miracldoc/api/mrcore/copy.md","ref":"miracldoc/api/mrcore/copy.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","tbfed-pagefooter","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy phdlisl","modify_label":"Update in ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"miracldoc/api/mrcore/ecp_memalloc.md","mtime":"2024-05-17T13:56:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-10T07:43:17.412Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2308,18 +2310,6 @@
     
         
         <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         

@@ -86,53 +86,10 @@
     text-decoration: underline !important;
 }
 
-/* 页面目录被遮挡 */
-/* 重置所有可能的高 z-index 元素 */
-.book .book-header,
-.book .book-summary,
-.book .book-body .navigation,
-.markdown-section .code-toolbar {
-    z-index: 100 !important;
-}
-
-/* 模态框和弹出层 */
-.modal, .popup, .tooltip {
-    z-index: 1000 !important;
-}
-
-/* 页面目录 - 最高优先级 */
-.page-toc {
-    z-index: 2147483647 !important; /* 接近最大整数值 */
-    position: fixed !important;
-    right: 20px !important;
-    top: 80px !important;
-    
-    /* 创建新的层叠上下文 */
-    transform: translate3d(0, 0, 0);
-    isolation: isolate;
-}
-/* 确保在移动端也能正常显示 */
-/* @media (max-width: 1240px) {
-    .page-toc {
-        z-index: 2147483647 !important;
-        position: fixed !important;
-        top: 60px !important;
-        right: 10px !important;
-        width: 250px !important;
-    }
-} */
- /* 移动端隐藏导航目录 */
- @media (max-width: 1240px) {
-    .page-toc {
-        display: none !important;
-    }
-}
-
 /* 隐藏导航箭头 */
 .navigation-next, .navigation-prev {
     display: none !important;
 }
-
 /* 或者更具体的选择器 */
 button[data-testid="next-chapter-button"],
 button[data-testid="previous-chapter-button"] {
