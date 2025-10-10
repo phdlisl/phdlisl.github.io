@@ -7,11 +7,42 @@ npm为Gitbook提供了很多插件，只需要在Gitbook项目配置npm项目，
 
 ## 搜索插件
 
-gitbook-plugin-search-pro
+插件gitbook-plugin-search-pro支持中文搜索，[官方文档](https://www.npmjs.com/package/gitbook-plugin-search-pro)，首先在项目中安装该插件
+
+```
+npm i gitbook-plugin-search-pro
+```
+
+然后在`book.js`文件中添加配置项
+
+```
+{
+    "plugins": [
+      "-lunr", "-search", "search-pro"
+    ]
+}
+```
+
 
 ## 代码插件
 
-gitbook-plugin-code
+插件gitbook-plugin-code的[官方文档](https://www.npmjs.com/package/gitbook-plugin-code)，首先在项目中安装该插件
+
+```
+npm i gitbook-plugin-code
+```
+
+然后在`book.js`文件中添加配置项
+
+```
+"plugins" : [ "code" ],
+"pluginsConfig": {
+  "code": {
+    "copyButtons": false
+  }
+}
+```
+
 
 ## 主题插件
 
@@ -28,7 +59,7 @@ Gitbook页面有诸如“Published with GitBook”的默认设置，可用这个
 npm i gitbook-plugin-hide-element
 ```
 
-然后在book.js文件中添加配置项
+然后在`book.js`文件中添加配置项
 
 ```
 {
@@ -54,7 +85,7 @@ npm i gitbook-plugin-hide-element
 npm i gitbook-plugin-flexible-alerts
 ```
 
-然后在book.js文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)。
+然后在`book.js`文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)。
 
 
 ```
@@ -108,7 +139,22 @@ npm i gitbook-plugin-flexible-alerts
 
 ## 菜单折叠
 
-gitbook-plugin-expandable-chapters
+插件gitbook-plugin-expandable-chapters的[官方文档](https://www.npmjs.com/package/gitbook-plugin-expandable-chapters)，首先在项目中安装该插件。
+
+```
+npm i gitbook-plugin-expandable-chapters
+```
+
+然后在`book.js`文件中添加配置项
+
+```
+{
+    plugins: ["expandable-chapters"],
+    "pluginsConfig": {
+        "expandable-chapters":{}
+    }
+}
+```
 
 ## 返回顶部
 
@@ -126,7 +172,7 @@ npm i gitbook-plugin-back-to-top-button
 }
 ```
 
-设置返回顶部按钮你之后，可能因为原来默认的左右导航箭头影响，不能正常显示，去除左右导航箭头可以配置CSS样式。
+设置返回顶部按钮之后，可能因为原来默认的左右导航箭头影响，不能正常显示返回顶部的按钮，需要去掉左右导航箭头，去除左右导航箭头可以配置CSS样式。
 
 ```
 /* 隐藏导航箭头 */
@@ -221,6 +267,26 @@ showToc: false
 ```
 
 这个插件的另一个缺点是，当页面出现导航目录的时候，会导致顶部间距增加，或许可以在`website.css`中设置相应的样式调整。
+
+## 页内导航与返回顶部
+
+插件gitbook-plugin-anchor-navigation-ex的[官方文档](https://www.npmjs.com/package/gitbook-plugin-anchor-navigation-ex)，首先在项目中安装该插件。
+
+```
+npm i gitbook-plugin-anchor-navigation-ex
+```
+
+然后在`book.js`文件中添加配置项
+
+```
+{
+  "plugins": [
+       "anchor-navigation-ex"
+  ]
+}
+```
+
+这个插件解决了插件gitbook-plugin-page-toc的问题，合并了插件gitbook-plugin-back-to-top-button和插件gitbook-plugin-page-toc的功能。
 
 
 ## TeX 公式

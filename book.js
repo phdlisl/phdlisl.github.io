@@ -7,7 +7,20 @@ module.exports = {
   lang: 'zh-cn',
 
   // 插件列表
-  plugins: ["-lunr", "-search", "search-pro", "katex", "code", "hide-element", "flexible-alerts", "prism", "-highlight", "expandable-chapters", "page-toc", "back-to-top-button"],
+  plugins: [
+    "-lunr", "-search", "search-pro", 
+    "katex", 
+    "code", 
+    "hide-element", 
+    "flexible-alerts", 
+    "prism", 
+    "-highlight", 
+    "expandable-chapters", 
+    // "page-toc", 
+    // "back-to-top-button", 
+    "tbfed-pagefooter", 
+    "anchor-navigation-ex",
+  ],
 
   // 插件全局配置
   pluginsConfig: {
@@ -25,20 +38,29 @@ module.exports = {
     },
     // 目录编号
     "theme-default": { "showLevel": false },
+    // 代码高亮
     "prism": {
       "css": ["prismjs/themes/prism-solarizedlight.css"],
       "lang": {"flow": "typescript"},
       "ignore": ["mermaid","eval-js"]
     },
+    // 菜单折叠
     "expandable-chapters":{},
-    "page-toc": {
-      "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
-      "position": "before-first",
-      "showByDefault": true,
+    // 页内导航
+    // "page-toc": {
+    //   "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
+    //   "position": "before-first",
+    //   "showByDefault": true,
+    // },
+    // 底部版权信息
+    "tbfed-pagefooter": {
+      "copyright":"&copy phdlisl",
+      "modify_label": "Update in ",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
   },
 
-  // 去掉分享功能
+  // 去掉内置分享功能
   "links": {
     "gitbook": false,
     "sharing": {
