@@ -6,10 +6,10 @@
 ### 教学笔记
 
 <!-- C语言 -->
-* [C语言程序设计](teach-clang/intro.md)
+* [C语言程序设计](teachClang/intro.md)
 
 <!-- 数据结构 -->
-* [数据结构与算法](teach-datastruct/intro.md)
+* [数据结构与算法](teachDatastruct/intro.md)
 
 <!-- 零散笔记 -->
 * 零散笔记
