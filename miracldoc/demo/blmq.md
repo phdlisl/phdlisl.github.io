@@ -8,7 +8,7 @@ BLMQ来自[Efficient and Provably-Secure Identity-Based Signatures and Signcrypt
 3. 第四种和第五种曲线，在编译的时候有错误。
 
 <!-- MR_PAIRING_CP -->
-## 1 MR_PAIRING_CP curve
+## MR_PAIRING_CP curve
 
 准备文件
 
@@ -131,7 +131,7 @@ No suitable curve available
 ```
 
 <!-- MR_PAIRING_MNT -->
-## 2 MR_PAIRING_MNT curve
+## MR_PAIRING_MNT curve
 
 准备文件
 
@@ -171,12 +171,12 @@ No suitable curve available
 
 
 <!-- MR_PAIRING_BN -->
-## 3 MR_PAIRING_BN curve
+## MR_PAIRING_BN curve
 
 所谓BN曲线是指Barreto和Naehrig设计的曲线，即[Pairing-Friendly Elliptic Curves of Prime Order](https://eprint.iacr.org/2005/133.pdf)。
 
 
-### 3.1 测试
+### 测试
 
 ```c
 #define MR_PAIRING_BN    // AES-128 or AES-192 security
@@ -220,7 +220,7 @@ Message is OK
 Verified Message= test message
 ```
 
-### 3.2 解析源码
+### 解析源码
 
 声明`MR_PAIRING_BN`，表示调用BN曲线。
 
@@ -261,7 +261,7 @@ miracl* mip=get_mip();
 
 
 <!-- MR_PAIRING_KSS -->
-## 4 MR_PAIRING_KSS curve
+## MR_PAIRING_KSS curve
 
 ```c
 blmq : miracl.a blmq.o kss_pair.o zzn18.o zzn6.o ecn3.o zzn3.o big.o zzn.o ecn.o
@@ -285,7 +285,7 @@ kss_pair.cpp:415:3: error: use of undeclared identifier 'to_binary'
 ```
 
 <!-- MR_PAIRING_BLS -->
-## 5 MR_PAIRING_BLS curve
+## MR_PAIRING_BLS curve
 
 ```c
 blmq : miracl.a blmq.o bls_pair.o zzn24.o zzn8.o zzn4.o zzn2.o ecn4.o big.o zzn.o

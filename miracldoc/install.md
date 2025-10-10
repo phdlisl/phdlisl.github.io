@@ -2,11 +2,11 @@
 
 本文介绍MIRACL的环境配置，目前以MacOS系统为例。
 
-## 1 准备工作
+## 准备工作
 
 实验运行的环境介绍。
 
-### 1.1 系统参数
+### 系统参数
 
 参考操作系统的相关参数：Version 21.3.0，arm64
 
@@ -16,7 +16,7 @@
 Darwin LisldeMacBook-Pro.local 21.3.0 Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_ARM64_T8101 arm64
 ```
 
-### 1.2 编译环境
+### 编译环境
 
 本实验目前全部采用C语言编译，所以配置gcc环境。
 
@@ -31,7 +31,7 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 ```
 
 
-### 1.3 Miracl环境
+### Miracl环境
 
 Miracl-SDK在GitHub上，[下载点这里](https://github.com/miracl/MIRACL)。目前（2024）该库已经有5年没有更新。
 
@@ -39,15 +39,15 @@ Miracl官方提供了一份安装[配置教程](https://github.com/miracl/MIRACL
 
 下载Miracl源文件，准备在本地安装。
 
-### 1.4 Miracl源码结构
+### Miracl源码结构
 
 。。。
 
-## 2 安装Miracl
+## 安装Miracl
 
 逐步添加源文件，解析Miracl源码。
 
-### 2.1 初始化Miracl项目
+### 初始化Miracl项目
 
 添加主要文件，编译Miracl静态库。
 
@@ -423,7 +423,7 @@ error: unknown register name 'rax' in asm
 
 以上完成了Miracl中主要文件的静态打包。
 
-### 2.2 测试
+### 测试
 
 测试编译好的静态库，根据`linux64`的指导，测试`ecsgen`，将下面的文件放在一个目录下，其中`miracl.a`就是编译得到的静态库。
 

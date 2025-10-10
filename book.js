@@ -17,7 +17,7 @@ module.exports = {
     "-highlight", 
     "expandable-chapters", 
     // "page-toc", 
-    // "back-to-top-button", 
+    "back-to-top-button", 
     "tbfed-pagefooter", 
     "anchor-navigation-ex",
   ],
@@ -58,6 +58,28 @@ module.exports = {
       "modify_label": "Update in ",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
+    // 页内导航
+    "anchor-navigation-ex":{
+      "showLevel": true,
+      "associatedWithSummary": true,
+      "printLog": false,
+      "multipleH1": false,
+      "mode": "float", // pageTop or float
+      "showGoTop":false,
+      "float": {
+          "floatIcon": "fa fa-navicon",
+          "showLevelIcon": false,
+          "level1Icon": "fa fa-hand-o-right",
+          "level2Icon": "fa fa-hand-o-right",
+          "level3Icon": "fa fa-hand-o-right"
+      },
+      "pageTop": {
+          "showLevelIcon": false,
+          "level1Icon": "fa fa-hand-o-right",
+          "level2Icon": "fa fa-hand-o-right",
+          "level3Icon": "fa fa-hand-o-right"
+      }
+    }
   },
 
   // 去掉内置分享功能

@@ -286,7 +286,31 @@ npm i gitbook-plugin-anchor-navigation-ex
 }
 ```
 
-这个插件解决了插件gitbook-plugin-page-toc的问题，合并了插件gitbook-plugin-back-to-top-button和插件gitbook-plugin-page-toc的功能。
+该插件解决了插件gitbook-plugin-page-toc的问题，合并了插件gitbook-plugin-back-to-top-button和插件gitbook-plugin-page-toc的功能。该插件更详细的配置如下
+
+```
+"anchor-navigation-ex":{
+  "showLevel": true,
+  "associatedWithSummary": true,
+  "printLog": false,
+  "multipleH1": true,
+  "mode": "pageTop", // pageTop or float
+  "showGoTop":true,
+  "float": {//悬浮在右上角
+      "floatIcon": "fa fa-navicon",
+      "showLevelIcon": false,
+      "level1Icon": "fa fa-hand-o-right",
+      "level2Icon": "fa fa-hand-o-right",
+      "level3Icon": "fa fa-hand-o-right"
+  },
+  "pageTop": {//页面底部插入
+      "showLevelIcon": false,
+      "level1Icon": "fa fa-hand-o-right",
+      "level2Icon": "fa fa-hand-o-right",
+      "level3Icon": "fa fa-hand-o-right"
+  }
+}
+```
 
 
 ## TeX 公式

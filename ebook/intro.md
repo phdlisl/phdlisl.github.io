@@ -3,7 +3,7 @@
 https://yangjh.oschina.io/gitbook/faq/Reference.html
 https://songlu-cube.gitee.io/courseware-gitbook-demo/2语法介绍.html -->
 
-## 欢迎来到Gitbook应用教程
+# 欢迎来到Gitbook应用教程
 
 * Gitbook配置教程
 
