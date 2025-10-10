@@ -7,7 +7,7 @@ npm为Gitbook提供了很多插件，只需要在Gitbook项目配置npm项目，
 
 ## 搜索插件
 
-插件gitbook-plugin-search-pro支持中文搜索，[官方文档](https://www.npmjs.com/package/gitbook-plugin-search-pro)，首先在项目中安装该插件
+插件gitbook-plugin-search-pro支持中文搜索，详情参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-search-pro)，首先在项目中安装该插件
 
 ```
 npm i gitbook-plugin-search-pro
@@ -23,10 +23,11 @@ npm i gitbook-plugin-search-pro
 }
 ```
 
+该插件能够搜索到全文匹配字符，搜索能力非常强。
 
 ## 代码插件
 
-插件gitbook-plugin-code的[官方文档](https://www.npmjs.com/package/gitbook-plugin-code)，首先在项目中安装该插件
+插件gitbook-plugin-code用于排版代码，详情参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-code)，首先在项目中安装该插件
 
 ```
 npm i gitbook-plugin-code
@@ -50,9 +51,8 @@ gitbook-plugin-theme-
 
 ## 隐藏Gitbook默认设置
 
-Gitbook页面有诸如“Published with GitBook”的默认设置，可用这个插件使之隐藏。
-
-插件gitbook-plugin-hide-element 的[官方文档](https://www.npmjs.com/package/gitbook-plugin-hide-element)，首先在项目中安装该插件
+Gitbook页面有诸如“Published with GitBook”的默认设置，可用插件gitbook-plugin-hide-element使之隐藏。
+插件gitbook-plugin-hide-element的[官方文档](https://www.npmjs.com/package/gitbook-plugin-hide-element)，首先在项目中安装该插件
 
 
 ```
@@ -78,7 +78,7 @@ npm i gitbook-plugin-hide-element
 
 ## 添加提示、警告等提示框
 
-插件gitbook-plugin-flexible-alerts的[官方文档](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)，首先在项目中安装该插件
+插件gitbook-plugin-flexible-alerts用于添加提示、警告等提示框，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)，首先在项目中安装该插件
 
 
 ```
@@ -139,7 +139,7 @@ npm i gitbook-plugin-flexible-alerts
 
 ## 菜单折叠
 
-插件gitbook-plugin-expandable-chapters的[官方文档](https://www.npmjs.com/package/gitbook-plugin-expandable-chapters)，首先在项目中安装该插件。
+插件gitbook-plugin-expandable-chapters用于折叠菜单，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-expandable-chapters)，首先在项目中安装该插件。
 
 ```
 npm i gitbook-plugin-expandable-chapters
@@ -158,7 +158,7 @@ npm i gitbook-plugin-expandable-chapters
 
 ## 返回顶部
 
-插件gitbook-plugin-back-to-top-button的[官方文档](https://www.npmjs.com/package/gitbook-plugin-back-to-top-button)，首先在项目中安装该插件。
+插件gitbook-plugin-back-to-top-button用于设置返回顶部按钮，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-back-to-top-button)，首先在项目中安装该插件。
 
 ```
 npm i gitbook-plugin-back-to-top-button
@@ -172,14 +172,13 @@ npm i gitbook-plugin-back-to-top-button
 }
 ```
 
-设置返回顶部按钮之后，可能因为原来默认的左右导航箭头影响，不能正常显示返回顶部的按钮，需要去掉左右导航箭头，去除左右导航箭头可以配置CSS样式。
+设置返回顶部按钮之后，可能受到原来默认的左右导航箭头影响，不能正常显示返回顶部的按钮，需要去掉左右导航箭头，去除左右导航箭头可以配置CSS样式（CSS样式设置参考[样式调整](style.md)）。
 
 ```
 /* 隐藏导航箭头 */
 .navigation-next, .navigation-prev {
     display: none !important;
 }
-
 /* 或者更具体的选择器 */
 button[data-testid="next-chapter-button"],
 button[data-testid="previous-chapter-button"] {
@@ -189,7 +188,7 @@ button[data-testid="previous-chapter-button"] {
 
 ## 页内导航
 
-插件gitbook-plugin-page-toc的[官方文档](https://www.npmjs.com/package/gitbook-plugin-page-toc)，首先在项目中安装该插件。
+插件gitbook-plugin-page-toc用于页内导航，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-page-toc)，首先在项目中安装该插件。
 
 ```
 npm i gitbook-plugin-page-toc
@@ -210,7 +209,7 @@ npm i gitbook-plugin-page-toc
 }
 ```
 
-默认情况下显示导航目录，如果设置为false，则会隐藏导航目录，但是显示不了打开导航的按钮。可以设置为false，在需要打开导航目录的markdown文档顶部添加以下代码，则该页面出现导航目录。
+默认情况下显示导航目录，如果`showToc`设置为`false`，则会隐藏导航目录，但是显示不了打开导航的按钮。可以设置`showToc`为`false`，在需要打开导航目录的`markdown`文档顶部添加以下代码，则该页面出现导航目录。
 
 ```
 ---
@@ -218,7 +217,7 @@ showToc: true
 ---
 ```
 
-如果是某个页面不需要导航目录，则设置为`false`
+如果是某个页面不需要导航目录，则设置`showToc`为`false`
 
 ```
 ---
@@ -270,7 +269,7 @@ showToc: false
 
 ## 页内导航与返回顶部
 
-插件gitbook-plugin-anchor-navigation-ex的[官方文档](https://www.npmjs.com/package/gitbook-plugin-anchor-navigation-ex)，首先在项目中安装该插件。
+插件gitbook-plugin-anchor-navigation-ex用于页内导航和返回顶部，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-anchor-navigation-ex)，首先在项目中安装该插件。
 
 ```
 npm i gitbook-plugin-anchor-navigation-ex
@@ -312,10 +311,12 @@ npm i gitbook-plugin-anchor-navigation-ex
 }
 ```
 
+插件gitbook-plugin-page-toc的返回顶部按钮固定不变，有些呆板，可以设置参数`showGoTop`为`false`，然后用插件gitbook-plugin-back-to-top-button设置返回顶部按钮。
+
 
 ## TeX 公式
 
-插件gitbook-plugin-katex的[官方文档](https://www.npmjs.com/package/gitbook-plugin-katex)，首先在项目中安装该插件。
+插件gitbook-plugin-katex用于处理 TEX 公式，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-katex)，首先在项目中安装该插件。
 
 ```
 npm i gitbook-plugin-katex
@@ -323,38 +324,41 @@ npm i gitbook-plugin-katex
 
 然后在`book.js`文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-katex)。
 
-```
+```json
 {
     "plugins": ["katex"]
 }
 ```
 
-例如，下面的代码，放在两个\$\$之间，与latex的语法格式相同，编译之后就是latex公式。
+例如，下面的代码，放在两个 \$\$ 之间，与latex的语法格式相同，编译之后就是latex公式。
 
 ```
-\int_{-\infty}^\infty g(x) dx 
+Inline math: $$\int_{-\infty}^\infty g(x) dx$$
+
+Block math:
+$$
 \int_{-\infty}^\infty g(x) dx
+$$
 ```
 
 Inline math: $$\int_{-\infty}^\infty g(x) dx$$
 
 Block math:
-
 $$
 \int_{-\infty}^\infty g(x) dx
 $$
 
-\$\$在gitbook中有特殊含义，表示数学公式的开始，要打印\$\$，可以用转义的方式，如`\$\$`。
+\$\$ 在gitbook中有特殊含义，表示数学公式的开始，要打印 \$\$，可以用转义的方式，如 `\$\$`。
 
 ## 代码高亮
 
-插件npm i gitbook-plugin-prism的[官方文档](https://www.npmjs.com/package/gitbook-plugin-prism)，首先在项目中安装该插件。
+插件npm i gitbook-plugin-prism用于处理代码高亮，参考[官方文档](https://www.npmjs.com/package/gitbook-plugin-prism)，首先在项目中安装该插件。
 
-```
+```bash
 npm i gitbook-plugin-prism
 ```
 
-然后在book.js文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-prism)。
+然后在`book.js`文件中添加配置项，以下是其中一种配置方式，更多配置参数，可查看[官方文档](https://www.npmjs.com/package/gitbook-plugin-prism)。
 
 
 ```json
@@ -371,4 +375,4 @@ npm i gitbook-plugin-prism
 }
 ```
 
-在使用的时候，需要指定编程语言，例如上面采用的是json。
+在使用的时候，需要指定编程语言，例如上面采用的是`json`。
