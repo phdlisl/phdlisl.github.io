@@ -56,7 +56,8 @@ module.exports = {
     "tbfed-pagefooter": {
       "copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>",
       "modify_label": "Update in ",
-      "modify_format": "YYYY-MM-DD HH:mm:ss"
+      "modify_format": "YYYY-MM-DD"
+      // "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     // 页内导航
     "anchor-navigation-ex":{
