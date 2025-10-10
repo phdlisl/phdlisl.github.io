@@ -1,14 +1,14 @@
 {
   "name": "profile",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "profile, teaching note, teaching video, technical blog.",
   "main": "book.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "gitbook serve",
     "build": "gitbook build"
   },
-  "author": "",
+  "author": "phdlisl",
   "license": "ISC",
   "dependencies": {
     "gitbook-plugin-back-to-top-button": "^0.1.4",

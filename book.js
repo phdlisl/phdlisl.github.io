@@ -1,6 +1,6 @@
 module.exports = {
   // 书籍信息
-  title: '个人档案',
+  title: '档案馆',
   description: '技术博客指南，教学视频，教学笔记',
   // isbn: '987',
   author: 'phdlisl',
