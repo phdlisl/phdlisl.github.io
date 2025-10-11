@@ -1,6 +1,7 @@
 /* 调整主内容区域宽度 */
 .book .book-body .page-wrapper .page-inner {
     max-width: 95% !important;
+    padding-top: 0 !important;
 }
 
 /* 调整正文内容宽度 */
@@ -114,3 +115,4 @@ button[data-testid="previous-chapter-button"] {
 .book .book-summary > ul.summary > li ul li a:before {
   content: none !important;
 }
+

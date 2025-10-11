@@ -14,7 +14,7 @@ extern void  mr_berror(_MIPT_ int);
 
 ## 源码分析
 
-根据错误类型`nerr`，用[mputs](/parts/api/mrcore/mputs.md)打印错误提示。
+根据错误类型`nerr`，用[mputs](/miracldoc/api/mrcore/mputs.md)打印错误提示。
 
 ```c
 void mr_berror(_MIPD_ int nerr)

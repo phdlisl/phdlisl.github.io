@@ -14,7 +14,7 @@
 
 ## modf()
 
-[modf](/parts/api/cplus.md)是C语言库`math.h`中提供的函数
+[modf](/miracldoc/api/cplus.md)是C语言库`math.h`中提供的函数
 
 ```c
 extern double modf(double x, double *intptr);

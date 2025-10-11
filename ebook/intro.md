@@ -11,11 +11,11 @@ Gitbook的学习包括两大部分，一部分是Gitbook本身的操作方法，
 
 * Gitbook配置教程
 
-  * [Gitbook环境配置](startbook.md)
-  * [第一个Gitbook项目](firstpage.md)
-  * [Gitbook插件配置](plugins.md)
+  * [Gitbook环境配置](/ebook/startbook.md)
+  * [第一个Gitbook项目](/ebook/firstpage.md)
+  * [Gitbook插件配置](/ebook/plugins.md)
 
 * Gitbook使用技巧
 
-  * [Gitbook操作技巧](gitbk.md)
-  * [MarkDown语法规则](mkdown.md)
+  * [Gitbook操作技巧](/ebook/gitbk.md)
+  * [MarkDown语法规则](/ebook/mkdown.md)

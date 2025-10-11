@@ -39,7 +39,7 @@ int mr_lent(flash x)
 }
 ```
 
-[flash类型](/parts/api/dtype/big.md)数据`x`的长度与[MR_OBITS](/parts/api/dtype/constants.md)做按位与运算。
+[flash类型](/miracldoc/api/dtype/big.md)数据`x`的长度与[MR_OBITS](/miracldoc/api/dtype/constants.md)做按位与运算。
 
 如果定义了`MR_FLASH`，返回的是低位两字节与高位两字节的和，否则返回的是`x`的长度。
 

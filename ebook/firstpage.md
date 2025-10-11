@@ -1,6 +1,6 @@
 # 第一个Gitbook项目
 
-在完成了[Gitbook环境配置](startbook.md)之后，就可以创建任何Gitbook项目，现在做一个Gitbook项目的一般化结构框架。
+在完成了[Gitbook环境配置](/ebook/startbook.md)之后，就可以创建任何Gitbook项目，现在做一个Gitbook项目的一般化结构框架。
 
 1、选择项目存储位置，在该位置创建一个新的文件夹。
 
@@ -186,4 +186,4 @@ info: found 0 asset files
 info: >> generation finished with success in 0.1s ! 
 ```
 
-这只是完成一个简单的项目创建，关于项目的初始设置可以阅读[操作技巧](gitbk.md)。
+这只是完成一个简单的项目创建，关于项目的初始设置可以阅读[操作技巧](/ebook/gitbk.md)。

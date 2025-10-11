@@ -38,4 +38,4 @@ struct bigtype{
 #define MR_SL sizeof(long)
 ```
 
-[mr_big_reserve](/parts/api/miracl/mr_big_reserve.md)计算得到`(n)*mr_size(m)+sizeof(long)`个字节。
+[mr_big_reserve](/miracldoc/api/miracl/mr_big_reserve.md)计算得到`(n)*mr_size(m)+sizeof(long)`个字节。

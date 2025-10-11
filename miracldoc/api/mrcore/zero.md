@@ -34,7 +34,7 @@ void zero(flash x)
 }
 ```
 
-如果是`MR_FLASH`，[mr_lent](/parts/api/mrcore/mr_lent.md)计算低位两字节与高位两字节的和，否则[MR_OBITS](/parts/api/dtype/constants.md)与参数`x`的长度按位与运算。
+如果是`MR_FLASH`，[mr_lent](/miracldoc/api/mrcore/mr_lent.md)计算低位两字节与高位两字节的和，否则[MR_OBITS](/miracldoc/api/dtype/constants.md)与参数`x`的长度按位与运算。
 
 
 

@@ -167,4 +167,4 @@ BOOL NO_CARRY;
 } miracl;
 ```
 
-`mr_mip->ERNUM`错误提示码[mr_berror](/parts/api/mrcore/mr_berror.md)已定义有29种。
+`mr_mip->ERNUM`错误提示码[mr_berror](/miracldoc/api/mrcore/mr_berror.md)已定义有29种。

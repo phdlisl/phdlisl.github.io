@@ -701,23 +701,23 @@ void divide(_MIPD_ big x,big y,big z)
 }
 ```
 
-[union doubleword类型](/parts/api/dtype/int.md)定义在`miracl.h`，两个`mr_small`与一个`mr_large`等大。
+[union doubleword类型](/miracldoc/api/dtype/int.md)定义在`miracl.h`，两个`mr_small`与一个`mr_large`等大。
 
-[mr_notint](/parts/api/mrcore/mr_notint.md)判断参数`x`是否为`flash`类型数值，返回`TRUE`或者`FALSE`。
+[mr_notint](/miracldoc/api/mrcore/mr_notint.md)判断参数`x`是否为`flash`类型数值，返回`TRUE`或者`FALSE`。
 
-[MR_DIV](/parts/api/miracl/MR_DIV.md)计算商，[MR_REMAIN](/parts/api/miracl/MR_REMAIN.md)计算余数。
+[MR_DIV](/miracldoc/api/miracl/MR_DIV.md)计算商，[MR_REMAIN](/miracldoc/api/miracl/MR_REMAIN.md)计算余数。
 
-[mr_berror](/parts/api/mrcore/mr_berror.md)根据错误类型提示，[zero](/parts/api/mrcore/zero.md)将对象设置位0。
+[mr_berror](/miracldoc/api/mrcore/mr_berror.md)根据错误类型提示，[zero](/miracldoc/api/mrcore/zero.md)将对象设置位0。
 
-[mr_sdiv](/parts/api/mrarth1/mr_sdiv.md)
+[mr_sdiv](/miracldoc/api/mrarth1/mr_sdiv.md)
 
-[copy](/parts/api/mrcore/copy.md)
+[copy](/miracldoc/api/mrcore/copy.md)
 
-[mr_compare](/parts/api/mrcore/mr_compare.md)比较两个数的大小，如果`x`大于	`y`，返回1；如果`x`小于	`y`，返回-1；否则返回0。
+[mr_compare](/miracldoc/api/mrcore/mr_compare.md)比较两个数的大小，如果`x`大于	`y`，返回1；如果`x`小于	`y`，返回-1；否则返回0。
 
-[mr_psub](/parts/api/mrarth0/mr_psub.md)
+[mr_psub](/miracldoc/api/mrarth0/mr_psub.md)
 
-[mr_lzero](/parts/api/mrcore/mr_lzero.md)
+[mr_lzero](/miracldoc/api/mrcore/mr_lzero.md)
 
 
 

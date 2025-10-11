@@ -30,6 +30,6 @@ epoint* epoint_init_mem(_MIPD_ char *mem,int index)
 }
 ```
 
-[get_mip](/parts/api/mrcore/get_mip.md)返回`miracl *`指针，如果没有定义`MR_OS_THREADS`，由`_MIPD_`接收。
+[get_mip](/miracldoc/api/mrcore/get_mip.md)返回`miracl *`指针，如果没有定义`MR_OS_THREADS`，由`_MIPD_`接收。
 
-[epoint_init_mem_variable](/parts/api/mrcore/epoint_init_mem_variable.md)对`mem`初始化为椭圆曲线上的点。
+[epoint_init_mem_variable](/miracldoc/api/mrcore/epoint_init_mem_variable.md)对`mem`初始化为椭圆曲线上的点。

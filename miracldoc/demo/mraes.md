@@ -342,7 +342,7 @@ BOOL aes_init(aes* a,int mode,int nk,char *key,char *iv)
 
 11、加密
 
-加密过程中，用到了[SSE指令集](/parts/api/cplus.md)，如`_mm_loadu_si128`。
+加密过程中，用到了[SSE指令集](/miracldoc/api/cplus.md)，如`_mm_loadu_si128`。
 
 ```c
 void aes_ecb_encrypt(aes *a,MR_BYTE *buff)

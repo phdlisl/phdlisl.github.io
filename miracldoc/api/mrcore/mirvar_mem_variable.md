@@ -56,11 +56,11 @@ flash mirvar_mem_variable(char *mem,int index,int sz)
 }
 ```
 
-`char`类型指针`mem`指向一个初始化为0的存储单元，作为[epoint_init_mem_variable](/parts/api/mrcore/epoint_init_mem_variable.md)的参数之一，`epoint_init_mem_variable`内部调用`mirvar_mem_variable`。
+`char`类型指针`mem`指向一个初始化为0的存储单元，作为[epoint_init_mem_variable](/miracldoc/api/mrcore/epoint_init_mem_variable.md)的参数之一，`epoint_init_mem_variable`内部调用`mirvar_mem_variable`。
 
 `(unsigned long)mem`对`char *`强制类型转换，也就是`mem`的地址强制转换为`unsigned long`。对`(unsigned long)mem%MR_SL`，校验`r`的地址余数是否与`long`对齐。如果没有对齐，`offset`纪录偏移量。
 
-[mr_size](/parts/api/miracl/mr_size.md)计算需要的字节数，取`mem`的第`offset+mr_size(sz)*index`个元素，并强制转换为`big`类型，放在`x`。
+[mr_size](/miracldoc/api/miracl/mr_size.md)计算需要的字节数，取`mem`的第`offset+mr_size(sz)*index`个元素，并强制转换为`big`类型，放在`x`。
 
 
 

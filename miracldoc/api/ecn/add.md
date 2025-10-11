@@ -30,4 +30,4 @@ int ECn::add(const ECn& b,big *lam,big *ex1,big *ex2) const
 } 
 ```
 
-[ecurve_add](/parts/api/mrcurve/ecurve_add.md)完成椭圆曲线上的两个点相加，`pa=pa+p`。
+[ecurve_add](/miracldoc/api/mrcurve/ecurve_add.md)完成椭圆曲线上的两个点相加，`pa=pa+p`。

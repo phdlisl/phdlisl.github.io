@@ -14,7 +14,7 @@
 
 参数`m`：整数。
 
-`MR_SL`为`long`类型数据占用的字节数，[mr_size](/parts/api/miracl/mr_size.md)计算返回字节数。
+`MR_SL`为`long`类型数据占用的字节数，[mr_size](/miracldoc/api/miracl/mr_size.md)计算返回字节数。
 
 ```c
 #define MR_SL sizeof(long)

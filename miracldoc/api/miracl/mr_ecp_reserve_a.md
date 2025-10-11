@@ -12,4 +12,4 @@
 
 参数`m`：整数。
 
-函数实现中用[mr_esize_a](/parts/api/miracl/mr_esize_a.md)计算字节数。
+函数实现中用[mr_esize_a](/miracldoc/api/miracl/mr_esize_a.md)计算字节数。

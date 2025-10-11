@@ -230,7 +230,7 @@ Verified Message= test message
 // #define AES_SECURITY 192
 ```
 
-[pairing_3.h](/parts/packg/pairing3h.md)关于BN曲线的定义：需要加入`zzn2.h`、`ecn2.h`、`zzn12a.h`，同时设置窗口大小和群元素类型。
+[pairing_3.h](/miracldoc/packg/pairing3h.md)关于BN曲线的定义：需要加入`zzn2.h`、`ecn2.h`、`zzn12a.h`，同时设置窗口大小和群元素类型。
 
 ```c
 //k=12 BN curve
@@ -257,7 +257,7 @@ Big order=pfc.order();
 miracl* mip=get_mip();
 ```
 
-[BN曲线配对](/parts/packgDemo/bn_pair.md)
+[BN曲线配对](/miracldoc/packgDemo/bn_pair.md)
 
 
 <!-- MR_PAIRING_KSS -->

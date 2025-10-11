@@ -29,4 +29,4 @@ epoint *p;
 int get_status() {return p->marker;}
 ```
 
-可参考[epoint类型](/parts/api/dtype/epoint.md)的描述。
+可参考[epoint类型](/miracldoc/api/dtype/epoint.md)的描述。

@@ -10,4 +10,4 @@
 #endif
 ```
 
-[MR_DIV](/parts/api/miracl/MR_DIV.md)计算商，`(a)-(b)*MR_DIV((a),(b))`就是余数。
+[MR_DIV](/miracldoc/api/miracl/MR_DIV.md)计算商，`(a)-(b)*MR_DIV((a),(b))`就是余数。

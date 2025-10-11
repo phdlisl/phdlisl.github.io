@@ -49,7 +49,7 @@ void copy(flash x,flash y)
 }
 ```
 
-[zero](/parts/api/mrcore/zero.md)将参数设置为0。
+[zero](/miracldoc/api/mrcore/zero.md)将参数设置为0。
 
-如果是`MR_FLASH`，[mr_lent](/parts/api/mrcore/mr_lent.md)计算低位两字节与高位两字节的和，否则[MR_OBITS](/parts/api/dtype/constants.md)与参数的长度按位与运算。
+如果是`MR_FLASH`，[mr_lent](/miracldoc/api/mrcore/mr_lent.md)计算低位两字节与高位两字节的和，否则[MR_OBITS](/miracldoc/api/dtype/constants.md)与参数的长度按位与运算。
 

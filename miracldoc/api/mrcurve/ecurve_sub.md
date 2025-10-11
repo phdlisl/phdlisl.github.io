@@ -47,8 +47,8 @@ int ecurve_sub(_MIPD_ epoint *p,epoint *pa)
 }
 ```
 
-[ecurve_add](/parts/api/mrcurve/ecurve_add.md)完成椭圆曲线上的两个点相加，`pa=pa+p`。
+[ecurve_add](/miracldoc/api/mrcurve/ecurve_add.md)完成椭圆曲线上的两个点相加，`pa=pa+p`。
 
-[epoint_negate](/parts/api/mrcurve/epoint_negate.md)做两个数的减法运算，更新`p`的坐标。
+[epoint_negate](/miracldoc/api/mrcurve/epoint_negate.md)做两个数的减法运算，更新`p`的坐标。
 
 

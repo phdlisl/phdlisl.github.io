@@ -100,10 +100,10 @@ int ecurve_add(_MIPD_ epoint *p,epoint *pa)
 }
 ```
 
-[get_mip](/parts/api/mrcore/get_mip.md)
+[get_mip](/miracldoc/api/mrcore/get_mip.md)
 
-[ecurve_double](/parts/api/mrcurve/ecurve_double.md)
+[ecurve_double](/miracldoc/api/mrcurve/ecurve_double.md)
 
-[ecurve_padd](/parts/api/mrcurve/ecurve_padd.md)
+[ecurve_padd](/miracldoc/api/mrcurve/ecurve_padd.md)
 
 

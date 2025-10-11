@@ -28,4 +28,4 @@ int ECn::sub(const ECn& b,big *lam,big *ex1,big *ex2) const
 }
 ```
 
-[ecurve_sub](/parts/api/mrcurve/ecurve_sub.md)减法运算。
+[ecurve_sub](/miracldoc/api/mrcurve/ecurve_sub.md)减法运算。

@@ -12,16 +12,16 @@ showToc: false
 
 ## 教学相关
 
-* [C语言程序设计](clang/intro.md)
-* [数据结构与算法](datastruct/intro.md)
+* [C语言程序设计](/teachClang/intro.md)
+* [数据结构与算法](/teachDatastruct/intro.md)
 * 零散笔记
 
 ## 技术指南
 
-* [C语言](clang/intro.md)
-* [数据结构](datastruct/intro.md)
-* [Gitbook使用指南](ebook/intro.md)
-* [MIRACL使用指南](miracldoc/intro.md)
+* [C语言](/clang/intro.md)
+* [数据结构](/datastruct/intro.md)
+* [Gitbook使用指南](/ebook/intro.md)
+* [MIRACL使用指南](/miracldoc/intro.md)
 
 
 

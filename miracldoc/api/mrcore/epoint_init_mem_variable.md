@@ -62,9 +62,9 @@ epoint* epoint_init_mem_variable(_MIPD_ char *mem,int index,int sz)
 }
 ```
 
-如果定义了`MR_OS_THREADS`，则设置`mr_mip`为[get_mip](/parts/api/mrcore/get_mip.md)，返回`miracl *`指针。
+如果定义了`MR_OS_THREADS`，则设置`mr_mip`为[get_mip](/miracldoc/api/mrcore/get_mip.md)，返回`miracl *`指针。
 
-[mirvar_mem_variable](/parts/api/mrcore/mirvar_mem_variable.md)为字符数组`mem`的元素设置对齐。
+[mirvar_mem_variable](/miracldoc/api/mrcore/mirvar_mem_variable.md)为字符数组`mem`的元素设置对齐。
 
-`MR_AFFINE`和`MR_EPOINT_INFINITY`定义在[字符常量](/parts/api/dtype/constants.md)，表示椭圆曲线上点的状态。
+`MR_AFFINE`和`MR_EPOINT_INFINITY`定义在[字符常量](/miracldoc/api/dtype/constants.md)，表示椭圆曲线上点的状态。
 

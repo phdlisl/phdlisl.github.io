@@ -13,4 +13,4 @@
 参数`m`：整数。
 
 
-函数实现中，用到[mr_esize](/parts/api/miracl/mr_esize.md)。
+函数实现中，用到[mr_esize](/miracldoc/api/miracl/mr_esize.md)。

@@ -30,7 +30,7 @@ void *ecp_memalloc(_MIPD_ int num)
 }
 ```
 
-[get_mip](/parts/api/mrcore/get_mip.md)返回`miracl *`指针，如果没有定义`MR_OS_THREADS`，由`_MIPD_`接收。
+[get_mip](/miracldoc/api/mrcore/get_mip.md)返回`miracl *`指针，如果没有定义`MR_OS_THREADS`，由`_MIPD_`接收。
 
-一般情况下，用[mr_ecp_reserve](/parts/api/miracl/mr_ecp_reserve.md)计算需要申请的字节数，当声明`MR_AFFINE_ONLY`，用[mr_ecp_reserve_a](/parts/api/miracl/mr_ecp_reserve_a.md)计算需要申请的字节数。
+一般情况下，用[mr_ecp_reserve](/miracldoc/api/miracl/mr_ecp_reserve.md)计算需要申请的字节数，当声明`MR_AFFINE_ONLY`，用[mr_ecp_reserve_a](/miracldoc/api/miracl/mr_ecp_reserve_a.md)计算需要申请的字节数。
 

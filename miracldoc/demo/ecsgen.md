@@ -293,7 +293,7 @@ long seed;
 
 3、产生一个种子，验证椭圆曲线参数的可行性。
 
-提示输入一个9位随机数，放在`seed`中，`irand`定义在`miracl.h`中，在`mrcore.c`中实现（[irand](/parts/api/irand.md)），初始化一个随机数。
+提示输入一个9位随机数，放在`seed`中，`irand`定义在`miracl.h`中，在`mrcore.c`中实现，初始化一个随机数。
 
 ```c
 cout << "Enter 9 digit random number seed  = ";
@@ -310,7 +310,7 @@ common >> p >> a >> b >> q >> x >> y;
 mip->IOBASE=10;
 ```
 
-`ecurve`定义在`big.h`，实现在`big.cpp`，初始化一个椭圆曲线。（[ecurve](/parts/api/ecurve.md)）
+`ecurve`定义在`big.h`，实现在`big.cpp`，初始化一个椭圆曲线。
 
 ```c
 ecurve(a,b,p,MR_PROJECTIVE);

@@ -55,14 +55,14 @@ void nres(_MIPD_ big x,big y)
 }
 ```
 
-[miracl类型](/parts/api/dtype/miracl.md)
+[miracl类型](/miracldoc/api/dtype/miracl.md)
 
-[get_mip](/parts/api/mrcore/get_mip.md)返回`miracl *`指针，如果没有定义`MR_OS_THREADS`，由`_MIPD_`接收。
+[get_mip](/miracldoc/api/mrcore/get_mip.md)返回`miracl *`指针，如果没有定义`MR_OS_THREADS`，由`_MIPD_`接收。
 
-[ERNUM](/parts/api/dtype/miracl.md)错误码，如果非零，表示有错误。
+[ERNUM](/miracldoc/api/dtype/miracl.md)错误码，如果非零，表示有错误。
 
-[MR_IN](/parts/api/miracl/MR_IN-MR_OUT.md)设置线程的进入码，[MR_OUT](/parts/api/miracl/MR_IN-MR_OUT.md)设置线程的退出码。
+[MR_IN](/miracldoc/api/miracl/MR_IN-MR_OUT.md)设置线程的进入码，[MR_OUT](/miracldoc/api/miracl/MR_IN-MR_OUT.md)设置线程的退出码。
 
-[mr_berror](/parts/api/mrcore/mr_berror.md)的错误码为[MR_ERR_NO_MODULUS](/parts/api/dtype/constants.md)。
+[mr_berror](/miracldoc/api/mrcore/mr_berror.md)的错误码为[MR_ERR_NO_MODULUS](/miracldoc/api/dtype/constants.md)。
 
-[copy](/parts/api/mrcore/copy.md)将x轴坐标复制给y轴坐标。
+[copy](/miracldoc/api/mrcore/copy.md)将x轴坐标复制给y轴坐标。
