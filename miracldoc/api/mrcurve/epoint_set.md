@@ -102,12 +102,12 @@ BOOL epoint_set(_MIPD_ big x,big y,int cb,epoint *p)
 }
 ```
 
-关于`BOOL`类型的定义和可选值，参考[字符常量](/parts/api/dtype/constants.md)。
+关于`BOOL`类型的定义和可选值，参考[字符常量](/miracldoc/api/dtype/constants.md)。
 
-[get_mip](/parts/api/mrcore/get_mip.md)返回`miracl *`指针，如果没有定义`MR_OS_THREADS`，由`_MIPD_`接收。
+[get_mip](/miracldoc/api/mrcore/get_mip.md)返回`miracl *`指针，如果没有定义`MR_OS_THREADS`，由`_MIPD_`接收。
 
-`MR_EPOINT_INFINITY`表示无穷大，其值参考[字符常量](/parts/api/dtype/constants.md)。
+`MR_EPOINT_INFINITY`表示无穷大，其值参考[字符常量](/miracldoc/api/dtype/constants.md)。
 
-[copy](/parts/api/mrcore/copy.md)将x轴坐标复制给y轴坐标。
+[copy](/miracldoc/api/mrcore/copy.md)将x轴坐标复制给y轴坐标。
 
-[MR_IN和MR_OUT](/parts/api/miracl/MR_IN-MR_OUT.md)设置线程的进退码。
+[MR_IN和MR_OUT](/miracldoc/api/miracl/MR_IN-MR_OUT.md)设置线程的进退码。

@@ -41,10 +41,10 @@ void *mr_alloc(_MIPD_ int num,int size)
 }
 ```
 
-[get_mip](/parts/api/mrcore/get_mip.md)返回`miracl *`指针。
+[get_mip](/miracldoc/api/mrcore/get_mip.md)返回`miracl *`指针。
 
-[mr_berror](/parts/api/mrcore/mr_berror.md)按照错误类型打印提示。
+[mr_berror](/miracldoc/api/mrcore/mr_berror.md)按照错误类型打印提示。
 
-`MR_ERR_OUT_OF_MEMORY`为[字符常量](/parts/api/dtype/constants.md)。
+`MR_ERR_OUT_OF_MEMORY`为[字符常量](/miracldoc/api/dtype/constants.md)。
 
 

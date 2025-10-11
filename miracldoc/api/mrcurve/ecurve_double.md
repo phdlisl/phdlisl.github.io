@@ -184,10 +184,10 @@ This is useful for calculating line functions in pairings
 }
 ```
 
-[size](/parts/api/mrcore/size.md)
+[size](/miracldoc/api/mrcore/size.md)
 
-[convert](/parts/api/mrcore/convert.md)将有符号`int`类型数据转换为`big`类型数据。
+[convert](/miracldoc/api/mrcore/convert.md)将有符号`int`类型数据转换为`big`类型数据。
 
-[nres_modmult](/parts/api/mrmonty/nres_modmult.md)
+[nres_modmult](/miracldoc/api/mrmonty/nres_modmult.md)
 
 

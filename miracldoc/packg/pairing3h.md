@@ -7,7 +7,7 @@
 #define PAIRING_3_H
 ```
 
-包含头文件`ecn.h`，设置群元素。[ecn](/parts/packg/ecn.md)
+包含头文件`ecn.h`，设置群元素。[ecn](/miracldoc/packg/ecn.md)
 
 ```c
 #include "ecn.h"	// G1

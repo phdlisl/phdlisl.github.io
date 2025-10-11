@@ -30,7 +30,7 @@ void epoint_negate(_MIPD_ epoint *p)
 }
 ```
 
-[mr_psub](/parts/api/mrarth0/mr_psub.md)做两个数的减法运算，即`p->Y = mr_mip->modulus - p->Y`。
+[mr_psub](/miracldoc/api/mrarth0/mr_psub.md)做两个数的减法运算，即`p->Y = mr_mip->modulus - p->Y`。
 
 
 ```c
