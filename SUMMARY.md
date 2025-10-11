@@ -20,7 +20,12 @@
 
 <!-- C语言 -->
 * [C语言](/clang/intro.md)
-	* [时间统计](/clang/tools/times.md)
+	* 标准库函数
+		* [内存分配](/clang/standardLib/memory.md)
+		* [qsort函数](/clang/standardLib/qsort.md)
+
+	* 实用案例
+		* [时间统计方法](/clang/tools/times.md)
 
 <!-- 数据结构 -->
 * [数据结构与算法](/datastruct/intro.md)
