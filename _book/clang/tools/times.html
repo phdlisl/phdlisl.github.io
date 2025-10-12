@@ -270,6 +270,64 @@
                 <span>
             
                     
+                    硬件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.2.1" data-path="../hardware/attribute.html">
+            
+                <a href="../hardware/attribute.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.2" data-path="../hardware/instruct.html">
+            
+                <a href="../hardware/instruct.html">
+            
+                    
+                    指令集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.3" data-path="../hardware/ssefun.html">
+            
+                <a href="../hardware/ssefun.html">
+            
+                    
+                    SSE函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" >
+            
+                <span>
+            
+                    
                     实用案例
             
                 </span>
@@ -279,7 +337,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1.2.1" data-path="times.html">
+        <li class="chapter active" data-level="5.1.3.1" data-path="times.html">
             
                 <a href="times.html">
             
@@ -2402,241 +2460,250 @@
 <p><code>__rdtsc</code></p>
 <h3 id="&#x6781;&#x9AD8;&#x7CBE;&#x5EA6;&#x65F6;&#x95F4;&#x7EDF;&#x8BA1;"><a name="&#x6781;&#x9AD8;&#x7CBE;&#x5EA6;&#x65F6;&#x95F4;&#x7EDF;&#x8BA1;" class="anchor-navigation-ex-anchor" href="#&#x6781;&#x9AD8;&#x7CBE;&#x5EA6;&#x65F6;&#x95F4;&#x7EDF;&#x8BA1;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x6781;&#x9AD8;&#x7CBE;&#x5EA6;&#x65F6;&#x95F4;&#x7EDF;&#x8BA1;</h3>
 <p><code>__rdtscp</code> &#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x8BD1;&#x5668;&#x5185;&#x7F6E;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x8BFB;&#x53D6;&#x5904;&#x7406;&#x5668;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x5E76;&#x786E;&#x4FDD;&#x5E8F;&#x5217;&#x5316;&#x6267;&#x884C;&#xFF0C;&#x540C;&#x65F6;&#x8BFB;&#x53D6;&#x5904;&#x7406;&#x5668;&#x7684;&#x6838;&#x5FC3;ID&#x3002;</p>
-<pre class="language-"><code>unsigned __int64 __rdtscp(unsigned int * _A);
-</code></pre><p>&#x53C2;&#x6570;<code>_A</code>&#xFF1A;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#x7684;&#x6307;&#x9488;&#x3002;&#x51FD;&#x6570;&#x6267;&#x884C;&#x540E;&#xFF0C;&#x4F1A;&#x5C06;&#x5F53;&#x524D;&#x5904;&#x7406;&#x5668;ID/&#x6838;&#x5FC3;ID &#x5199;&#x5165;&#x5230;&#x8FD9;&#x4E2A;&#x5185;&#x5B58;&#x5730;&#x5740;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token keyword">unsigned</span> __int64 <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span> _A<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x53C2;&#x6570;<code>_A</code>&#xFF1A;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#x7684;&#x6307;&#x9488;&#x3002;&#x51FD;&#x6570;&#x6267;&#x884C;&#x540E;&#xFF0C;&#x4F1A;&#x5C06;&#x5F53;&#x524D;&#x5904;&#x7406;&#x5668;ID/&#x6838;&#x5FC3;ID &#x5199;&#x5165;&#x5230;&#x8FD9;&#x4E2A;&#x5185;&#x5B58;&#x5730;&#x5740;&#x3002;</p>
 <p>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;&#x4E00;&#x4E2A;64&#x4F4D;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF0C;&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x6233;&#x8BA1;&#x6570;&#x5668;&#x7684;&#x503C;&#x3002;</p>
 <blockquote>
 <p>[!NOTE]
 &#x4E0B;&#x6765;&#x7ED9;&#x51FA;&#x4E86;&#x56DB;&#x79CD;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x65F6;&#x95F4;&#x7EDF;&#x8BA1;&#xFF0C;&#x6BCF;&#x79CD;&#x65B9;&#x6CD5;&#x5206;&#x522B;&#x9488;&#x5BF9;Linux&#x7CFB;&#x7EDF;&#x548C;Windows&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#xFF0C;&#x4F46;&#x53EA;&#x6D4B;&#x8BD5;&#x4E86;Linux&#x7CFB;&#x7EDF;&#x4E0A;&#x7684;&#x53EF;&#x884C;&#x6027;&#xFF0C;&#x6CA1;&#x6709;&#x6D4B;&#x8BD5;Windows&#x7CFB;&#x7EDF;&#x4E0A;&#x662F;&#x5426;&#x53EF;&#x884C;&#x3002;</p>
 </blockquote>
 <p>&#x5728;Linux/GCC&#x73AF;&#x5883;&#x4E0B;&#x7684;&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#xFF1A;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>x86intrin.h</span><span class="token punctuation">&gt;</span></span> // &#x5305;&#x542B; __rdtscp &#x7B49; intrinsic &#x51FD;&#x6570;&#x7684;&#x5934;&#x6587;&#x4EF6;
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;x86intrin.h&gt;</span> <span class="token comment">// &#x5305;&#x542B; __rdtscp &#x7B49; intrinsic &#x51FD;&#x6570;&#x7684;&#x5934;&#x6587;&#x4EF6;</span></span>
 
-int main() {
-    unsigned int aux; // &#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x5904;&#x7406;&#x5668;ID&#x7684;&#x53D8;&#x91CF;
-    unsigned long long tsc1, tsc2;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> aux<span class="token punctuation">;</span> <span class="token comment">// &#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x5904;&#x7406;&#x5668;ID&#x7684;&#x53D8;&#x91CF;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> tsc1<span class="token punctuation">,</span> tsc2<span class="token punctuation">;</span>
 
-    // &#x7B2C;&#x4E00;&#x6B21;&#x8BFB;&#x53D6;
-    tsc1 = __rdtscp(&amp;aux);
-    printf(&quot;First read: TSC = %llu, Processor ID = %u\n&quot;, tsc1, aux);
+    <span class="token comment">// &#x7B2C;&#x4E00;&#x6B21;&#x8BFB;&#x53D6;</span>
+    tsc1 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;First read: TSC = %llu, Processor ID = %u\n&quot;</span><span class="token punctuation">,</span> tsc1<span class="token punctuation">,</span> aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // &#x6267;&#x884C;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5FAA;&#x73AF;
-    for (volatile int i = 0; i &lt; 1000000; ++i) {}
+    <span class="token comment">// &#x6267;&#x884C;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5FAA;&#x73AF;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">volatile</span> <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1000000</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-    // &#x7B2C;&#x4E8C;&#x6B21;&#x8BFB;&#x53D6;
-    tsc2 = __rdtscp(&amp;aux);
-    printf(&quot;Second read: TSC = %llu, Processor ID = %u\n&quot;, tsc2, aux);
+    <span class="token comment">// &#x7B2C;&#x4E8C;&#x6B21;&#x8BFB;&#x53D6;</span>
+    tsc2 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Second read: TSC = %llu, Processor ID = %u\n&quot;</span><span class="token punctuation">,</span> tsc2<span class="token punctuation">,</span> aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // &#x8BA1;&#x7B97;&#x65F6;&#x95F4;&#x5DEE;&#xFF08;&#x65F6;&#x949F;&#x5468;&#x671F;&#x6570;&#xFF09;
-    printf(&quot;Elapsed cycles: %llu\n&quot;, tsc2 - tsc1);
+    <span class="token comment">// &#x8BA1;&#x7B97;&#x65F6;&#x95F4;&#x5DEE;&#xFF08;&#x65F6;&#x949F;&#x5468;&#x671F;&#x6570;&#xFF09;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Elapsed cycles: %llu\n&quot;</span><span class="token punctuation">,</span> tsc2 <span class="token operator">-</span> tsc1<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    return 0;
-}
-</code></pre><p>&#x5728;Windows/MSVC&#x4E0B;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>intrin.h</span><span class="token punctuation">&gt;</span></span> // MSVC &#x7684;&#x5934;&#x6587;&#x4EF6;
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;Windows/MSVC&#x4E0B;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;intrin.h&gt;</span> <span class="token comment">// MSVC &#x7684;&#x5934;&#x6587;&#x4EF6;</span></span>
 
-#pragma intrinsic(__rdtscp) // &#x544A;&#x8BC9;&#x7F16;&#x8BD1;&#x5668;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x51FD;&#x6570;
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">pragma</span> <span class="token expression"><span class="token function">intrinsic</span><span class="token punctuation">(</span>__rdtscp<span class="token punctuation">)</span> </span><span class="token comment">// &#x544A;&#x8BC9;&#x7F16;&#x8BD1;&#x5668;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x51FD;&#x6570;</span></span>
 
-int main() {
-    unsigned int aux;
-    unsigned __int64 tsc1, tsc2;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> aux<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> __int64 tsc1<span class="token punctuation">,</span> tsc2<span class="token punctuation">;</span>
 
-    tsc1 = __rdtscp(&amp;aux);
-    // ... &#x505A;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;
-    tsc2 = __rdtscp(&amp;aux);
+    tsc1 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// ... &#x505A;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;</span>
+    tsc2 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    printf(&quot;Elapsed cycles: %llu\n&quot;, tsc2 - tsc1);
-    return 0;
-}
-</code></pre><p><code>__rdtscp</code> &#x6307;&#x4EE4;&#x672C;&#x8EAB;&#x6709;&#x6267;&#x884C;&#x5F00;&#x9500;&#xFF08;&#x51E0;&#x5341;&#x5230;&#x4E0A;&#x767E;&#x4E2A;&#x65F6;&#x949F;&#x5468;&#x671F;&#xFF09;&#xFF0C;&#x5728;&#x6D4B;&#x91CF;&#x975E;&#x5E38;&#x77ED;&#x7684;&#x4EE3;&#x7801;&#x6BB5;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x5F00;&#x9500;&#x672C;&#x8EAB;&#x4F1A;&#x5360;&#x636E;&#x5F88;&#x5927;&#x6BD4;&#x4F8B;&#xFF0C;&#x5F71;&#x54CD;&#x7ED3;&#x679C;&#x7684;&#x51C6;&#x786E;&#x6027;&#x3002;
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Elapsed cycles: %llu\n&quot;</span><span class="token punctuation">,</span> tsc2 <span class="token operator">-</span> tsc1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>__rdtscp</code> &#x6307;&#x4EE4;&#x672C;&#x8EAB;&#x6709;&#x6267;&#x884C;&#x5F00;&#x9500;&#xFF08;&#x51E0;&#x5341;&#x5230;&#x4E0A;&#x767E;&#x4E2A;&#x65F6;&#x949F;&#x5468;&#x671F;&#xFF09;&#xFF0C;&#x5728;&#x6D4B;&#x91CF;&#x975E;&#x5E38;&#x77ED;&#x7684;&#x4EE3;&#x7801;&#x6BB5;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x5F00;&#x9500;&#x672C;&#x8EAB;&#x4F1A;&#x5360;&#x636E;&#x5F88;&#x5927;&#x6BD4;&#x4F8B;&#xFF0C;&#x5F71;&#x54CD;&#x7ED3;&#x679C;&#x7684;&#x51C6;&#x786E;&#x6027;&#x3002;
 &#x867D;&#x7136;&#x5E8F;&#x5217;&#x5316;&#x4FDD;&#x8BC1;&#x4E86;&#x51C6;&#x786E;&#x6027;&#xFF0C;&#x4F46;&#x5B83;&#x4E5F;&#x963B;&#x6B62;&#x4E86;CPU&#x7684;&#x5E76;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x5F97;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;&#x6027;&#x80FD;&#x4E0E;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x6027;&#x80FD;&#x7565;&#x6709;&#x4E0D;&#x540C;&#x3002;</p>
 <p>&#x5BF9;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x4E0D;&#x9700;&#x8981;&#x68C0;&#x6D4B;&#x6838;&#x5FC3;&#x8FC1;&#x79FB;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x7248;&#x672C; <code>__rdtsc</code> &#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;&#x4F46;&#x5728;&#x9700;&#x8981;&#x6700;&#x9AD8;&#x53EF;&#x9760;&#x6027;&#x7684;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;<code>__rdtscp</code> &#x662F;&#x66F4;&#x4E13;&#x4E1A;&#x548C;&#x53EF;&#x9760;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
 <h3 id="&#x65F6;&#x949F;&#x5468;&#x671F;&#x6570;&#x8F6C;&#x65F6;&#x95F4;"><a name="&#x65F6;&#x949F;&#x5468;&#x671F;&#x6570;&#x8F6C;&#x65F6;&#x95F4;" class="anchor-navigation-ex-anchor" href="#&#x65F6;&#x949F;&#x5468;&#x671F;&#x6570;&#x8F6C;&#x65F6;&#x95F4;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x65F6;&#x949F;&#x5468;&#x671F;&#x6570;&#x8F6C;&#x65F6;&#x95F4;</h3>
 <p>&#x5C06;&#x65F6;&#x949F;&#x5468;&#x671F;&#x8F6C;&#x6362;&#x4E3A;&#x65F6;&#x95F4;&#x9700;&#x8981;&#x77E5;&#x9053;&#x5904;&#x7406;&#x5668;&#x7684;&#x5B9E;&#x9645;&#x8FD0;&#x884C;&#x9891;&#x7387;&#x3002;</p>
 <h4 id="&#x65B9;&#x6CD5;1&#x3001;&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x9891;&#x7387;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x73B0;&#x4EE3;cpu&#xFF09;"><a name="&#x65B9;&#x6CD5;1&#x3001;&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x9891;&#x7387;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x73B0;&#x4EE3;cpu&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;1&#x3001;&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x9891;&#x7387;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x73B0;&#x4EE3;cpu&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;1&#x3001;&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x9891;&#x7387;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x73B0;&#x4EE3;CPU&#xFF09;</h4>
 <p>&#x73B0;&#x4EE3;CPU&#x5927;&#x591A;&#x652F;&#x6301; &quot;Invariant TSC&quot;&#xFF08;&#x6052;&#x5B9A;&#x65F6;&#x95F4;&#x6233;&#x8BA1;&#x6570;&#x5668;&#xFF09;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;TSC&#x4EE5;&#x56FA;&#x5B9A;&#x9891;&#x7387;&#x9012;&#x589E;&#xFF0C;&#x4E0D;&#x53D7;CPU&#x9891;&#x7387;&#x8C03;&#x8282;&#x7684;&#x5F71;&#x54CD;&#x3002;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>x86intrin.h</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;x86intrin.h&gt;</span></span>
 
-// &#x5047;&#x8BBE;CPU&#x57FA;&#x51C6;&#x9891;&#x7387;&#x4E3A;2.5GHz&#xFF08;&#x8BF7;&#x6839;&#x636E;&#x4F60;&#x7684;CPU&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8C03;&#x6574;&#xFF09;
-#define CPU_GHZ 2.5
-#define NS_PER_SEC 1000000000ULL
+<span class="token comment">// &#x5047;&#x8BBE;CPU&#x57FA;&#x51C6;&#x9891;&#x7387;&#x4E3A;2.5GHz&#xFF08;&#x8BF7;&#x6839;&#x636E;&#x4F60;&#x7684;CPU&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8C03;&#x6574;&#xFF09;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">CPU_GHZ</span> <span class="token expression"><span class="token number">2.5</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">NS_PER_SEC</span> <span class="token expression"><span class="token number">1000000000ULL</span></span></span>
 
-int main() {
-    unsigned int aux;
-    unsigned long long tsc1, tsc2, cycles;
-    double time_ns, time_us, time_ms;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> aux<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> tsc1<span class="token punctuation">,</span> tsc2<span class="token punctuation">,</span> cycles<span class="token punctuation">;</span>
+    <span class="token keyword">double</span> time_ns<span class="token punctuation">,</span> time_us<span class="token punctuation">,</span> time_ms<span class="token punctuation">;</span>
 
-    tsc1 = __rdtscp(&amp;aux);
+    tsc1 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // &#x6267;&#x884C;&#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;
-    for (volatile int i = 0; i &lt; 1000000; ++i) {}
+    <span class="token comment">// &#x6267;&#x884C;&#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">volatile</span> <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1000000</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-    tsc2 = __rdtscp(&amp;aux);
+    tsc2 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    cycles = tsc2 - tsc1;
+    cycles <span class="token operator">=</span> tsc2 <span class="token operator">-</span> tsc1<span class="token punctuation">;</span>
 
-    // &#x8F6C;&#x6362;&#x4E3A;&#x65F6;&#x95F4;
-    time_ns = (double)cycles / CPU_GHZ;           // &#x7EB3;&#x79D2;
-    time_us = time_ns / 1000.0;                   // &#x5FAE;&#x79D2;
-    time_ms = time_us / 1000.0;                   // &#x6BEB;&#x79D2;
+    <span class="token comment">// &#x8F6C;&#x6362;&#x4E3A;&#x65F6;&#x95F4;</span>
+    time_ns <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>cycles <span class="token operator">/</span> CPU_GHZ<span class="token punctuation">;</span>           <span class="token comment">// &#x7EB3;&#x79D2;</span>
+    time_us <span class="token operator">=</span> time_ns <span class="token operator">/</span> <span class="token number">1000.0</span><span class="token punctuation">;</span>                   <span class="token comment">// &#x5FAE;&#x79D2;</span>
+    time_ms <span class="token operator">=</span> time_us <span class="token operator">/</span> <span class="token number">1000.0</span><span class="token punctuation">;</span>                   <span class="token comment">// &#x6BEB;&#x79D2;</span>
 
-    printf(&quot;Elapsed cycles: %llu\n&quot;, cycles);
-    printf(&quot;Time: %.2f ns, %.2f us, %.2f ms\n&quot;, time_ns, time_us, time_ms);
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Elapsed cycles: %llu\n&quot;</span><span class="token punctuation">,</span> cycles<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Time: %.2f ns, %.2f us, %.2f ms\n&quot;</span><span class="token punctuation">,</span> time_ns<span class="token punctuation">,</span> time_us<span class="token punctuation">,</span> time_ms<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    return 0;
-}
-</code></pre><h4 id="&#x65B9;&#x6CD5;2&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;cpu&#x9891;&#x7387;&#xFF08;&#x66F4;&#x51C6;&#x786E;&#xFF09;"><a name="&#x65B9;&#x6CD5;2&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;cpu&#x9891;&#x7387;&#xFF08;&#x66F4;&#x51C6;&#x786E;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;2&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;cpu&#x9891;&#x7387;&#xFF08;&#x66F4;&#x51C6;&#x786E;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;2&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;CPU&#x9891;&#x7387;&#xFF08;&#x66F4;&#x51C6;&#x786E;&#xFF09;</h4>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x65B9;&#x6CD5;2&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;cpu&#x9891;&#x7387;&#xFF08;&#x66F4;&#x51C6;&#x786E;&#xFF09;"><a name="&#x65B9;&#x6CD5;2&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;cpu&#x9891;&#x7387;&#xFF08;&#x66F4;&#x51C6;&#x786E;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;2&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;cpu&#x9891;&#x7387;&#xFF08;&#x66F4;&#x51C6;&#x786E;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;2&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;CPU&#x9891;&#x7387;&#xFF08;&#x66F4;&#x51C6;&#x786E;&#xFF09;</h4>
 <p>&#x5728;linux&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x901A;&#x8FC7;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;<code>/proc/cpuinfo</code>&#xFF0C;&#x83B7;&#x5F97;&#x51C6;&#x786E;&#x7684;CPU&#x9891;&#x7387;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>x86intrin.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdlib.h</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;x86intrin.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
 
-double get_cpu_ghz() {
-    FILE *fp = fopen(&quot;/proc/cpuinfo&quot;, &quot;r&quot;);
-    if (!fp) return 0.0;
+<span class="token keyword">double</span> <span class="token function">get_cpu_ghz</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    FILE <span class="token operator">*</span>fp <span class="token operator">=</span> <span class="token function">fopen</span><span class="token punctuation">(</span><span class="token string">&quot;/proc/cpuinfo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;r&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fp<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0.0</span><span class="token punctuation">;</span>
 
-    char line[256];
-    double freq_ghz = 0.0;
+    <span class="token keyword">char</span> line<span class="token punctuation">[</span><span class="token number">256</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> freq_ghz <span class="token operator">=</span> <span class="token number">0.0</span><span class="token punctuation">;</span>
 
-    while (fgets(line, sizeof(line), fp)) {
-        if (sscanf(line, &quot;cpu MHz : %lf&quot;, &amp;freq_ghz) == 1) {
-            freq_ghz /= 1000.0;  // &#x8F6C;&#x6362;&#x4E3A;GHz
-            break;
-        }
-    }
-    fclose(fp);
-    return freq_ghz;
-}
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token function">fgets</span><span class="token punctuation">(</span>line<span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token punctuation">,</span> fp<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">sscanf</span><span class="token punctuation">(</span>line<span class="token punctuation">,</span> <span class="token string">&quot;cpu MHz : %lf&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>freq_ghz<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            freq_ghz <span class="token operator">/=</span> <span class="token number">1000.0</span><span class="token punctuation">;</span>  <span class="token comment">// &#x8F6C;&#x6362;&#x4E3A;GHz</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">fclose</span><span class="token punctuation">(</span>fp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> freq_ghz<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-int main() {
-    double cpu_ghz = get_cpu_ghz();
-    if (cpu_ghz == 0.0) {
-        cpu_ghz = 2.5;  // &#x9ED8;&#x8BA4;&#x503C;
-        printf(&quot;Warning: Using default CPU frequency: %.2f GHz\n&quot;, cpu_ghz);
-    } else {
-        printf(&quot;Detected CPU frequency: %.2f GHz\n&quot;, cpu_ghz);
-    }
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">double</span> cpu_ghz <span class="token operator">=</span> <span class="token function">get_cpu_ghz</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cpu_ghz <span class="token operator">==</span> <span class="token number">0.0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cpu_ghz <span class="token operator">=</span> <span class="token number">2.5</span><span class="token punctuation">;</span>  <span class="token comment">// &#x9ED8;&#x8BA4;&#x503C;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Warning: Using default CPU frequency: %.2f GHz\n&quot;</span><span class="token punctuation">,</span> cpu_ghz<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Detected CPU frequency: %.2f GHz\n&quot;</span><span class="token punctuation">,</span> cpu_ghz<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    unsigned int aux;
-    unsigned long long tsc1, tsc2;
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> aux<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> tsc1<span class="token punctuation">,</span> tsc2<span class="token punctuation">;</span>
 
-    tsc1 = __rdtscp(&amp;aux);
-    // &#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;
-    for (volatile int i = 0; i &lt; 1000000; ++i) {}
-    tsc2 = __rdtscp(&amp;aux);
+    tsc1 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">volatile</span> <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1000000</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    tsc2 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    unsigned long long cycles = tsc2 - tsc1;
-    double time_ns = (double)cycles / cpu_ghz;
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> cycles <span class="token operator">=</span> tsc2 <span class="token operator">-</span> tsc1<span class="token punctuation">;</span>
+    <span class="token keyword">double</span> time_ns <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>cycles <span class="token operator">/</span> cpu_ghz<span class="token punctuation">;</span>
 
-    printf(&quot;Cycles: %llu, Time: %.2f ns\n&quot;, cycles, time_ns);
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Cycles: %llu, Time: %.2f ns\n&quot;</span><span class="token punctuation">,</span> cycles<span class="token punctuation">,</span> time_ns<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    return 0;
-}
-</code></pre><p>&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x5728;Windows&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x83B7;&#x5F97;&#x51C6;&#x786E;&#x7684;CPU&#x9891;&#x7387;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>intrin.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>windows.h</span><span class="token punctuation">&gt;</span></span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x5728;Windows&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x83B7;&#x5F97;&#x51C6;&#x786E;&#x7684;CPU&#x9891;&#x7387;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;intrin.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;windows.h&gt;</span></span>
 
-#pragma intrinsic(__rdtscp)
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">pragma</span> <span class="token expression"><span class="token function">intrinsic</span><span class="token punctuation">(</span>__rdtscp<span class="token punctuation">)</span></span></span>
 
-double get_cpu_ghz() {
-    HKEY hKey;
-    DWORD freq_mhz = 0;
-    DWORD size = sizeof(freq_mhz);
+<span class="token keyword">double</span> <span class="token function">get_cpu_ghz</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    HKEY hKey<span class="token punctuation">;</span>
+    DWORD freq_mhz <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    DWORD size <span class="token operator">=</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>freq_mhz<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    if (RegOpenKeyExA(HKEY_LOCAL_MACHINE, 
-                     &quot;HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0&quot;, 
-                     0, KEY_READ, &amp;hKey) == ERROR_SUCCESS) {
-        RegQueryValueExA(hKey, &quot;~MHz&quot;, NULL, NULL, 
-                        (LPBYTE)&amp;freq_mhz, &amp;size);
-        RegCloseKey(hKey);
-    }
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">RegOpenKeyExA</span><span class="token punctuation">(</span>HKEY_LOCAL_MACHINE<span class="token punctuation">,</span> 
+                     <span class="token string">&quot;HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0&quot;</span><span class="token punctuation">,</span> 
+                     <span class="token number">0</span><span class="token punctuation">,</span> KEY_READ<span class="token punctuation">,</span> <span class="token operator">&amp;</span>hKey<span class="token punctuation">)</span> <span class="token operator">==</span> ERROR_SUCCESS<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">RegQueryValueExA</span><span class="token punctuation">(</span>hKey<span class="token punctuation">,</span> <span class="token string">&quot;~MHz&quot;</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> 
+                        <span class="token punctuation">(</span>LPBYTE<span class="token punctuation">)</span><span class="token operator">&amp;</span>freq_mhz<span class="token punctuation">,</span> <span class="token operator">&amp;</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">RegCloseKey</span><span class="token punctuation">(</span>hKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    return freq_mhz / 1000.0;  // &#x8F6C;&#x6362;&#x4E3A;GHz
-}
-</code></pre><h4 id="&#x65B9;&#x6CD5;3&#xFF1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x6821;&#x51C6;&#xFF08;&#x6700;&#x51C6;&#x786E;&#xFF09;"><a name="&#x65B9;&#x6CD5;3&#xFF1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x6821;&#x51C6;&#xFF08;&#x6700;&#x51C6;&#x786E;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;3&#xFF1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x6821;&#x51C6;&#xFF08;&#x6700;&#x51C6;&#x786E;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;3&#xFF1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x6821;&#x51C6;&#xFF08;&#x6700;&#x51C6;&#x786E;&#xFF09;</h4>
+    <span class="token keyword">return</span> freq_mhz <span class="token operator">/</span> <span class="token number">1000.0</span><span class="token punctuation">;</span>  <span class="token comment">// &#x8F6C;&#x6362;&#x4E3A;GHz</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x65B9;&#x6CD5;3&#xFF1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x6821;&#x51C6;&#xFF08;&#x6700;&#x51C6;&#x786E;&#xFF09;"><a name="&#x65B9;&#x6CD5;3&#xFF1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x6821;&#x51C6;&#xFF08;&#x6700;&#x51C6;&#x786E;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;3&#xFF1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x6821;&#x51C6;&#xFF08;&#x6700;&#x51C6;&#x786E;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;3&#xFF1A;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x6821;&#x51C6;&#xFF08;&#x6700;&#x51C6;&#x786E;&#xFF09;</h4>
 <p>&#x901A;&#x8FC7;&#x6D4B;&#x91CF;&#x5DF2;&#x77E5;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x5185;&#x7684;&#x5468;&#x671F;&#x6570;&#x6765;&#x8BA1;&#x7B97;&#x5B9E;&#x9645;&#x9891;&#x7387;&#x3002;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>x86intrin.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>time.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>unistd.h</span><span class="token punctuation">&gt;</span></span>  // for usleep
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;x86intrin.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;time.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h&gt;</span>  <span class="token comment">// for usleep</span></span>
 
-// &#x6821;&#x51C6;&#x51FD;&#x6570;&#xFF0C;&#x8BA1;&#x7B97;&#x5B9E;&#x9645;&#x7684;CPU&#x9891;&#x7387;
-double calibrate_cpu_frequency() {
-    const long long calibrate_time_us = 100000;  // 100ms&#x6821;&#x51C6;&#x65F6;&#x95F4;
-    unsigned int aux;
+<span class="token comment">// &#x6821;&#x51C6;&#x51FD;&#x6570;&#xFF0C;&#x8BA1;&#x7B97;&#x5B9E;&#x9645;&#x7684;CPU&#x9891;&#x7387;</span>
+<span class="token keyword">double</span> <span class="token function">calibrate_cpu_frequency</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token keyword">long</span> <span class="token keyword">long</span> calibrate_time_us <span class="token operator">=</span> <span class="token number">100000</span><span class="token punctuation">;</span>  <span class="token comment">// 100ms&#x6821;&#x51C6;&#x65F6;&#x95F4;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> aux<span class="token punctuation">;</span>
 
-    // &#x7B2C;&#x4E00;&#x6B21;&#x6D4B;&#x91CF;
-    struct timespec start, end;
-    unsigned long long tsc_start, tsc_end;
+    <span class="token comment">// &#x7B2C;&#x4E00;&#x6B21;&#x6D4B;&#x91CF;</span>
+    <span class="token keyword">struct</span> <span class="token class-name">timespec</span> start<span class="token punctuation">,</span> end<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> tsc_start<span class="token punctuation">,</span> tsc_end<span class="token punctuation">;</span>
 
-    clock_gettime(CLOCK_MONOTONIC, &amp;start);
-    tsc_start = __rdtscp(&amp;aux);
+    <span class="token function">clock_gettime</span><span class="token punctuation">(</span>CLOCK_MONOTONIC<span class="token punctuation">,</span> <span class="token operator">&amp;</span>start<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    tsc_start <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // &#x7B49;&#x5F85;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;
-    usleep(calibrate_time_us);
+    <span class="token comment">// &#x7B49;&#x5F85;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;</span>
+    <span class="token function">usleep</span><span class="token punctuation">(</span>calibrate_time_us<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    clock_gettime(CLOCK_MONOTONIC, &amp;end);
-    tsc_end = __rdtscp(&amp;aux);
+    <span class="token function">clock_gettime</span><span class="token punctuation">(</span>CLOCK_MONOTONIC<span class="token punctuation">,</span> <span class="token operator">&amp;</span>end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    tsc_end <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // &#x8BA1;&#x7B97;&#x7ECF;&#x8FC7;&#x7684;&#x65F6;&#x95F4;&#xFF08;&#x7EB3;&#x79D2;&#xFF09;
-    long long time_ns = (end.tv_sec - start.tv_sec) * 1000000000LL + 
-                       (end.tv_nsec - start.tv_nsec);
+    <span class="token comment">// &#x8BA1;&#x7B97;&#x7ECF;&#x8FC7;&#x7684;&#x65F6;&#x95F4;&#xFF08;&#x7EB3;&#x79D2;&#xFF09;</span>
+    <span class="token keyword">long</span> <span class="token keyword">long</span> time_ns <span class="token operator">=</span> <span class="token punctuation">(</span>end<span class="token punctuation">.</span>tv_sec <span class="token operator">-</span> start<span class="token punctuation">.</span>tv_sec<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1000000000LL</span> <span class="token operator">+</span> 
+                       <span class="token punctuation">(</span>end<span class="token punctuation">.</span>tv_nsec <span class="token operator">-</span> start<span class="token punctuation">.</span>tv_nsec<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // &#x8BA1;&#x7B97;&#x9891;&#x7387;&#xFF08;GHz&#xFF09;
-    double freq_ghz = (double)(tsc_end - tsc_start) / time_ns;
+    <span class="token comment">// &#x8BA1;&#x7B97;&#x9891;&#x7387;&#xFF08;GHz&#xFF09;</span>
+    <span class="token keyword">double</span> freq_ghz <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">(</span>tsc_end <span class="token operator">-</span> tsc_start<span class="token punctuation">)</span> <span class="token operator">/</span> time_ns<span class="token punctuation">;</span>
 
-    printf(&quot;Calibrated CPU frequency: %.6f GHz\n&quot;, freq_ghz);
-    return freq_ghz;
-}
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Calibrated CPU frequency: %.6f GHz\n&quot;</span><span class="token punctuation">,</span> freq_ghz<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> freq_ghz<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-int main() {
-    double cpu_ghz = calibrate_cpu_frequency();
-    unsigned int aux;
-    unsigned long long tsc1, tsc2;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">double</span> cpu_ghz <span class="token operator">=</span> <span class="token function">calibrate_cpu_frequency</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> aux<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> tsc1<span class="token punctuation">,</span> tsc2<span class="token punctuation">;</span>
 
-    tsc1 = __rdtscp(&amp;aux);
-    // &#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;
-    for (volatile int i = 0; i &lt; 1000000; ++i) {}
-    tsc2 = __rdtscp(&amp;aux);
+    tsc1 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">volatile</span> <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1000000</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    tsc2 <span class="token operator">=</span> <span class="token function">__rdtscp</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>aux<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    unsigned long long cycles = tsc2 - tsc1;
-    double time_ns = (double)cycles / cpu_ghz;
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> cycles <span class="token operator">=</span> tsc2 <span class="token operator">-</span> tsc1<span class="token punctuation">;</span>
+    <span class="token keyword">double</span> time_ns <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>cycles <span class="token operator">/</span> cpu_ghz<span class="token punctuation">;</span>
 
-    printf(&quot;Performance results:\n&quot;);
-    printf(&quot;  Cycles: %llu\n&quot;, cycles);
-    printf(&quot;  Time: %.2f ns\n&quot;, time_ns);
-    printf(&quot;  Time: %.2f us\n&quot;, time_ns / 1000.0);
-    printf(&quot;  Time: %.2f ms\n&quot;, time_ns / 1000000.0);
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Performance results:\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;  Cycles: %llu\n&quot;</span><span class="token punctuation">,</span> cycles<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;  Time: %.2f ns\n&quot;</span><span class="token punctuation">,</span> time_ns<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;  Time: %.2f us\n&quot;</span><span class="token punctuation">,</span> time_ns <span class="token operator">/</span> <span class="token number">1000.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;  Time: %.2f ms\n&quot;</span><span class="token punctuation">,</span> time_ns <span class="token operator">/</span> <span class="token number">1000000.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    return 0;
-}
-</code></pre><h4 id="&#x65B9;&#x6CD5;4&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#xFF08;&#x6700;&#x7B80;&#x5355;&#xFF09;"><a name="&#x65B9;&#x6CD5;4&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#xFF08;&#x6700;&#x7B80;&#x5355;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;4&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#xFF08;&#x6700;&#x7B80;&#x5355;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;4&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#xFF08;&#x6700;&#x7B80;&#x5355;&#xFF09;</h4>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x65B9;&#x6CD5;4&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#xFF08;&#x6700;&#x7B80;&#x5355;&#xFF09;"><a name="&#x65B9;&#x6CD5;4&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#xFF08;&#x6700;&#x7B80;&#x5355;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;4&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#xFF08;&#x6700;&#x7B80;&#x5355;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;4&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#xFF08;&#x6700;&#x7B80;&#x5355;&#xFF09;</h4>
 <p>&#x5BF9;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x5E94;&#x7528;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x9AD8;&#x7CBE;&#x5EA6;&#x8BA1;&#x65F6;&#x5668;&#x53EF;&#x80FD;&#x66F4;&#x7B80;&#x5355;&#x53EF;&#x9760;&#xFF1A;</p>
 <p>&#x5BF9;&#x4E8E;Linux&#x7CFB;&#x7EDF;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>time.h</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;time.h&gt;</span></span>
 
-struct timespec start, end;
-clock_gettime(CLOCK_MONOTONIC, &amp;start);
-// &#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;
-clock_gettime(CLOCK_MONOTONIC, &amp;end);
+<span class="token keyword">struct</span> <span class="token class-name">timespec</span> start<span class="token punctuation">,</span> end<span class="token punctuation">;</span>
+<span class="token function">clock_gettime</span><span class="token punctuation">(</span>CLOCK_MONOTONIC<span class="token punctuation">,</span> <span class="token operator">&amp;</span>start<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;</span>
+<span class="token function">clock_gettime</span><span class="token punctuation">(</span>CLOCK_MONOTONIC<span class="token punctuation">,</span> <span class="token operator">&amp;</span>end<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-long long time_ns = (end.tv_sec - start.tv_sec) * 1000000000LL +  (end.tv_nsec - start.tv_nsec);
-</code></pre><p>&#x5BF9;&#x4E8E;Windows&#x7CFB;&#x7EDF;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>windows.h</span><span class="token punctuation">&gt;</span></span>
+<span class="token keyword">long</span> <span class="token keyword">long</span> time_ns <span class="token operator">=</span> <span class="token punctuation">(</span>end<span class="token punctuation">.</span>tv_sec <span class="token operator">-</span> start<span class="token punctuation">.</span>tv_sec<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1000000000LL</span> <span class="token operator">+</span>  <span class="token punctuation">(</span>end<span class="token punctuation">.</span>tv_nsec <span class="token operator">-</span> start<span class="token punctuation">.</span>tv_nsec<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5BF9;&#x4E8E;Windows&#x7CFB;&#x7EDF;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;windows.h&gt;</span></span>
 
-LARGE_INTEGER frequency, start, end;
-QueryPerformanceFrequency(&amp;frequency);
-QueryPerformanceCounter(&amp;start);
-// &#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;
-QueryPerformanceCounter(&amp;end);
+LARGE_INTEGER frequency<span class="token punctuation">,</span> start<span class="token punctuation">,</span> end<span class="token punctuation">;</span>
+<span class="token function">QueryPerformanceFrequency</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>frequency<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">QueryPerformanceCounter</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>start<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x8981;&#x6D4B;&#x91CF;&#x7684;&#x4EE3;&#x7801;</span>
+<span class="token function">QueryPerformanceCounter</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>end<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-double time_sec = (double)(end.QuadPart - start.QuadPart) / frequency.QuadPart;
-</code></pre><footer class="page-footer"><span class="copyright">&#xA9; <a href="https://github.com/phdlisl/phdlisl.github.io" target="_blank">phdlisl</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Update in 
-2025-10-11
+<span class="token keyword">double</span> time_sec <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">(</span>end<span class="token punctuation">.</span>QuadPart <span class="token operator">-</span> start<span class="token punctuation">.</span>QuadPart<span class="token punctuation">)</span> <span class="token operator">/</span> frequency<span class="token punctuation">.</span>QuadPart<span class="token punctuation">;</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; <a href="https://github.com/phdlisl/phdlisl.github.io" target="_blank">phdlisl</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Update in 
+2025-10-12
 </span></footer>
                                 
                                 </section>
@@ -2676,7 +2743,7 @@ double time_sec = (double)(end.QuadPart - start.QuadPart) / frequency.QuadPart;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"时间统计方法","level":"5.1.2.1","depth":3,"next":{"title":"数据结构与算法","level":"6.1","depth":1,"path":"datastruct/intro.md","ref":"datastruct/intro.md","articles":[]},"previous":{"title":"实用案例","level":"5.1.2","depth":2,"ref":"","articles":[{"title":"时间统计方法","level":"5.1.2.1","depth":3,"path":"clang/tools/times.md","ref":"clang/tools/times.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","back-to-top-button","tbfed-pagefooter","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>","modify_label":"Update in ","modify_format":"YYYY-MM-DD"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"clang/tools/times.md","mtime":"2025-10-11T13:53:41.835Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-11T15:38:02.129Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"时间统计方法","level":"5.1.3.1","depth":3,"next":{"title":"数据结构与算法","level":"6.1","depth":1,"path":"datastruct/intro.md","ref":"datastruct/intro.md","articles":[]},"previous":{"title":"实用案例","level":"5.1.3","depth":2,"ref":"","articles":[{"title":"时间统计方法","level":"5.1.3.1","depth":3,"path":"clang/tools/times.md","ref":"clang/tools/times.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","back-to-top-button","tbfed-pagefooter","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>","modify_label":"Update in ","modify_format":"YYYY-MM-DD"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"clang/tools/times.md","mtime":"2025-10-12T06:45:13.759Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-12T08:06:32.059Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

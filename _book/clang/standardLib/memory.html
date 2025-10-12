@@ -270,6 +270,64 @@
                 <span>
             
                     
+                    硬件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.2.1" data-path="../hardware/attribute.html">
+            
+                <a href="../hardware/attribute.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.2" data-path="../hardware/instruct.html">
+            
+                <a href="../hardware/instruct.html">
+            
+                    
+                    指令集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.3" data-path="../hardware/ssefun.html">
+            
+                <a href="../hardware/ssefun.html">
+            
+                    
+                    SSE函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" >
+            
+                <span>
+            
+                    
                     实用案例
             
                 </span>
@@ -279,7 +337,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="5.1.2.1" data-path="../tools/times.html">
+        <li class="chapter " data-level="5.1.3.1" data-path="../tools/times.html">
             
                 <a href="../tools/times.html">
             
@@ -2396,46 +2454,48 @@
 <p>&#x5185;&#x5B58;&#x5206;&#x914D;&#x76F8;&#x5173;&#x7684;&#x51FD;&#x6570;</p>
 <h2 id="malloc"><a name="malloc" class="anchor-navigation-ex-anchor" href="#malloc"><i class="fa fa-link" aria-hidden="true"></i></a>1. malloc</h2>
 <p><code>malloc</code> &#x662F; C &#x8BED;&#x8A00;&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x7684;&#x52A8;&#x6001;&#x5185;&#x5B58;&#x5206;&#x914D;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x5806;&#xFF08;heap&#xFF09;&#x533A;&#x5206;&#x914D;&#x6307;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x5185;&#x5B58;&#x5757;&#x3002;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdlib.h</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
 
-void* malloc(size_t size);
-</code></pre><p>&#x53C2;&#x6570;&#x8BF4;&#x660E;</p>
+<span class="token keyword">void</span><span class="token operator">*</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token class-name">size_t</span> size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x53C2;&#x6570;&#x8BF4;&#x660E;</p>
 <ul>
 <li>size: &#x8981;&#x5206;&#x914D;&#x7684;&#x5B57;&#x8282;&#x6570;</li>
 </ul>
 <p>&#x8FD4;&#x56DE;&#x503C;</p>
 <ul>
-<li>&#x6210;&#x529F;&#xFF1A;&#x8FD4;&#x56DE;&#x6307;&#x5411;&#x5206;&#x914D;&#x5185;&#x5B58;&#x8D77;&#x59CB;&#x5730;&#x5740;&#x7684;&#x6307;&#x9488;&#xFF08;&#x7C7B;&#x578B;&#x4E3A; void*&#xFF09;</li>
+<li>&#x6210;&#x529F;&#xFF1A;&#x8FD4;&#x56DE;&#x6307;&#x5411;&#x5206;&#x914D;&#x5185;&#x5B58;&#x8D77;&#x59CB;&#x5730;&#x5740;&#x7684;&#x6307;&#x9488;&#xFF08;&#x7C7B;&#x578B;&#x4E3A; <code>void*</code>&#xFF09;</li>
 <li>&#x5931;&#x8D25;&#xFF1A;&#x8FD4;&#x56DE; NULL</li>
 </ul>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdlib.h</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
 
-int main() {
-    // &#x5206;&#x914D;&#x5185;&#x5B58;
-    int* arr = (int*)malloc(10 * sizeof(int));
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5206;&#x914D;&#x5185;&#x5B58;</span>
+    <span class="token keyword">int</span><span class="token operator">*</span> arr <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">malloc</span><span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    if (arr == NULL) {
-        printf(&quot;&#x5185;&#x5B58;&#x5206;&#x914D;&#x5931;&#x8D25;\n&quot;);
-        return 1;
-    }
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>arr <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5185;&#x5B58;&#x5206;&#x914D;&#x5931;&#x8D25;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    // &#x4F7F;&#x7528;&#x5185;&#x5B58;
-    for (int i = 0; i &lt; 10; i++) {
-        arr[i] = i * 10;
-    }
+    <span class="token comment">// &#x4F7F;&#x7528;&#x5185;&#x5B58;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    // &#x6253;&#x5370;&#x7ED3;&#x679C;
-    for (int i = 0; i &lt; 10; i++) {
-        printf(&quot;%d &quot;, arr[i]);
-    }
+    <span class="token comment">// &#x6253;&#x5370;&#x7ED3;&#x679C;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d &quot;</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    // &#x91CA;&#x653E;&#x5185;&#x5B58;
-    free(arr);
+    <span class="token comment">// &#x91CA;&#x653E;&#x5185;&#x5B58;</span>
+    <span class="token function">free</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    return 0;
-}
-</code></pre><h2 id="free"><a name="free" class="anchor-navigation-ex-anchor" href="#free"><i class="fa fa-link" aria-hidden="true"></i></a>2. free</h2>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="free"><a name="free" class="anchor-navigation-ex-anchor" href="#free"><i class="fa fa-link" aria-hidden="true"></i></a>2. free</h2>
 <p><code>free()</code>&#x91CA;&#x653E;&#x5185;&#x5B58;&#xFF0C;<code>calloc()</code>&#x5206;&#x914D;&#x5E76;&#x6E05;&#x96F6;&#x5185;&#x5B58;&#xFF0C;<code>realloc()</code>&#x8C03;&#x6574;&#x5DF2;&#x5206;&#x914D;&#x5185;&#x5B58;&#x7684;&#x5927;&#x5C0F;&#x3002;</p>
 <blockquote>
 <p>[!NOTE]
@@ -2443,47 +2503,77 @@ int main() {
 </blockquote>
 <h2 id="mmmalloc"><a name="mmmalloc" class="anchor-navigation-ex-anchor" href="#mmmalloc"><i class="fa fa-link" aria-hidden="true"></i></a>3. _mm_malloc</h2>
 <p><code>_mm_malloc</code> &#x662F; Intel &#x63D0;&#x4F9B;&#x7684;&#x5185;&#x5B58;&#x5206;&#x914D;&#x51FD;&#x6570;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5206;&#x914D;&#x5BF9;&#x9F50;&#x7684;&#x5185;&#x5B58;&#x5757;&#xFF0C;&#x7279;&#x522B;&#x9002;&#x7528;&#x4E8E;&#x9700;&#x8981; SSE/AVX &#x7B49; SIMD &#x6307;&#x4EE4;&#x96C6;&#x4F18;&#x5316;&#x7684;&#x573A;&#x666F;&#x3002;</p>
-<pre class="language-"><code>void* _mm_malloc(size_t size, size_t align);
-</code></pre><p>&#x53C2;&#x6570;&#x8BF4;&#x660E;</p>
+<pre class="language-"><code class="lang-c"><span class="token keyword">void</span><span class="token operator">*</span> <span class="token function">_mm_malloc</span><span class="token punctuation">(</span><span class="token class-name">size_t</span> size<span class="token punctuation">,</span> <span class="token class-name">size_t</span> align<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x53C2;&#x6570;&#x8BF4;&#x660E;</p>
 <ul>
 <li>size: &#x8981;&#x5206;&#x914D;&#x7684;&#x5B57;&#x8282;&#x6570;</li>
 <li>align: &#x5BF9;&#x9F50;&#x8FB9;&#x754C;&#xFF0C;&#x5FC5;&#x987B;&#x662F; 2 &#x7684;&#x5E42;&#x6B21;&#x65B9;&#xFF0C;&#x4E14;&#x81F3;&#x5C11;&#x4E3A; sizeof(void*)</li>
 </ul>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>emmintrin.h</span><span class="token punctuation">&gt;</span></span>  // &#x9700;&#x8981;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x5934;&#x6587;&#x4EF6;
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;emmintrin.h&gt;</span>  <span class="token comment">// &#x9700;&#x8981;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x5934;&#x6587;&#x4EF6;</span></span>
 
-int main() {
-    // &#x5206;&#x914D; 64 &#x5B57;&#x8282;&#x5185;&#x5B58;&#xFF0C;&#x6309; 16 &#x5B57;&#x8282;&#x5BF9;&#x9F50;&#xFF08;SSE &#x8981;&#x6C42;&#xFF09;
-    float* aligned_data = (float*)_mm_malloc(64, 16);
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5206;&#x914D; 64 &#x5B57;&#x8282;&#x5185;&#x5B58;&#xFF0C;&#x6309; 16 &#x5B57;&#x8282;&#x5BF9;&#x9F50;&#xFF08;SSE &#x8981;&#x6C42;&#xFF09;</span>
+    <span class="token keyword">float</span><span class="token operator">*</span> aligned_data <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">_mm_malloc</span><span class="token punctuation">(</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    if (aligned_data != NULL) {
-        // &#x4F7F;&#x7528;&#x5BF9;&#x9F50;&#x7684;&#x5185;&#x5B58;&#x8FDB;&#x884C; SIMD &#x64CD;&#x4F5C;
-        __m128 vec = _mm_load_ps(aligned_data);  // &#x5B89;&#x5168;&#x52A0;&#x8F7D;&#xFF0C;&#x4E0D;&#x4F1A;&#x6BB5;&#x9519;&#x8BEF;
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>aligned_data <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x4F7F;&#x7528;&#x5BF9;&#x9F50;&#x7684;&#x5185;&#x5B58;&#x8FDB;&#x884C; SIMD &#x64CD;&#x4F5C;</span>
+        __m128 vec <span class="token operator">=</span> <span class="token function">_mm_load_ps</span><span class="token punctuation">(</span>aligned_data<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// &#x5B89;&#x5168;&#x52A0;&#x8F7D;&#xFF0C;&#x4E0D;&#x4F1A;&#x6BB5;&#x9519;&#x8BEF;</span>
 
-        // ... &#x5904;&#x7406;&#x6570;&#x636E;
-        printf(&quot;create memory\n&quot;);
+        <span class="token comment">// ... &#x5904;&#x7406;&#x6570;&#x636E;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;create memory\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        _mm_free(aligned_data);  // &#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x914D;&#x5957;&#x7684;&#x91CA;&#x653E;&#x51FD;&#x6570;
-    }
-    return 0;
-}
-</code></pre><p>16&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#xFF0C;&#x9002;&#x7528;&#x4E8E;SSE&#x6307;&#x4EE4;&#x96C6;&#xFF1B;32&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#xFF0C;&#x9002;&#x7528;&#x4E8E;AVX&#x6307;&#x4EE4;&#x96C6;&#xFF1B;64&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#xFF0C;&#x9002;&#x7528;&#x4E8E;AVX-512&#x6307;&#x4EE4;&#x96C6;&#x3002;&#x5BF9;&#x9F50;&#x503C;&#x5FC5;&#x987B;&#x662F; 2 &#x7684;&#x5E42;&#x6B21;&#x65B9;&#x3002;</p>
-<pre class="language-"><code>// &#x6807;&#x51C6; malloc - &#x5BF9;&#x9F50;&#x4E0D;&#x786E;&#x5B9A;
-void* data1 = malloc(64);  // &#x5BF9;&#x9F50;&#x53EF;&#x80FD;&#x4E0D;&#x662F;16&#x5B57;&#x8282;
+        <span class="token function">_mm_free</span><span class="token punctuation">(</span>aligned_data<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// &#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x914D;&#x5957;&#x7684;&#x91CA;&#x653E;&#x51FD;&#x6570;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>16&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#xFF0C;&#x9002;&#x7528;&#x4E8E;SSE&#x6307;&#x4EE4;&#x96C6;&#xFF1B;32&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#xFF0C;&#x9002;&#x7528;&#x4E8E;AVX&#x6307;&#x4EE4;&#x96C6;&#xFF1B;64&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#xFF0C;&#x9002;&#x7528;&#x4E8E;AVX-512&#x6307;&#x4EE4;&#x96C6;&#x3002;&#x5BF9;&#x9F50;&#x503C;&#x5FC5;&#x987B;&#x662F; 2 &#x7684;&#x5E42;&#x6B21;&#x65B9;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token comment">// &#x6807;&#x51C6; malloc - &#x5BF9;&#x9F50;&#x4E0D;&#x786E;&#x5B9A;</span>
+<span class="token keyword">void</span><span class="token operator">*</span> data1 <span class="token operator">=</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// &#x5BF9;&#x9F50;&#x53EF;&#x80FD;&#x4E0D;&#x662F;16&#x5B57;&#x8282;</span>
 
-// _mm_malloc - &#x4FDD;&#x8BC1;&#x5BF9;&#x9F50;
-void* data2 = _mm_malloc(64, 16);  // &#x4FDD;&#x8BC1;16&#x5B57;&#x8282;&#x5BF9;&#x9F50;
-</code></pre><p>&#x5FC5;&#x987B;&#x4F7F;&#x7528; <code>_mm_free</code> &#x91CA;&#x653E;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>free()</code>&#x3002;&#x9700;&#x8981;&#x5305;&#x542B; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>emmintrin.h</span><span class="token punctuation">&gt;</span></span></code> &#x6216; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>xmmintrin.h</span><span class="token punctuation">&gt;</span></span></code> &#x5934;&#x6587;&#x4EF6;</p>
+<span class="token comment">// _mm_malloc - &#x4FDD;&#x8BC1;&#x5BF9;&#x9F50;</span>
+<span class="token keyword">void</span><span class="token operator">*</span> data2 <span class="token operator">=</span> <span class="token function">_mm_malloc</span><span class="token punctuation">(</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// &#x4FDD;&#x8BC1;16&#x5B57;&#x8282;&#x5BF9;&#x9F50;</span>
+</code></pre>
+<p>&#x5FC5;&#x987B;&#x4F7F;&#x7528; <code>_mm_free</code> &#x91CA;&#x653E;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>free()</code>&#x3002;&#x9700;&#x8981;&#x5305;&#x542B; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>emmintrin.h</span><span class="token punctuation">&gt;</span></span></code> &#x6216; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>xmmintrin.h</span><span class="token punctuation">&gt;</span></span></code> &#x5934;&#x6587;&#x4EF6;</p>
 <h2 id="mmfree"><a name="mmfree" class="anchor-navigation-ex-anchor" href="#mmfree"><i class="fa fa-link" aria-hidden="true"></i></a>4. _mm_free</h2>
-<pre class="language-"><code>void _mm_free(void* ptr);
-</code></pre><p><code>malloc</code>&#x4E0E; <code>_mm_malloc</code> &#x7684;&#x533A;&#x522B;</p>
-<p>&#x7279;&#x6027; | <code>malloc</code> | <code>_mm_malloc</code> 
-&#x6807;&#x51C6;&#x6027; | C &#x6807;&#x51C6;&#x51FD;&#x6570; | &#x7F16;&#x8BD1;&#x5668;&#x6269;&#x5C55;
-&#x5BF9;&#x9F50;| &#x5B9E;&#x73B0;&#x5B9A;&#x4E49; | &#x6307;&#x5B9A;&#x5BF9;&#x9F50;
-&#x91CA;&#x653E; | &#x4F7F;&#x7528; <code>free()</code> | &#x4F7F;&#x7528; <code>_mm_free()</code>
-&#x7528;&#x9014; | &#x901A;&#x7528;&#x5185;&#x5B58;&#x5206;&#x914D; | SIMD/&#x7279;&#x5B9A;&#x5BF9;&#x9F50;&#x9700;&#x6C42;</p>
+<pre class="language-"><code class="lang-c"><span class="token keyword">void</span> <span class="token function">_mm_free</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span> ptr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>malloc</code>&#x4E0E; <code>_mm_malloc</code> &#x7684;&#x533A;&#x522B;</p>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x6027;</th>
+<th><code>malloc</code></th>
+<th><code>_mm_malloc</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x6807;&#x51C6;&#x6027;</td>
+<td>C &#x6807;&#x51C6;&#x51FD;&#x6570;</td>
+<td>&#x7F16;&#x8BD1;&#x5668;&#x6269;&#x5C55;</td>
+</tr>
+<tr>
+<td>&#x5BF9;&#x9F50;</td>
+<td>&#x5B9E;&#x73B0;&#x5B9A;&#x4E49;</td>
+<td>&#x6307;&#x5B9A;&#x5BF9;&#x9F50;</td>
+</tr>
+<tr>
+<td>&#x91CA;&#x653E;</td>
+<td>&#x4F7F;&#x7528; <code>free()</code></td>
+<td>&#x4F7F;&#x7528; <code>_mm_free()</code></td>
+</tr>
+<tr>
+<td>&#x7528;&#x9014;</td>
+<td>&#x901A;&#x7528;&#x5185;&#x5B58;&#x5206;&#x914D;</td>
+<td>SIMD/&#x7279;&#x5B9A;&#x5BF9;&#x9F50;&#x9700;&#x6C42;</td>
+</tr>
+</tbody>
+</table>
 <footer class="page-footer"><span class="copyright">&#xA9; <a href="https://github.com/phdlisl/phdlisl.github.io" target="_blank">phdlisl</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Update in 
-2025-10-11
+2025-10-12
 </span></footer>
                                 
                                 </section>
@@ -2523,7 +2613,7 @@ void* data2 = _mm_malloc(64, 16);  // &#x4FDD;&#x8BC1;16&#x5B57;&#x8282;&#x5BF9;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"内存分配","level":"5.1.1.1","depth":3,"next":{"title":"qsort函数","level":"5.1.1.2","depth":3,"path":"clang/standardLib/qsort.md","ref":"clang/standardLib/qsort.md","articles":[]},"previous":{"title":"标准库函数","level":"5.1.1","depth":2,"ref":"","articles":[{"title":"内存分配","level":"5.1.1.1","depth":3,"path":"clang/standardLib/memory.md","ref":"clang/standardLib/memory.md","articles":[]},{"title":"qsort函数","level":"5.1.1.2","depth":3,"path":"clang/standardLib/qsort.md","ref":"clang/standardLib/qsort.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","back-to-top-button","tbfed-pagefooter","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>","modify_label":"Update in ","modify_format":"YYYY-MM-DD"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"clang/standardLib/memory.md","mtime":"2025-10-11T15:37:35.937Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-11T15:38:02.129Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"内存分配","level":"5.1.1.1","depth":3,"next":{"title":"qsort函数","level":"5.1.1.2","depth":3,"path":"clang/standardLib/qsort.md","ref":"clang/standardLib/qsort.md","articles":[]},"previous":{"title":"标准库函数","level":"5.1.1","depth":2,"ref":"","articles":[{"title":"内存分配","level":"5.1.1.1","depth":3,"path":"clang/standardLib/memory.md","ref":"clang/standardLib/memory.md","articles":[]},{"title":"qsort函数","level":"5.1.1.2","depth":3,"path":"clang/standardLib/qsort.md","ref":"clang/standardLib/qsort.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","back-to-top-button","tbfed-pagefooter","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>","modify_label":"Update in ","modify_format":"YYYY-MM-DD"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"clang/standardLib/memory.md","mtime":"2025-10-12T06:42:39.008Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-12T08:06:32.059Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

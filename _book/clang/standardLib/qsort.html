@@ -270,6 +270,64 @@
                 <span>
             
                     
+                    硬件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.2.1" data-path="../hardware/attribute.html">
+            
+                <a href="../hardware/attribute.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.2" data-path="../hardware/instruct.html">
+            
+                <a href="../hardware/instruct.html">
+            
+                    
+                    指令集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.3" data-path="../hardware/ssefun.html">
+            
+                <a href="../hardware/ssefun.html">
+            
+                    
+                    SSE函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" >
+            
+                <span>
+            
+                    
                     实用案例
             
                 </span>
@@ -279,7 +337,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="5.1.2.1" data-path="../tools/times.html">
+        <li class="chapter " data-level="5.1.3.1" data-path="../tools/times.html">
             
                 <a href="../tools/times.html">
             
@@ -2394,10 +2452,11 @@
                                 
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6392;&#x5E8F;&#x51FD;&#x6570;qsort"><b> </b>&#x6392;&#x5E8F;&#x51FD;&#x6570;qsort</a></li></ul></div><h1 id="&#x6392;&#x5E8F;&#x51FD;&#x6570;qsort"><a name="&#x6392;&#x5E8F;&#x51FD;&#x6570;qsort" class="anchor-navigation-ex-anchor" href="#&#x6392;&#x5E8F;&#x51FD;&#x6570;qsort"><i class="fa fa-link" aria-hidden="true"></i></a> &#x6392;&#x5E8F;&#x51FD;&#x6570;qsort</h1>
 <p><code>qsort</code>&#x662F;C&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdlib.h</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
 
-void qsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void *));
-</code></pre><p>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</p>
+<span class="token keyword">void</span> <span class="token function">qsort</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>base<span class="token punctuation">,</span> <span class="token class-name">size_t</span> nitems<span class="token punctuation">,</span> <span class="token class-name">size_t</span> size<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token operator">*</span>compar<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</p>
 <ul>
 <li><code>base</code>&#xFF1A;&#x6307;&#x5411;&#x8981;&#x6392;&#x5E8F;&#x7684;&#x6570;&#x7EC4;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6307;&#x9488;&#xFF08;&#x6570;&#x7EC4;&#x9996;&#x5730;&#x5740;&#xFF09;</li>
 <li><code>nitems</code>&#xFF1A;&#x6570;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;</li>
@@ -2405,50 +2464,51 @@ void qsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, c
 <li><code>compar</code>&#xFF1A;&#x6BD4;&#x8F83;&#x51FD;&#x6570;&#x6307;&#x9488;&#xFF0C;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x6392;&#x5E8F;&#x89C4;&#x5219;</li>
 </ul>
 <p>&#x4EE5;&#x4E0B;&#x6848;&#x4F8B;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6574;&#x6570;&#x6392;&#x5E8F;&#xFF0C;&#x5B9A;&#x4E49;&#x6392;&#x5E8F;&#x89C4;&#x5219;<code>compare_int</code>&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;<code>qsort</code>&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x6392;&#x5E8F;&#x3002;</p>
-<pre class="language-"><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdio.h</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdlib.h</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
 
-// &#x6BD4;&#x8F83;&#x51FD;&#x6570; - &#x5347;&#x5E8F;&#x6392;&#x5E8F;
-int compare_int(const void *a, const void *b) {
-    const int *num1 = (const int *)a;
-    const int *num2 = (const int *)b;
+<span class="token comment">// &#x6BD4;&#x8F83;&#x51FD;&#x6570; - &#x5347;&#x5E8F;&#x6392;&#x5E8F;</span>
+<span class="token keyword">int</span> <span class="token function">compare_int</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>a<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>num1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span>a<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>num2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span>b<span class="token punctuation">;</span>
 
-    if (*num1 &lt; *num2) return -1;
-    if (*num1 &gt; *num2) return 1;
-    return 0;
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">*</span>num1 <span class="token operator">&lt;</span> <span class="token operator">*</span>num2<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">*</span>num1 <span class="token operator">&gt;</span> <span class="token operator">*</span>num2<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 
-    // &#x66F4;&#x7B80;&#x6D01;&#x7684;&#x5199;&#x6CD5;&#xFF1A;
-    // return (*(int*)a - *(int*)b);
-}
+    <span class="token comment">// &#x66F4;&#x7B80;&#x6D01;&#x7684;&#x5199;&#x6CD5;&#xFF1A;</span>
+    <span class="token comment">// return (*(int*)a - *(int*)b);</span>
+<span class="token punctuation">}</span>
 
-// &#x964D;&#x5E8F;&#x6392;&#x5E8F;&#x7684;&#x6BD4;&#x8F83;&#x51FD;&#x6570;
-int compare_int_desc(const void *a, const void *b) {
-    return (*(int*)b - *(int*)a);
-}
+<span class="token comment">// &#x964D;&#x5E8F;&#x6392;&#x5E8F;&#x7684;&#x6BD4;&#x8F83;&#x51FD;&#x6570;</span>
+<span class="token keyword">int</span> <span class="token function">compare_int_desc</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>a<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token operator">*</span><span class="token punctuation">)</span>b <span class="token operator">-</span> <span class="token operator">*</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token operator">*</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-int main() {
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(arr) / sizeof(arr[0]);
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">34</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    printf(&quot;Original array: &quot;);
-    for (int i = 0; i &lt; n; i++) {
-        printf(&quot;%d &quot;, arr[i]);
-    }
-    printf(&quot;\n&quot;);
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Original array: &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d &quot;</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // &#x5347;&#x5E8F;&#x6392;&#x5E8F;
-    qsort(arr, n, sizeof(int), compare_int);
+    <span class="token comment">// &#x5347;&#x5E8F;&#x6392;&#x5E8F;</span>
+    <span class="token function">qsort</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> n<span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">,</span> compare_int<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    printf(&quot;Sorted array (ascending): &quot;);
-    for (int i = 0; i &lt; n; i++) {
-        printf(&quot;%d &quot;, arr[i]);
-    }
-    printf(&quot;\n&quot;);
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Sorted array (ascending): &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d &quot;</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    return 0;
-}
-</code></pre><footer class="page-footer"><span class="copyright">&#xA9; <a href="https://github.com/phdlisl/phdlisl.github.io" target="_blank">phdlisl</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Update in 
-2025-10-11
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; <a href="https://github.com/phdlisl/phdlisl.github.io" target="_blank">phdlisl</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Update in 
+2025-10-12
 </span></footer>
                                 
                                 </section>
@@ -2488,7 +2548,7 @@ int main() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"qsort函数","level":"5.1.1.2","depth":3,"next":{"title":"实用案例","level":"5.1.2","depth":2,"ref":"","articles":[{"title":"时间统计方法","level":"5.1.2.1","depth":3,"path":"clang/tools/times.md","ref":"clang/tools/times.md","articles":[]}]},"previous":{"title":"内存分配","level":"5.1.1.1","depth":3,"path":"clang/standardLib/memory.md","ref":"clang/standardLib/memory.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","back-to-top-button","tbfed-pagefooter","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>","modify_label":"Update in ","modify_format":"YYYY-MM-DD"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"clang/standardLib/qsort.md","mtime":"2025-10-11T15:04:38.920Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-11T15:38:02.129Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"qsort函数","level":"5.1.1.2","depth":3,"next":{"title":"硬件","level":"5.1.2","depth":2,"ref":"","articles":[{"title":"属性","level":"5.1.2.1","depth":3,"path":"clang/hardware/attribute.md","ref":"clang/hardware/attribute.md","articles":[]},{"title":"指令集","level":"5.1.2.2","depth":3,"path":"clang/hardware/instruct.md","ref":"clang/hardware/instruct.md","articles":[]},{"title":"SSE函数","level":"5.1.2.3","depth":3,"path":"clang/hardware/ssefun.md","ref":"clang/hardware/ssefun.md","articles":[]}]},"previous":{"title":"内存分配","level":"5.1.1.1","depth":3,"path":"clang/standardLib/memory.md","ref":"clang/standardLib/memory.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","back-to-top-button","tbfed-pagefooter","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>","modify_label":"Update in ","modify_format":"YYYY-MM-DD"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"clang/standardLib/qsort.md","mtime":"2025-10-12T06:43:08.075Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-12T08:06:32.059Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

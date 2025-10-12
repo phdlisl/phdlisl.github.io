@@ -6,7 +6,7 @@
 
 `malloc` 是 C 语言标准库中的动态内存分配函数，用于在堆（heap）区分配指定大小的内存块。
 
-```
+```c
 #include <stdlib.h>
 
 void* malloc(size_t size);
@@ -18,10 +18,10 @@ void* malloc(size_t size);
 
 返回值
 
-* 成功：返回指向分配内存起始地址的指针（类型为 void*）
+* 成功：返回指向分配内存起始地址的指针（类型为 `void*`）
 * 失败：返回 NULL
 
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -64,7 +64,7 @@ int main() {
 
 `_mm_malloc` 是 Intel 提供的内存分配函数，主要用于分配对齐的内存块，特别适用于需要 SSE/AVX 等 SIMD 指令集优化的场景。
 
-```
+```c
 void* _mm_malloc(size_t size, size_t align);
 ```
 
@@ -73,7 +73,7 @@ void* _mm_malloc(size_t size, size_t align);
 * size: 要分配的字节数
 * align: 对齐边界，必须是 2 的幂次方，且至少为 sizeof(void*)
 
-```
+```c
 #include <stdio.h>
 #include <emmintrin.h>  // 需要包含这个头文件
 
@@ -96,7 +96,7 @@ int main() {
 
 16字节对齐，适用于SSE指令集；32字节对齐，适用于AVX指令集；64字节对齐，适用于AVX-512指令集。对齐值必须是 2 的幂次方。
 
-```
+```c
 // 标准 malloc - 对齐不确定
 void* data1 = malloc(64);  // 对齐可能不是16字节
 
@@ -108,14 +108,15 @@ void* data2 = _mm_malloc(64, 16);  // 保证16字节对齐
 
 ## _mm_free
 
-```
+```c
 void _mm_free(void* ptr);
 ```
 
 `malloc`与 `_mm_malloc` 的区别
 
-特性 | `malloc` | `_mm_malloc` 
-标准性 | C 标准函数 | 编译器扩展
-对齐| 实现定义 | 指定对齐
-释放 | 使用 `free()` | 使用 `_mm_free()`
-用途 | 通用内存分配 | SIMD/特定对齐需求
+| 特性 | `malloc` | `_mm_malloc` |
+| ---- | ---- | ---- |
+| 标准性 | C 标准函数 | 编译器扩展 |
+| 对齐| 实现定义 | 指定对齐 |
+| 释放 | 使用 `free()` | 使用 `_mm_free()` |
+| 用途 | 通用内存分配 | SIMD/特定对齐需求 |

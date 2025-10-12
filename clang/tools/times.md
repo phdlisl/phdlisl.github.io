@@ -18,7 +18,7 @@ todo
 
 `__rdtscp` 是一个编译器内置函数，用于读取处理器的时间戳计数器，并确保序列化执行，同时读取处理器的核心ID。
 
-```
+```c
 unsigned __int64 __rdtscp(unsigned int * _A);
 ```
 
@@ -31,7 +31,7 @@ unsigned __int64 __rdtscp(unsigned int * _A);
 
 在Linux/GCC环境下的使用示例：
 
-```
+```c
 #include <stdio.h>
 #include <x86intrin.h> // 包含 __rdtscp 等 intrinsic 函数的头文件
 
@@ -59,7 +59,7 @@ int main() {
 
 在Windows/MSVC下的示例：
 
-```
+```c
 #include <stdio.h>
 #include <intrin.h> // MSVC 的头文件
 
@@ -91,7 +91,7 @@ int main() {
 
 现代CPU大多支持 "Invariant TSC"（恒定时间戳计数器），这意味着TSC以固定频率递增，不受CPU频率调节的影响。
 
-```
+```c
 #include <stdio.h>
 #include <x86intrin.h>
 
@@ -129,7 +129,7 @@ int main() {
 
 在linux系统上，通过读取文件`/proc/cpuinfo`，获得准确的CPU频率，然后计算对应的时间。
 
-```
+```c
 #include <stdio.h>
 #include <x86intrin.h>
 #include <stdlib.h>
@@ -179,7 +179,7 @@ int main() {
 
 类似的，在Windows系统上，获得准确的CPU频率，然后计算对应的时间。
 
-```
+```c
 #include <stdio.h>
 #include <intrin.h>
 #include <windows.h>
@@ -207,7 +207,7 @@ double get_cpu_ghz() {
 
 通过测量已知时间间隔内的周期数来计算实际频率。
 
-```
+```c
 #include <stdio.h>
 #include <x86intrin.h>
 #include <time.h>
@@ -271,7 +271,7 @@ int main() {
 
 对于Linux系统
 
-```
+```c
 #include <time.h>
 
 struct timespec start, end;
@@ -284,7 +284,7 @@ long long time_ns = (end.tv_sec - start.tv_sec) * 1000000000LL +  (end.tv_nsec -
 
 对于Windows系统
 
-```
+```c
 #include <windows.h>
 
 LARGE_INTEGER frequency, start, end;

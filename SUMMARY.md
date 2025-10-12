@@ -23,7 +23,10 @@
 	* 标准库函数
 		* [内存分配](/clang/standardLib/memory.md)
 		* [qsort函数](/clang/standardLib/qsort.md)
-
+	* 硬件
+		* [属性](/clang/hardware/attribute.md)
+		* [指令集](/clang/hardware/instruct.md)
+		* [SSE函数](/clang/hardware/ssefun.md)
 	* 实用案例
 		* [时间统计方法](/clang/tools/times.md)
 

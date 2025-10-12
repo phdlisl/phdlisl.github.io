@@ -2,7 +2,7 @@
 
 `qsort`是C标准库中提供的快速排序函数，用于对任意类型的数组进行排序。
 
-```
+```c
 #include <stdlib.h>
 
 void qsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void *));
@@ -17,7 +17,7 @@ void qsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, c
 
 以下案例是一个简单的整数排序，定义排序规则`compare_int`，然后通过`qsort`函数完成排序。
 
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
