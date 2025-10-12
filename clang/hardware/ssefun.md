@@ -60,8 +60,9 @@ __m128 _mm_shuffle_ps(__m128 a, __m128 b, int imm8); // 混洗
 __m128i _mm_slli_epi32(__m128i a, int count);        // 左移
 ```
 
+## 数据加载和存储
 
-## `_mm_load_ps`
+### `_mm_load_ps`
 
 `_mm_load_ps` 用于从内存中加载4个单精度浮点数到SSE寄存器中，要求内存地址必须16字节对齐。
 
@@ -91,4 +92,52 @@ int main() {
 }
 ```
 
-## `_mm_loadu_ps`
+### _mm_loadu_ps
+
+### _mm_set_ps
+
+### _mm_store_ps
+
+### _mm_storeu_ps
+
+## 算术运算
+
+## _mm_add_ps
+
+### _mm_add_ss
+
+### _mm_sub_ps
+
+### _mm_mul_ps
+
+### _mm_div_ps
+
+### _mm_sqrt_ps
+
+## 比较运算
+
+### _mm_cmpeq_ps
+
+### _mm_cmpgt_ps
+
+### _mm_cmplt_ps
+
+### _mm_cmpge_ps
+
+### _mm_cmple_ps
+
+## 逻辑运算
+
+### _mm_and_ps
+
+### _mm_or_ps
+
+### _mm_xor_ps
+
+### _mm_andnot_ps
+
+## 位移
+
+### _mm_shuffle_ps
+
+### _mm_slli_epi32
