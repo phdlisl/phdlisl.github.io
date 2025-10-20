@@ -2812,29 +2812,31 @@ Serving book on http://localhost:4000
 <p>&#x6784;&#x5EFA;&#x9879;&#x76EE;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x4F1A;&#x5F00;&#x542F;&#xFF0C;&#x53EA;&#x662F;&#x5BF9;&#x9879;&#x76EE;&#x8FDB;&#x884C;&#x4E86;&#x6700;&#x5C0F;&#x5316;&#x548C;&#x6700;&#x4F18;&#x5316;&#x7684;&#x6784;&#x5EFA;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x901A;&#x8FC7; <a href="http://localhost:4000" target="_blank">http://localhost:4000</a> &#x8BBF;&#x95EE;&#x3002;</p>
 <h3 id="&#x6DFB;&#x52A0;&#x5FC5;&#x8981;&#x6587;&#x4EF6;"><a name="&#x6DFB;&#x52A0;&#x5FC5;&#x8981;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;&#x5FC5;&#x8981;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x6DFB;&#x52A0;&#x5FC5;&#x8981;&#x6587;&#x4EF6;</h3>
 <p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x6DFB;&#x52A0;&#x5FC5;&#x8981;&#x6587;&#x4EF6;</p>
-<pre class="language-"><code>% touch book.js
-% touch .bookignore
-</code></pre><p>&#x5176;&#x4E2D;<code>book.js</code>&#x6682;&#x65F6;&#x653E;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
-<pre class="language-"><code>module.exports = {
-  // &#x4E66;&#x7C4D;&#x4FE1;&#x606F;
-  title: &apos;Gitbook&#x5E94;&#x7528;&#x6559;&#x7A0B;&apos;,
-  description: &apos;Gitbook&#x5FEB;&#x901F;&#x5EFA;&#x7ACB;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;&apos;,
-  author: &apos;&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x5B9E;&#x9A8C;&#x5BA4;&apos;,
-  lang: &apos;zh-cn&apos;,
+<pre class="language-"><code class="lang-bash">% <span class="token function">touch</span> book.js
+% <span class="token function">touch</span> .bookignore
+</code></pre>
+<p>&#x5176;&#x4E2D;<code>book.js</code>&#x6682;&#x65F6;&#x653E;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<pre class="language-"><code class="lang-json">module.exports = <span class="token punctuation">{</span>
+  <span class="token comment">// &#x4E66;&#x7C4D;&#x4FE1;&#x606F;</span>
+  title<span class="token operator">:</span> &apos;Gitbook&#x5E94;&#x7528;&#x6559;&#x7A0B;&apos;<span class="token punctuation">,</span>
+  description<span class="token operator">:</span> &apos;Gitbook&#x5FEB;&#x901F;&#x5EFA;&#x7ACB;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;&apos;<span class="token punctuation">,</span>
+  author<span class="token operator">:</span> &apos;&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x5B9E;&#x9A8C;&#x5BA4;&apos;<span class="token punctuation">,</span>
+  lang<span class="token operator">:</span> &apos;zh-cn&apos;<span class="token punctuation">,</span>
 
-  // &#x63D2;&#x4EF6;&#x5217;&#x8868;
-  plugins: [ ],
+  <span class="token comment">// &#x63D2;&#x4EF6;&#x5217;&#x8868;</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
 
-  // &#x63D2;&#x4EF6;&#x5168;&#x5C40;&#x914D;&#x7F6E;
-  pluginsConfig: {
-  },
+  <span class="token comment">// &#x63D2;&#x4EF6;&#x5168;&#x5C40;&#x914D;&#x7F6E;</span>
+  pluginsConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
-  // &#x6A21;&#x677F;&#x53D8;&#x91CF;
-  variables: {
-    // &#x81EA;&#x5B9A;&#x4E49;
-  },
-};
-</code></pre><p>&#x5176;&#x4E2D;<code>.bookignore</code>&#x6682;&#x65F6;&#x653E;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+  <span class="token comment">// &#x6A21;&#x677F;&#x53D8;&#x91CF;</span>
+  variables<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x81EA;&#x5B9A;&#x4E49;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>;
+</code></pre>
+<p>&#x5176;&#x4E2D;<code>.bookignore</code>&#x6682;&#x65F6;&#x653E;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
 <pre class="language-"><code>package.json
 package-lock.json
 .bookignore
@@ -3130,25 +3132,29 @@ package-lock.json
 </blockquote>
 <h3 id="&#x641C;&#x7D22;&#x63D2;&#x4EF6;"><a name="&#x641C;&#x7D22;&#x63D2;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x641C;&#x7D22;&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. &#x641C;&#x7D22;&#x63D2;&#x4EF6;</h3>
 <p>&#x63D2;&#x4EF6;gitbook-plugin-search-pro&#x652F;&#x6301;&#x4E2D;&#x6587;&#x641C;&#x7D22;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-search-pro" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;</p>
-<pre class="language-"><code>npm i gitbook-plugin-search-pro
-</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
-<pre class="language-"><code>{
-    &quot;plugins&quot;: [
-      &quot;-lunr&quot;, &quot;-search&quot;, &quot;search-pro&quot;
-    ]
-}
-</code></pre><p>&#x8BE5;&#x63D2;&#x4EF6;&#x80FD;&#x591F;&#x641C;&#x7D22;&#x5230;&#x5168;&#x6587;&#x5339;&#x914D;&#x5B57;&#x7B26;&#xFF0C;&#x641C;&#x7D22;&#x80FD;&#x529B;&#x975E;&#x5E38;&#x5F3A;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> i gitbook-plugin-search-pro
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;-lunr&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;-search&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;search-pro&quot;</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8BE5;&#x63D2;&#x4EF6;&#x80FD;&#x591F;&#x641C;&#x7D22;&#x5230;&#x5168;&#x6587;&#x5339;&#x914D;&#x5B57;&#x7B26;&#xFF0C;&#x641C;&#x7D22;&#x80FD;&#x529B;&#x975E;&#x5E38;&#x5F3A;&#x3002;</p>
 <h3 id="&#x4EE3;&#x7801;&#x63D2;&#x4EF6;"><a name="&#x4EE3;&#x7801;&#x63D2;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. &#x4EE3;&#x7801;&#x63D2;&#x4EF6;</h3>
 <p>&#x63D2;&#x4EF6;gitbook-plugin-code&#x7528;&#x4E8E;&#x6392;&#x7248;&#x4EE3;&#x7801;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-code" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;</p>
-<pre class="language-"><code>npm i gitbook-plugin-code
-</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
-<pre class="language-"><code>&quot;plugins&quot; : [ &quot;code&quot; ],
-&quot;pluginsConfig&quot;: {
-  &quot;code&quot;: {
-    &quot;copyButtons&quot;: false
-  }
-}
-</code></pre><h3 id="&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;"><a name="&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. &#x4EE3;&#x7801;&#x9AD8;&#x4EAE;</h3>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> i gitbook-plugin-code
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;plugins&quot;</span> <span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">&quot;code&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token property">&quot;pluginsConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;copyButtons&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;"><a name="&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. &#x4EE3;&#x7801;&#x9AD8;&#x4EAE;</h3>
 <p>&#x63D2;&#x4EF6;npm i gitbook-plugin-prism&#x7528;&#x4E8E;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#xFF0C;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-prism" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;&#x3002;</p>
 <pre class="language-"><code class="lang-bash"><span class="token function">npm</span> i gitbook-plugin-prism
 </code></pre>
@@ -3169,42 +3175,47 @@ package-lock.json
 <h3 id="&#x9690;&#x85CF;gitbook&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;"><a name="&#x9690;&#x85CF;gitbook&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x9690;&#x85CF;gitbook&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>5.4. &#x9690;&#x85CF;Gitbook&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;</h3>
 <p>Gitbook&#x9875;&#x9762;&#x6709;&#x8BF8;&#x5982;&#x201C;Published with GitBook&#x201D;&#x7684;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#xFF0C;&#x53EF;&#x7528;&#x63D2;&#x4EF6;gitbook-plugin-hide-element&#x4F7F;&#x4E4B;&#x9690;&#x85CF;&#x3002;
 &#x63D2;&#x4EF6;gitbook-plugin-hide-element&#x7684;<a href="https://www.npmjs.com/package/gitbook-plugin-hide-element" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;</p>
-<pre class="language-"><code>npm i gitbook-plugin-hide-element
-</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
-<pre class="language-"><code>{
-    &quot;plugins&quot;: [
-        &quot;hide-element&quot;
-    ],
-    &quot;pluginsConfig&quot;: {
-        &quot;hide-element&quot;: {
-            &quot;elements&quot;: [&quot;.gitbook-link&quot;]
-        }
-    }
-}
-</code></pre><p>&#x5B8C;&#x6210;&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x201C;Published with GitBook&#x201D;&#x7684;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x53BB;&#x6389;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> i gitbook-plugin-hide-element
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;hide-element&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;pluginsConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;hide-element&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;elements&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.gitbook-link&quot;</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5B8C;&#x6210;&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x201C;Published with GitBook&#x201D;&#x7684;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x53BB;&#x6389;&#x3002;</p>
 <h3 id="&#x6DFB;&#x52A0;&#x63D0;&#x793A;&#x3001;&#x8B66;&#x544A;&#x7B49;&#x63D0;&#x793A;&#x6846;"><a name="&#x6DFB;&#x52A0;&#x63D0;&#x793A;&#x3001;&#x8B66;&#x544A;&#x7B49;&#x63D0;&#x793A;&#x6846;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;&#x63D0;&#x793A;&#x3001;&#x8B66;&#x544A;&#x7B49;&#x63D0;&#x793A;&#x6846;"><i class="fa fa-link" aria-hidden="true"></i></a>5.5. &#x6DFB;&#x52A0;&#x63D0;&#x793A;&#x3001;&#x8B66;&#x544A;&#x7B49;&#x63D0;&#x793A;&#x6846;</h3>
 <p>&#x63D2;&#x4EF6;gitbook-plugin-flexible-alerts&#x7528;&#x4E8E;&#x6DFB;&#x52A0;&#x63D0;&#x793A;&#x3001;&#x8B66;&#x544A;&#x7B49;&#x63D0;&#x793A;&#x6846;&#xFF0C;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-flexible-alerts" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;</p>
-<pre class="language-"><code>npm i gitbook-plugin-flexible-alerts
-</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x67E5;&#x770B;<a href="https://www.npmjs.com/package/gitbook-plugin-flexible-alerts" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
-<pre class="language-"><code>{
-  &quot;plugins&quot;: [
-    &quot;flexible-alerts&quot;
-  ],
-  &quot;pluginsConfig&quot;: {
-    &quot;flexible-alerts&quot;: {
-      &quot;style&quot;: &quot;flat&quot;
-    }
-  }
-}
-</code></pre><p>&#x4F8B;&#x5982;&#x7ED9;&#x51FA;&#x5177;&#x4F53;&#x7684;&#x6837;&#x5F0F;&#x914D;&#x7F6E;</p>
-<pre class="language-"><code>&quot;flexible-alerts&quot;: {
-  // &quot;style&quot;: &quot;flat&quot;,
-  &quot;note&quot;: {&quot;label&quot; : &quot;&#x6CE8;&#x610F;&quot;},
-  &quot;tip&quot;: {&quot;label&quot; : &quot;&#x63D0;&#x793A;&quot;},
-  &quot;warning&quot;: { &quot;label&quot;: &quot;warning&quot; },
-  &quot;danger&quot;: { &quot;label&quot;: &quot;&#x5371;&#x9669;&quot; }
-}
-</code></pre><p>&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#xFF0C;<code>&gt; [!NOTE]</code>&#x7ED9;&#x51FA;&#x201C;&#x63D0;&#x793A;&#x201D;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x76F8;&#x5173;&#x6587;&#x672C;&#xFF1B;&#x5176;&#x4ED6;&#x63D0;&#x793A;&#x6846;&#x4E5F;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x201C;TIPs&#x201D;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> i gitbook-plugin-flexible-alerts
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x67E5;&#x770B;<a href="https://www.npmjs.com/package/gitbook-plugin-flexible-alerts" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;flexible-alerts&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;pluginsConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;flexible-alerts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token string">&quot;flat&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F8B;&#x5982;&#x7ED9;&#x51FA;&#x5177;&#x4F53;&#x7684;&#x6837;&#x5F0F;&#x914D;&#x7F6E;</p>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;flexible-alerts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &quot;style&quot;: &quot;flat&quot;,</span>
+  <span class="token property">&quot;note&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;label&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;&#x6CE8;&#x610F;&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;tip&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;label&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;&#x63D0;&#x793A;&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;warning&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;warning&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;danger&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5371;&#x9669;&quot;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#xFF0C;<code>&gt; [!NOTE]</code>&#x7ED9;&#x51FA;&#x201C;&#x63D0;&#x793A;&#x201D;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x76F8;&#x5173;&#x6587;&#x672C;&#xFF1B;&#x5176;&#x4ED6;&#x63D0;&#x793A;&#x6846;&#x4E5F;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x201C;TIPs&#x201D;&#x3002;</p>
 <pre class="language-"><code>&gt; [!NOTE]
 &gt; &#x6587;&#x672C;
 </code></pre><blockquote>
@@ -3223,50 +3234,56 @@ In addition, this alert uses an own heading and hides specific icon.</p>
 <p>&#x66F4;&#x591A;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;&#xFF0C;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-flexible-alerts" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
 <h3 id="&#x83DC;&#x5355;&#x6298;&#x53E0;"><a name="&#x83DC;&#x5355;&#x6298;&#x53E0;" class="anchor-navigation-ex-anchor" href="#&#x83DC;&#x5355;&#x6298;&#x53E0;"><i class="fa fa-link" aria-hidden="true"></i></a>5.6. &#x83DC;&#x5355;&#x6298;&#x53E0;</h3>
 <p>&#x63D2;&#x4EF6;gitbook-plugin-expandable-chapters&#x7528;&#x4E8E;&#x6298;&#x53E0;&#x83DC;&#x5355;&#xFF0C;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-expandable-chapters" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;&#x3002;</p>
-<pre class="language-"><code>npm i gitbook-plugin-expandable-chapters
-</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
-<pre class="language-"><code>{
-    plugins: [&quot;expandable-chapters&quot;],
-    &quot;pluginsConfig&quot;: {
-        &quot;expandable-chapters&quot;:{}
-    }
-}
-</code></pre><h3 id="&#x9875;&#x5185;&#x5BFC;&#x822A;&#x4E0E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;"><a name="&#x9875;&#x5185;&#x5BFC;&#x822A;&#x4E0E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;" class="anchor-navigation-ex-anchor" href="#&#x9875;&#x5185;&#x5BFC;&#x822A;&#x4E0E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;"><i class="fa fa-link" aria-hidden="true"></i></a>5.7. &#x9875;&#x5185;&#x5BFC;&#x822A;&#x4E0E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;</h3>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> i gitbook-plugin-expandable-chapters
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;expandable-chapters&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;pluginsConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;expandable-chapters&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x9875;&#x5185;&#x5BFC;&#x822A;&#x4E0E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;"><a name="&#x9875;&#x5185;&#x5BFC;&#x822A;&#x4E0E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;" class="anchor-navigation-ex-anchor" href="#&#x9875;&#x5185;&#x5BFC;&#x822A;&#x4E0E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;"><i class="fa fa-link" aria-hidden="true"></i></a>5.7. &#x9875;&#x5185;&#x5BFC;&#x822A;&#x4E0E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;</h3>
 <p>&#x63D2;&#x4EF6;gitbook-plugin-anchor-navigation-ex&#x7528;&#x4E8E;&#x9875;&#x5185;&#x5BFC;&#x822A;&#x548C;&#x8FD4;&#x56DE;&#x9876;&#x90E8;&#xFF0C;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-anchor-navigation-ex" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;&#x3002;</p>
-<pre class="language-"><code>npm i gitbook-plugin-anchor-navigation-ex
-</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
-<pre class="language-"><code>{
-  &quot;plugins&quot;: [
-       &quot;anchor-navigation-ex&quot;
-  ]
-}
-</code></pre><p>&#x8BE5;&#x63D2;&#x4EF6;&#x89E3;&#x51B3;&#x4E86;&#x63D2;&#x4EF6;gitbook-plugin-page-toc&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5408;&#x5E76;&#x4E86;&#x63D2;&#x4EF6;gitbook-plugin-back-to-top-button&#x548C;&#x63D2;&#x4EF6;gitbook-plugin-page-toc&#x7684;&#x529F;&#x80FD;&#x3002;&#x8BE5;&#x63D2;&#x4EF6;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x914D;&#x7F6E;&#x5982;&#x4E0B;</p>
-<pre class="language-"><code>&quot;anchor-navigation-ex&quot;:{
-  &quot;showLevel&quot;: true,
-  &quot;associatedWithSummary&quot;: true,
-  &quot;printLog&quot;: false,
-  &quot;multipleH1&quot;: true,
-  &quot;mode&quot;: &quot;pageTop&quot;, // pageTop or float
-  &quot;showGoTop&quot;:true,
-  &quot;float&quot;: {//&#x60AC;&#x6D6E;&#x5728;&#x53F3;&#x4E0A;&#x89D2;
-      &quot;floatIcon&quot;: &quot;fa fa-navicon&quot;,
-      &quot;showLevelIcon&quot;: false,
-      &quot;level1Icon&quot;: &quot;fa fa-hand-o-right&quot;,
-      &quot;level2Icon&quot;: &quot;fa fa-hand-o-right&quot;,
-      &quot;level3Icon&quot;: &quot;fa fa-hand-o-right&quot;
-  },
-  &quot;pageTop&quot;: {//&#x9875;&#x9762;&#x5E95;&#x90E8;&#x63D2;&#x5165;
-      &quot;showLevelIcon&quot;: false,
-      &quot;level1Icon&quot;: &quot;fa fa-hand-o-right&quot;,
-      &quot;level2Icon&quot;: &quot;fa fa-hand-o-right&quot;,
-      &quot;level3Icon&quot;: &quot;fa fa-hand-o-right&quot;
-  }
-}
-</code></pre><p>&#x63D2;&#x4EF6;gitbook-plugin-page-toc&#x7684;&#x8FD4;&#x56DE;&#x9876;&#x90E8;&#x6309;&#x94AE;&#x56FA;&#x5B9A;&#x4E0D;&#x53D8;&#xFF0C;&#x6709;&#x4E9B;&#x5446;&#x677F;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;<code>showGoTop</code>&#x4E3A;<code>false</code>&#xFF0C;&#x7136;&#x540E;&#x7528;&#x63D2;&#x4EF6;gitbook-plugin-back-to-top-button&#x8BBE;&#x7F6E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;&#x6309;&#x94AE;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> i gitbook-plugin-anchor-navigation-ex
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+       <span class="token string">&quot;anchor-navigation-ex&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8BE5;&#x63D2;&#x4EF6;&#x89E3;&#x51B3;&#x4E86;&#x63D2;&#x4EF6;gitbook-plugin-page-toc&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5408;&#x5E76;&#x4E86;&#x63D2;&#x4EF6;gitbook-plugin-back-to-top-button&#x548C;&#x63D2;&#x4EF6;gitbook-plugin-page-toc&#x7684;&#x529F;&#x80FD;&#x3002;&#x8BE5;&#x63D2;&#x4EF6;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x914D;&#x7F6E;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;anchor-navigation-ex&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;showLevel&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;associatedWithSummary&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;printLog&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;multipleH1&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;mode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pageTop&quot;</span><span class="token punctuation">,</span> <span class="token comment">// pageTop or float</span>
+  <span class="token property">&quot;showGoTop&quot;</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;float&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token comment">//&#x60AC;&#x6D6E;&#x5728;&#x53F3;&#x4E0A;&#x89D2;</span>
+      <span class="token property">&quot;floatIcon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-navicon&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;showLevelIcon&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;level1Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;level2Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;level3Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;pageTop&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token comment">//&#x9875;&#x9762;&#x5E95;&#x90E8;&#x63D2;&#x5165;</span>
+      <span class="token property">&quot;showLevelIcon&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;level1Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;level2Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;level3Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x63D2;&#x4EF6;gitbook-plugin-page-toc&#x7684;&#x8FD4;&#x56DE;&#x9876;&#x90E8;&#x6309;&#x94AE;&#x56FA;&#x5B9A;&#x4E0D;&#x53D8;&#xFF0C;&#x6709;&#x4E9B;&#x5446;&#x677F;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;<code>showGoTop</code>&#x4E3A;<code>false</code>&#xFF0C;&#x7136;&#x540E;&#x7528;&#x63D2;&#x4EF6;gitbook-plugin-back-to-top-button&#x8BBE;&#x7F6E;&#x8FD4;&#x56DE;&#x9876;&#x90E8;&#x6309;&#x94AE;&#x3002;</p>
 <h3 id="tex-&#x516C;&#x5F0F;"><a name="tex-&#x516C;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#tex-&#x516C;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>5.8. TeX &#x516C;&#x5F0F;</h3>
 <p>&#x63D2;&#x4EF6;gitbook-plugin-katex&#x7528;&#x4E8E;&#x5904;&#x7406; TEX &#x516C;&#x5F0F;&#xFF0C;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/gitbook-plugin-katex" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;&#x3002;</p>
-<pre class="language-"><code>npm i gitbook-plugin-katex
-</code></pre><p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x67E5;&#x770B;<a href="https://www.npmjs.com/package/gitbook-plugin-katex" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> i gitbook-plugin-katex
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;<code>book.js</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x67E5;&#x770B;<a href="https://www.npmjs.com/package/gitbook-plugin-katex" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
     <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;katex&quot;</span><span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
@@ -3288,12 +3305,13 @@ Block math:
 <p>&#x76EE;&#x6807;&#xFF1A;&#x57FA;&#x4E8E;GitHub&#x670D;&#x52A1;&#x7528;Gitbook&#x642D;&#x5EFA;&#x514D;&#x8D39;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#xFF0C;&#x79C1;&#x6709;&#x5E93;&#x5907;&#x4EFD;&#x6E90;&#x7801;&#xFF0C;&#x516C;&#x6709;&#x5E93;&#x4F5C;&#x4E3A;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#x3002;</p>
 <p>1&#x3001;&#x521B;&#x5EFA;&#x4E24;&#x4E2A;github&#x4ED3;&#x5E93;&#xFF0C;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x4E00;&#x4E2A;&#x516C;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x516C;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x662F;usename.github.io&#xFF0C;&#x5176;&#x4E2D;usename&#x5C31;&#x662F;GitHub&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</p>
 <p>2&#x3001;&#x5C06;&#x672C;&#x5730;&#x9879;&#x76EE;&#x540C;&#x6B65;&#x5230;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x5173;&#x4E8E;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x3001;&#x516C;&#x6709;&#x4ED3;&#x5E93;&#x521B;&#x5EFA;&#x3001;&#x540C;&#x6B65;&#x7B49;&#x64CD;&#x4F5C;&#xFF0C;&#x53C2;&#x8003;<a href="https://mp.weixin.qq.com/s/mCUfBUxyXUAxP-Um1kV58Q" target="_blank">&#x672C;&#x5730;&#x540C;&#x6B65;&#x4E0A;&#x4F20;&#x3001;&#x4E0B;&#x8F7D;&#x3001;&#x65B0;&#x5EFA;github&#x9879;&#x76EE;&#xFF0C;&#x4E00;&#x6B65;&#x5230;&#x4F4D;</a>&#xFF0C;&#x4E3B;&#x8981;&#x547D;&#x4EE4;</p>
-<pre class="language-"><code>git init
-git remote add origin xxxx
-git add .
-git commit -m &quot;message&quot;
-git push origin main
-</code></pre><p>&#x5728;&#x8F93;&#x5165;&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x505A;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">git</span> init
+<span class="token function">git</span> remote <span class="token function">add</span> origin xxxx
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">&quot;message&quot;</span>
+<span class="token function">git</span> push origin main
+</code></pre>
+<p>&#x5728;&#x8F93;&#x5165;&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x505A;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
 <p>&#x5728;Gitbook&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x5F88;&#x591A;&#x7EC4;&#x4EF6;&#xFF0C;&#x5728;&#x540C;&#x6B65;&#x9879;&#x76EE;&#x5230;github&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x53BB;&#x9664;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;gitbook&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x201C;.gitignore&#x201D;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x5165;</p>
 <pre class="language-"><code>node_modules/
 </code></pre><p>&#x8FD9;&#x6837;&#xFF0C;&#x5728;&#x4E0A;&#x4F20;&#x9879;&#x76EE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x628A;node_modules&#x76EE;&#x5F55;&#x6DFB;&#x52A0;&#x5230;github&#x4E0A;&#x3002;</p>
@@ -3304,19 +3322,22 @@ git push origin main
 </code></pre><p>&#x90A3;&#x4E48;<code>_book/xxx/</code>&#x4E2D;&#x7684;<code>html</code>&#x6587;&#x4EF6;&#x5C06;&#x4E0D;&#x4F1A;&#x4E0A;&#x4F20;&#x5230;&#x516C;&#x6709;&#x5E93;&#xFF0C;&#x4F46;&#x662F;<code>xxx</code>&#x7684;&#x6E90;&#x7801;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;&#x5230;&#x79C1;&#x6709;&#x5E93;&#xFF0C;&#x4ECE;&#x800C;&#x5B8C;&#x6210;&#x7EDF;&#x4E00;&#x5907;&#x4EFD;&#x3002;&#x6709;&#x610F;&#x601D;&#x7684;&#x662F;&#xFF0C;&#x5728;&#x672C;&#x5730;&#x8C03;&#x8BD5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x4F1A;&#x53D7;&#x5230;&#x5F71;&#x54CD;&#xFF0C;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x6B63;&#x5E38;&#x8BBF;&#x95EE;&#x672A;&#x516C;&#x5F00;&#x7684;&#x90E8;&#x5206;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;&#x8BBE;&#x7F6E;&#x53EA;&#x662F;&#x6CA1;&#x6709;&#x5C06;&#x4FDD;&#x5BC6;&#x7684;&#x90E8;&#x5206;&#x63D0;&#x4EA4;&#x5230;&#x516C;&#x6709;&#x5E93;&#xFF0C;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E0D;&#x4F1A;&#x53D7;&#x5F71;&#x54CD;&#x3002;</p>
 </blockquote>
 <p>&#x5728;clone&#x9879;&#x76EE;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#x76F8;&#x5173;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x7F16;&#x8BD1;&#x901A;&#x8FC7;&#x3002;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x7684;&#x6A21;&#x5757;&#x5728;book.js&#x6587;&#x4EF6;&#x7684;plugins&#x63D2;&#x4EF6;&#x5217;&#x8868;&#x4E2D;&#x67E5;&#x770B;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<a href="https://www.npmjs.com/package/package" target="_blank">&#x63D2;&#x4EF6;&#x5B98;&#x7F51;</a>&#x67E5;&#x8BE2;&#x5BF9;&#x5E94;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x5E76;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#xFF0C;&#x4F8B;&#x5982;</p>
-<pre class="language-"><code>npm install package
-</code></pre><p>&#x53C2;&#x8003;<a href="https://mp.weixin.qq.com/s/-fE3dE-pvjFwDiFz6VQbyQ" target="_blank">gitbook&#x7F8E;&#x5316;&#x4EE3;&#x7801;&#x683C;&#x5F0F;&#x5316;&#x6392;&#x7248;&#xFF0C;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#x8BBE;&#x7F6E;</a></p>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> <span class="token function">install</span> package
+</code></pre>
+<p>&#x53C2;&#x8003;<a href="https://mp.weixin.qq.com/s/-fE3dE-pvjFwDiFz6VQbyQ" target="_blank">gitbook&#x7F8E;&#x5316;&#x4EE3;&#x7801;&#x683C;&#x5F0F;&#x5316;&#x6392;&#x7248;&#xFF0C;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#x8BBE;&#x7F6E;</a></p>
 <p>3&#x3001;&#x5C06;&#x672C;&#x5730;gitbook&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x9879;&#x76EE;&#x4E0A;&#x4F20;&#x5230;github&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x53EA;&#x9700;&#x8981;&#x4E0A;&#x4F20;&#x9879;&#x76EE;&#x4E2D;_book&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x9762;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5373;&#x53EF;&#xFF0C;github&#x4ED3;&#x5E93;&#x4E5F;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x9759;&#x6001;&#x9875;&#x9762;&#x5C55;&#x793A;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#x5185;&#x5BB9;&#xFF0C;&#x975E;&#x9759;&#x6001;&#x9875;&#x9762;&#x65E0;&#x6CD5;&#x5C55;&#x793A;&#x3002;</p>
-<pre class="language-"><code>git remote add public xxxxx
-git subtree push --prefix=_book public main
-</code></pre><p>&#x9996;&#x5148;&#x6DFB;&#x52A0;&#x516C;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x5730;&#x5740;xxxx&#xFF0C;&#x7136;&#x540E;&#x7528;subtree&#x5C06;&#x9879;&#x76EE;&#x63A8;&#x9001;&#x5230;github&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#x7684;&#x90E8;&#x7F72;&#x5DE5;&#x4F5C;&#xFF0C;&#x90E8;&#x7F72;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;usename.github.io&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">git</span> remote <span class="token function">add</span> public xxxxx
+<span class="token function">git</span> subtree push <span class="token parameter variable">--prefix</span><span class="token operator">=</span>_book public main
+</code></pre>
+<p>&#x9996;&#x5148;&#x6DFB;&#x52A0;&#x516C;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x5730;&#x5740;xxxx&#xFF0C;&#x7136;&#x540E;&#x7528;subtree&#x5C06;&#x9879;&#x76EE;&#x63A8;&#x9001;&#x5230;github&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#x7684;&#x90E8;&#x7F72;&#x5DE5;&#x4F5C;&#xFF0C;&#x90E8;&#x7F72;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;usename.github.io&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#x3002;</p>
 <p>4&#x3001;&#x5F53;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#x9879;&#x76EE;&#x518D;&#x6B21;&#x66F4;&#x65B0;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x63A8;&#x9001;&#x5230;github&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x91CD;&#x590D;&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x5373;&#x53EF;</p>
-<pre class="language-"><code>npm run build
-git add .
-git commit -m &quot;message&quot;
-git push origin main
-git subtree push --prefix=_book public main
-</code></pre><p>&#x7B2C;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x662F;&#x7F16;&#x8BD1;&#x6253;&#x5305;&#x9879;&#x76EE;&#xFF0C;&#x4F7F;&#x5F97;markdown&#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x4E3A;html&#x9759;&#x6001;&#x7F51;&#x9875;&#x3002;&#x540E;&#x9762;&#x51E0;&#x6761;&#x547D;&#x4EE4;&#x662F;&#x63D0;&#x4EA4;&#x5230;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x662F;&#x5C06;&#x9759;&#x6001;&#x9875;&#x9762;&#x63D0;&#x4EA4;&#x5230;&#x516C;&#x6709;&#x4ED3;&#x5E93;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">npm</span> run build
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">&quot;message&quot;</span>
+<span class="token function">git</span> push origin main
+<span class="token function">git</span> subtree push <span class="token parameter variable">--prefix</span><span class="token operator">=</span>_book public main
+</code></pre>
+<p>&#x7B2C;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x662F;&#x7F16;&#x8BD1;&#x6253;&#x5305;&#x9879;&#x76EE;&#xFF0C;&#x4F7F;&#x5F97;markdown&#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x4E3A;html&#x9759;&#x6001;&#x7F51;&#x9875;&#x3002;&#x540E;&#x9762;&#x51E0;&#x6761;&#x547D;&#x4EE4;&#x662F;&#x63D0;&#x4EA4;&#x5230;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x662F;&#x5C06;&#x9759;&#x6001;&#x9875;&#x9762;&#x63D0;&#x4EA4;&#x5230;&#x516C;&#x6709;&#x4ED3;&#x5E93;&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x662F;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x6B65;&#x9AA4;</p>
 <h3 id="github&#x4ED3;&#x5E93;&#x5EFA;&#x7ACB;&#x548C;&#x66F4;&#x65B0;"><a name="github&#x4ED3;&#x5E93;&#x5EFA;&#x7ACB;&#x548C;&#x66F4;&#x65B0;" class="anchor-navigation-ex-anchor" href="#github&#x4ED3;&#x5E93;&#x5EFA;&#x7ACB;&#x548C;&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. GitHub&#x4ED3;&#x5E93;&#x5EFA;&#x7ACB;&#x548C;&#x66F4;&#x65B0;</h3>
 <p>1&#x3001;&#x521B;&#x5EFA;github&#x8D26;&#x53F7;&#xFF0C;&#x6CA1;&#x6709;github&#x8D26;&#x53F7;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x8FDB;&#x5165;&#x540E;&#x53F0;&#x3002;</p>
@@ -3426,7 +3447,7 @@ git subtree push --prefix=_book public main
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"搭建个人博客（笔记）网站","level":"4.1.1","depth":2,"next":{"title":"集合（零散）","level":"5.1","depth":1,"path":"note/intro.md","ref":"note/intro.md","articles":[{"title":"资源集合","level":"5.1.1","depth":2,"path":"note/source.md","ref":"note/source.md","articles":[]},{"title":"基于GitHub服务用Gitbook搭建免费个人网站","level":"5.1.2","depth":2,"path":"note/gitbook-github.md","ref":"note/gitbook-github.md","articles":[]}]},"previous":{"title":"集合（零散教学）","level":"4.1","depth":1,"path":"teachNote/intro.md","ref":"teachNote/intro.md","articles":[{"title":"搭建个人博客（笔记）网站","level":"4.1.1","depth":2,"path":"teachNote/gitbook2github.md","ref":"teachNote/gitbook2github.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","back-to-top-button","tbfed-pagefooter","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>","modify_label":"Update in ","modify_format":"YYYY-MM-DD"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"teachNote/gitbook2github.md","mtime":"2025-10-20T11:06:15.062Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-20T11:06:38.214Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"搭建个人博客（笔记）网站","level":"4.1.1","depth":2,"next":{"title":"集合（零散）","level":"5.1","depth":1,"path":"note/intro.md","ref":"note/intro.md","articles":[{"title":"资源集合","level":"5.1.1","depth":2,"path":"note/source.md","ref":"note/source.md","articles":[]},{"title":"基于GitHub服务用Gitbook搭建免费个人网站","level":"5.1.2","depth":2,"path":"note/gitbook-github.md","ref":"note/gitbook-github.md","articles":[]}]},"previous":{"title":"集合（零散教学）","level":"4.1","depth":1,"path":"teachNote/intro.md","ref":"teachNote/intro.md","articles":[{"title":"搭建个人博客（笔记）网站","level":"4.1.1","depth":2,"path":"teachNote/gitbook2github.md","ref":"teachNote/gitbook2github.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","katex","code","hide-element","flexible-alerts","prism","-highlight","expandable-chapters","back-to-top-button","tbfed-pagefooter","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://github.com/phdlisl/phdlisl.github.io'>phdlisl</a>","modify_label":"Update in ","modify_format":"YYYY-MM-DD"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"back-to-top-button":{},"flexible-alerts":{"style":"callout","note":{"label":"注意","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"提示","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"危险","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"phdlisl","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"档案馆","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"技术博客指南，教学视频，教学笔记"},"file":{"path":"teachNote/gitbook2github.md","mtime":"2025-10-20T11:20:17.480Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-20T11:20:54.711Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
