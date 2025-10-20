@@ -1,0 +1,268 @@
+/* 调整主内容区域宽度 */
+.book .book-body .page-wrapper .page-inner {
+    max-width: 95% !important;
+    padding-top: 0 !important;
+}
+
+/* 调整正文内容宽度 */
+.markdown-section {
+    /* max-width: 1200px !important; */
+    max-width: 100% !important;
+    margin: 0 auto;
+    /* padding: 0 40px; */
+}
+
+/* 如果需要调整侧边栏宽度 */
+.book .book-summary {
+    width: 300px !important;
+}
+
+.book.with-summary .book-body {
+    left: 300px !important;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    /* 基础容器重置 */
+  .book,
+  .book-body,
+  .book-body .body-inner,
+  .book-body .page-wrapper,
+  .book-body .page-inner {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+    .book .book-summary {
+        /* width: 280px !important; */
+        width: 100% !important;
+        transform: translateX(-100%);
+    }
+    
+    .book.with-summary .book-summary {
+        transform: translateX(0);
+    }
+    
+    .book.with-summary .book-body {
+        /* transform: translateX(280px); */
+        transform: translateX(100%);
+        left: 0 !important;
+    }
+    
+    .markdown-section {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding-left: 5px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* 所有链接下划线 */
+.markdown-section a {
+    text-decoration: underline !important;
+    color: #007acc !important;
+    transition: color 0.3s ease;
+}
+
+/* 鼠标悬停时显示下划线 */
+.markdown-section a:hover {
+    text-decoration: underline !important;
+    color: #005a9e !important;
+}
+
+/* 导航链接保持默认样式 */
+.book-summary a {
+    text-decoration: none !important;
+}
+
+.book-summary a:hover {
+    text-decoration: underline !important;
+}
+
+/* 标题锚点链接 */
+.anchor span {
+    text-decoration: none !important;
+}
+
+/* 代码块中的链接 */
+.markdown-section code a {
+    text-decoration: underline !important;
+}
+
+/* 隐藏导航箭头 */
+.navigation-next, .navigation-prev {
+    display: none !important;
+}
+/* 或者更具体的选择器 */
+button[data-testid="next-chapter-button"],
+button[data-testid="previous-chapter-button"] {
+    display: none !important;
+}
+
+/* 为一级目录添加简单序号 1, 2, 3... */
+.book .book-summary > ul.summary > li > a:before {
+  content: counter(chapter) ". ";
+  counter-increment: chapter;
+  font-weight: bold;
+  margin-right: 8px;
+  display: inline-block;
+  min-width: 20px;
+}
+
+.book .book-summary {
+  counter-reset: chapter;
+}
+
+/* 移除子级的序号 */
+.book .book-summary > ul.summary > li ul li a:before {
+  content: none !important;
+}
+
+/* 表格样式 */
+/* 表格自适应宽度 */
+.markdown-section table {
+  display: block !important;
+  /* width: fit-content !important; */
+  min-width: 45% !important;
+  max-width: 100% !important;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  background: white;
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+  border-radius: 8px;
+}
+
+.markdown-section th {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  font-weight: 600;
+  padding: 14px 18px;
+  border-bottom: 2px solid #dee2e6;
+  color: #495057;
+}
+
+.markdown-section td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e9ecef;
+  color: #6c757d;
+}
+
+/* 立体悬停效果 */
+.markdown-section tbody tr {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.markdown-section tbody tr:hover {
+  background-color: #fff3e0 !important;
+  transform: scale(1.01);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.markdown-section tbody tr:hover td {
+  border-color: #ffb74d;
+  color: #e65100;
+}
+
+
+
+/* 代码框宽度 */
+/* styles/website.css */
+.markdown-section pre {
+  width: fit-content !important;
+  min-width: 45%;
+  max-width: 100%;
+  display: block;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 16px 0;
+  overflow-x: auto;
+  font-size: 16px;
+  line-height: 1.45;
+  position: relative;
+}
+
+/* 复制按钮样式 */
+.markdown-section pre .copy-btn {
+  position: absolute;
+  /* top: 8px;
+  right: 8px; */
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #24292f;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0;
+  backdrop-filter: blur(4px);
+}
+
+.markdown-section pre:hover .copy-btn {
+  opacity: 1;
+}
+
+.markdown-section pre .copy-btn:hover {
+  background: white;
+  border-color: #0366d6;
+  color: #0366d6;
+  transform: translateY(-1px);
+}
+
+.markdown-section pre .copy-btn.copied {
+  background: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.markdown-section pre:hover {
+  box-shadow: 
+    0 0 0 2px rgba(59, 130, 246, 0.2),
+    0 10px 15px -3px rgba(59, 130, 246, 0.1),
+    0 4px 6px -2px rgba(59, 130, 246, 0.05);
+}
+
+/* 内联代码 */
+.markdown-section p code,
+.markdown-section li code {
+  background: rgba(175, 184, 193, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  border: 1px solid rgba(175, 184, 193, 0.2);
+  white-space: nowrap;
+}
+
+/* styles/alerts.css */
+.markdown-section .alert {
+  width: fit-content !important;
+  min-width: 45%;
+  display: inline-block;
+  margin: 16px 0;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 5px solid;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 不同类型颜色 */
+.alert-info { background: #f0f7ff; border-color: #1890ff; color: #0050b3; }
+.alert-warning { background: #fff7e6; border-color: #fa8c16; color: #873800; }
+.alert-danger { background: #fff2f0; border-color: #ff4d4f; color: #a8071a; }
+.alert-success { background: #f6ffed; border-color: #52c41a; color: #135200; }
+
+.markdown-section .alert:hover {
+  box-shadow: 
+    0 0 0 2px rgba(59, 130, 246, 0.2),
+    0 10px 15px -3px rgba(59, 130, 246, 0.1),
+    0 4px 6px -2px rgba(59, 130, 246, 0.05);
+}
